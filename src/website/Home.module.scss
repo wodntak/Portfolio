@@ -1,0 +1,59 @@
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: '양진체';
+}
+
+@function generate_star($number){
+    $x : random($number);
+    $y : random($number);
+    $color: white;
+    $star : #{$x}px #{$y}px $color;
+    @for $i from 3 through 200{
+        $x: random($number);
+        $y: random($number);
+        $star: #{$star}, #{$x}px #{$y}px $color;
+    }
+   @return $star;
+}
+
+@mixin stars($number,$delay){
+    width: 2px;
+    height: 2px;
+    box-shadow: generate_star($number);
+    //top: generate_star($number);
+    //left: generate_star($number);
+    background-color: white;
+    border-radius: 50%;
+    animation-name: glow;
+    animation-duration: 1.7s;
+    animation-iteration-count: infinite;
+    animation-delay: $delay + s;
+}
+
+#star1{
+    @include stars(1920, 0.2);
+}
+#star2{
+    @include stars(1920, 0.4);
+}
+#star3{
+    @include stars(1920,0.6);
+}
+#star4{
+    @include stars(1920, 0);
+}
+
+@keyframes glow {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+}
+

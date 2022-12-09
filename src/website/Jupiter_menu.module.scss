@@ -1,0 +1,13 @@
+#jupiter_menumode{
+    position: absolute;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    top: 30%;
+    right: 27%;
+    box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.2),
+    inset 30px 0 40px 3px rgba(0,0,0,0.9),
+    inset -10px 0 4px 1px rgba(255,255,255,0.3);
+    background-image: url('../images/jupiter-500.jpg');
+    background-position: center;
+}

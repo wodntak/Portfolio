@@ -1,0 +1,37 @@
+#sun_menumode{
+    position: absolute;
+    border-radius: 50%;
+    width: 450px;
+    height: 750px;
+    right: 90%;
+    box-shadow: inset 30px 0 40px 3px rgba(0,0,0,0.9),
+    inset -10px 0 4px 1px rgba(255,255,255,0.3),
+    inset 0 0 5px 90px rgba(255,200,0,0.4),
+    0 0 50px 50px rgba(255,0,0,0.3);
+    background-image: url('../images/sunshot.jpg');
+}
+
+#sun_menumode:hover{
+    transform: scale(1.05);
+    transition: ease-in-out;
+}
+
+#Offcanvas{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+    .Offcanvas_Header{
+        text-align: right;
+        justify-content: right;
+    }
+
+    .Offcanvas_Title{
+        text-align: center;
+        margin:30px;
+        font-size: 20px;
+    }
+
+    .Offcanvas_Title:hover{
+        transform: scale(1.15);
+    }
