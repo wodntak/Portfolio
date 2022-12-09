@@ -1,13 +1,11 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
-import Tooltip from 'react-bootstrap/Tooltip';
 import background from './Home.module.scss';
 import aniStyle from './Animation.module.scss';
 import menuStyle from './Menu.module.scss';
-import Sun from './Sun';
+import Sun from './Planets/Sun.js';
+import Mercury from './Planets/Mercury';
 
 import { useState } from 'react';
 
@@ -25,7 +23,7 @@ const Home = () => {
         <div id={background.star3}></div>
         <div id={background.star4}></div>
         <Sun checked={checked}/>
-        <div id= {checked ? aniStyle.mercury_animode : menuStyle.mercury_menumode}></div>
+        <Mercury checked={checked}/>
         <div id= {checked ? aniStyle.venus_animode : menuStyle.venus_menumode}></div>
         <div id= {checked ? aniStyle.earth_animode : menuStyle.earth_menumode}></div>
         <div id= {checked ? aniStyle.mars_animode : menuStyle.mars_menumode}></div>
