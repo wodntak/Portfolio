@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #mercury_menumode{
     position: absolute;
     border-radius: 50%;
@@ -13,6 +20,20 @@
 }
 
 #mercury_menumode:hover{
-    transform: scale(1.05);
-    transition: ease-in-out;
+    transform: scale(1.15);
+    transition: transform 2s;
 }
+
+#Tooltip {
+    font-family: 'SDSamliphopangche_Outline';
+    position: fixed;
+    display: inline-block;
+    border-radius: 10%;
+    background-color: red;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 5%;
+}
+    .p{
+        font-size: 18px;
+    }
