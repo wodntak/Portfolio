@@ -1,7 +1,7 @@
 import React from 'react';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import sunmenuStyle from './Sun_menu.module.scss';
-import sunaniStyle from './Sun_animation.module.scss';
+import sunmenuStyle from './MenuStyle/Sun_menu.module.scss';
+import sunaniStyle from './AnimationStyle/Sun_animation.module.scss';
 
 import { useState } from 'react';
 

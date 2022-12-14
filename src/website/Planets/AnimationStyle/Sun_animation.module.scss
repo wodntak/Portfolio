@@ -1,0 +1,98 @@
+#sun_animode{
+    z-index: 1;
+    position: fixed;
+    margin-top: -50px;
+    margin-left: -100px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    box-shadow: inset 30px 0 40px 3px rgba(0,0,0,0.9),
+    inset -10px 0 4px 1px rgba(255,255,255,0.3),
+    inset 0 0 5px 90px rgba(255,200,0,0.4),
+    0 0 50px 30px rgba(255,0,0,0.3);
+    background-image: url('/images/sunshot.jpg');
+    animation-name: planet;
+    animation-duration: 25s ;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    transition: transform .2s; 
+    
+}
+
+#sun_animode:hover{
+    animation-name: planet;
+    animation-duration: 25s ;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+}
+
+
+
+@keyframes planet {
+    
+    0%{
+        background-position-x: 0;
+        background-position-y: 100%;
+        transform: rotateZ(0deg);
+
+    }
+    50%{
+        background-position-x: 100%;
+        background-position-y: 0;
+    }
+   100%{
+        background-position-x: 0;
+        background-position-y: 100%;
+        transform: rotateZ(360deg);
+   }
+}
+
+@keyframes move{
+    0%   { left: 43%;  }
+
+    100% { left: 60%;  }
+}
+
+@keyframes orbit-animation {
+
+    0% {
+        transform: rotateZ(0deg); }
+    
+    100% {
+        transform: rotateZ(-360deg); } 
+
+    // 0% {
+    //     transform: perspective(200px) translate3d(-200px, 0px, 0px);
+        
+    // }
+
+    // 25%{
+    //     transform: perspective(200px)  translate3d(0px, 100px, 50px);
+    // }
+
+    // 50%{
+    //     transform: perspective(200px) translate3d(200px, 0px, 0px);
+    //     z-index: 0;
+    // }
+
+    // 75%{
+    //     transform: perspective(200px) translate3d(0px, -100px, -50px);
+    //     z-index: 0;
+    // }
+
+    // 100% {
+    //     transform: perspective(200px) translate3d(-200px, 0px, 0px);
+    //     z-index: 0;
+    // }
+
+
+
+    // from { transform: rotate(0deg) translateX(130px) rotate(0deg); }
+    // to   { transform: rotate(360deg) translateX(130px) rotate(-360deg); }
+}

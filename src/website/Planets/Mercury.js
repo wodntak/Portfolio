@@ -1,6 +1,6 @@
 import React from 'react';
-import mercurymenu from './Mercury_menu.module.scss';
-import mercuryani from './Mercury_animation.module.scss';
+import mercurymenu from './MenuStyle/Mercury_menu.module.scss';
+import mercuryani from './AnimationStyle/Mercury_animation.module.scss';
 
 const Mercury = ({checked}) => {
     return (
