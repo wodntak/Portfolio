@@ -40,7 +40,68 @@
         
     }
 
-#Modal {
+#Modal{
     font-family: 'SDSamliphopangche_Outline';
     color: black;
+    text-align: center;
+    justify-content: center;
 }
+
+    .Modal_Header{
+       font-size: 20px;
+       background-color: black;
+       color: white;
+       border: white 2px solid;
+    }
+
+    .Modal_Title{
+        font-size: 30px;
+        
+    }
+
+    .Modal_Body{
+       background-color: black;
+       color: white;
+       border: white 1px solid;
+
+    }
+
+#Carousel{
+    height: 500px;
+}
+
+#aboutMefirst{
+    height: 150px;
+    border: white 1px solid;
+    margin-right: 5px;
+}
+    .icon_Row{
+        margin-top: 5px;
+        height: 40%;
+
+    }
+
+    .text_Row{
+        font-size: 30px;
+        height: 60%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+.icon{
+    fill:white;
+    
+}
+    .iconLeft{
+        text-align: right;
+
+
+
+    }
+    .iconRight{
+
+        font-size: 20px;
+        text-align: left;
+        margin-left: -15px;
+
+    }
