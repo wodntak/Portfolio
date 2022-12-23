@@ -35,13 +35,13 @@ const Sun = ({checked}, ...props) => {
         <Offcanvas.Header className={sunmenuStyle.Offcanvas_Header} closeButton closeVariant="white">
         </Offcanvas.Header>
         <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>About Me</Offcanvas.Title>
-        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Education</Offcanvas.Title>
+        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Education & Experience</Offcanvas.Title>
         <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Skills</Offcanvas.Title>
-        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 1</Offcanvas.Title>
-        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 2</Offcanvas.Title>
-        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 3</Offcanvas.Title>
+        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 1 (Personal website)</Offcanvas.Title>
+        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 2 (Erudite)</Offcanvas.Title>
+        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 3 (Grocery shopping/Todos)</Offcanvas.Title>
+        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 4 (Recommend Movie)</Offcanvas.Title>
         <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Contact Me</Offcanvas.Title>
-        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Others</Offcanvas.Title>
        
         </Offcanvas>
     </>
