@@ -4,11 +4,12 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import sunmenuStyle from './MenuStyle/Sun_menu.module.scss';
 import sunaniStyle from './AnimationStyle/Sun_animation.module.scss';
+import Mercury from './Mercury';
 
 import { useState } from 'react';
 
 
-const Sun = ({checked}, ...props) => {
+const Sun = ({checked, mercuryShow}, ...props) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -34,7 +35,7 @@ const Sun = ({checked}, ...props) => {
         <Offcanvas id={sunmenuStyle.Offcanvas} show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header className={sunmenuStyle.Offcanvas_Header} closeButton closeVariant="white">
         </Offcanvas.Header>
-        <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>About Me</Offcanvas.Title>
+        <Offcanvas.Title onClick={() => {mercuryShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>About Me</Offcanvas.Title>
         <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Education & Experience</Offcanvas.Title>
         <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Skills</Offcanvas.Title>
         <Offcanvas.Title className={sunmenuStyle.Offcanvas_Title}>Project 1 (Personal website)</Offcanvas.Title>

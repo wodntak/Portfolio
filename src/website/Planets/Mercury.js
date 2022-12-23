@@ -9,14 +9,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import { useState } from 'react';
 
+const Mercury = ({checked, show, handleClose, mercuryShow}) => {
 
-const Mercury = ({checked}) => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
 
     const renderTooltip = (props) => (
         <Tooltip id={mercurymenu.Tooltip} {...props}>
@@ -30,7 +25,7 @@ const Mercury = ({checked}) => {
         placement="top"
         overlay={renderTooltip}
         >
-            {checked ? <div id={mercuryani.mercury_animode}/> : <div id={mercurymenu.mercury_menumode} onClick={handleShow}/>}
+            {checked ? <div id={mercuryani.mercury_animode}/> : <div id={mercurymenu.mercury_menumode} onClick={mercuryShow}/>}
         </OverlayTrigger>
 
         <Modal

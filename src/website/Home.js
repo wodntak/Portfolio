@@ -19,6 +19,13 @@ import { useState } from 'react';
 
 const Home = () => {
     const [checked, setChecked] = useState(false);
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const mercuryShow = () => setShow(true);
+    const venusShow = () => setShow(true);
+    const earthShow = () => setShow(true);
+    const MarsShow = () => setShow(true);
   
 
     return (
@@ -27,8 +34,8 @@ const Home = () => {
         <div id={background.star2}></div>
         <div id={background.star3}></div>
         <div id={background.star4}></div>
-        <Sun checked={checked}/>
-        <Mercury checked={checked}/>
+        <Sun checked={checked} mercuryShow={mercuryShow}/>
+        <Mercury checked={checked} show={show} handleClose={handleClose} mercuryShow={mercuryShow}/>
         <Venus checked={checked}/>
         <Earth checked={checked}/>
         <Mars checked={checked}/>
