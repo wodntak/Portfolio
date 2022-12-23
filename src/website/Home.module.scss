@@ -9,6 +9,7 @@ body {
     background-color: black;
     color: white;
     font-family: '양진체';
+    width: 1920px;
 }
 
 @function generate_star($number){
@@ -57,3 +58,6 @@ body {
     100% {opacity: 0;}
 }
 
+.switch{
+    margin-left: 50%;
+}

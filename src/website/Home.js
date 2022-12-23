@@ -2,7 +2,6 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Form from 'react-bootstrap/Form';
 import background from './Home.module.scss';
-import aniStyle from './Animation.module.scss';
 import Sun from './Planets/Sun.js';
 import Mercury from './Planets/Mercury';
 import Venus from './Planets/Venus';
@@ -42,7 +41,7 @@ const Home = () => {
       <Form.Check 
         type="switch"
         id="custom-switch"
-        style={{"margin-left":"62%"}}
+        className={background.switch}
         checked={checked}
         label={checked ? "애니메이션 모드" : "메뉴 모드" }
         onChange={(e) => setChecked(e.currentTarget.checked)} 

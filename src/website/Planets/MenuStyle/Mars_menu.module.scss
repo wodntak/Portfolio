@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'SDSamliphopangche_Outline';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #mars_menumode{
     position: absolute;
     border-radius: 50%;
@@ -11,3 +18,106 @@
     background-image: url('/images/mars-170.jpg');
     background-position: center;
 }
+
+#mars_menumode:hover{
+    transform: scale(1.15);
+    transition: transform 2s;
+}
+
+#Tooltip {
+    font-family: 'SDSamliphopangche_Outline';
+    position: fixed;
+    display: inline-block;
+    border-radius: 10%;
+    background-color: #c3195d;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: 1.5%;
+    margin-top: 1%;
+}
+    .p{
+        font-size: 16px;
+        
+    }
+
+    #Modal{
+        font-family: 'SDSamliphopangche_Outline';
+        color: black;
+        text-align: center;
+        justify-content: center;
+    }
+    
+        .Modal_Header{
+           font-size: 20px;
+           background-color: black;
+           color: white;
+           border: #c3195d 2px solid;
+        }
+    
+        .Modal_Title{
+            font-size: 30px;
+            
+        }
+     
+        .Modal_Body{
+           background-color: black;
+           color: white;
+           border: #c3195d 1px solid;
+    
+        }
+    
+    #Carousel{
+        height: 500px;
+    }
+    
+    #aboutMesecond{
+        height: 150px;
+        border: white 1px solid;
+        margin-right: 5px;
+        border-radius: 35%;
+    
+    }
+        .icon_Row{
+            margin-top: 5px;
+            height: 40%;
+        }
+    
+        .text_Row{
+            font-size: 20px;
+            height: 60%;
+            text-align: center;
+            justify-content: center;
+        }
+    
+        .text_Row_email{
+            font-size: 18px;
+            height: 60%;
+            text-align: center;
+            justify-content: center;
+            
+        }
+        
+    .icon{
+        fill:white;
+    }
+        .iconLeft{
+            text-align: right;
+        }
+    
+        .iconRight{
+            font-size: 22px;
+            text-align: left;
+            margin-left: -15px;
+        }
+    
+        .iconLeft_three{
+            text-align: right;
+            flex: 45%
+        }
+        .iconRight_three{
+            font-size: 22px;
+            text-align: left;
+            margin-left: -15px;
+            flex:55%
+        }
+    

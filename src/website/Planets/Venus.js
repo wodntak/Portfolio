@@ -21,7 +21,7 @@ const Venus = ({checked}) => {
     const renderTooltip = (props) => (
         <Tooltip id={venusmenu.Tooltip} {...props}>
           Education & Experience
-          <p className={venusmenu.p}> 학력 & 경력</p>
+          <p className={venusmenu.p}> 제 학력과 경력이 궁금하다면 클릭!</p>
         </Tooltip>
     );
 
