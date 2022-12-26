@@ -9,14 +9,7 @@ import Col from 'react-bootstrap/Col';
 import neptunemenu from './MenuStyle/Neptune_menu.module.scss';
 import neptuneani from './AnimationStyle/Neptune_animation.module.scss';
 
-import { useState } from 'react';
-
-
-const Neptune = ({checked}) => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+const Neptune = ({checked, neptuneshow, neptuneClose, neptuneShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={neptunemenu.Tooltip} {...props}>
@@ -32,20 +25,20 @@ const Neptune = ({checked}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-            {checked ? <div id={neptuneani.neptune_animode}/> : <div id={neptunemenu.neptune_menumode} onClick={handleShow}/>}
+            {checked ? <div id={neptuneani.neptune_animode}/> : <div id={neptunemenu.neptune_menumode} onClick={neptuneShow}/>}
         </OverlayTrigger>
 
         <Modal
-        show={show}
+        show={neptuneshow}
         size="lg"
         id={neptunemenu.Modal}
-        onHide={handleClose}
+        onHide={neptuneClose}
         backdrop="static"
         keyboard={false}
         centered
       >
         <Modal.Header  closeButton closeVariant="white" className={neptunemenu.Modal_Header}>
-          <Modal.Title className={neptunemenu.Modal_Title}> Project 1</Modal.Title>
+          <Modal.Title className={neptunemenu.Modal_Title}>Contact Me</Modal.Title>
         </Modal.Header>
         <Modal.Body className={neptunemenu.Modal_Body}>
         <Carousel id={neptunemenu.Carousel}>

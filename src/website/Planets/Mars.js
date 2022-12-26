@@ -9,14 +9,8 @@ import Col from 'react-bootstrap/Col';
 import marsmenu from './MenuStyle/Mars_menu.module.scss';
 import marsani from './AnimationStyle/Mars_animation.module.scss';
 
-import { useState } from 'react';
 
-
-const Mars = ({checked}) => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+const Mars = ({checked, marsshow, marsClose, marsShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={marsmenu.Tooltip} {...props}>
@@ -32,14 +26,14 @@ const Mars = ({checked}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-            {checked ? <div id={marsani.mars_animode}/> : <div id={marsmenu.mars_menumode} onClick={handleShow}/>}
+            {checked ? <div id={marsani.mars_animode}/> : <div id={marsmenu.mars_menumode} onClick={marsShow}/>}
         </OverlayTrigger>
 
         <Modal
-        show={show}
+        show={marsshow}
         size="lg"
         id={marsmenu.Modal}
-        onHide={handleClose}
+        onHide={marsClose}
         backdrop="static"
         keyboard={false}
         centered

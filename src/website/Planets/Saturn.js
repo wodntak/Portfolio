@@ -9,14 +9,8 @@ import Col from 'react-bootstrap/Col';
 import saturnmenu from './MenuStyle/Saturn_menu.module.scss';
 import saturnani from './AnimationStyle/Saturn_animation.module.scss';
 
-import { useState } from 'react';
 
-
-const Saturn = ({checked}) => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+const Saturn = ({checked, saturnshow, saturnClose, saturnShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={saturnmenu.Tooltip} {...props}>
@@ -33,15 +27,15 @@ const Saturn = ({checked}) => {
         overlay={renderTooltip}
         >
             {checked ? <div id={saturnani.saturn_animode}/>   :
-            <div id={saturnmenu.saturn_menumode} onClick={handleShow}> <div id={saturnmenu.saturn_bottom}/> <div id={saturnmenu.saturn_ring}/> 
+            <div id={saturnmenu.saturn_menumode} onClick={saturnShow}> <div id={saturnmenu.saturn_bottom}/> <div id={saturnmenu.saturn_ring}/> 
             <div id={saturnmenu.saturn_top} /></div>}        
         </OverlayTrigger>
 
         <Modal
-        show={show}
+        show={saturnshow}
         size="lg"
         id={saturnmenu.Modal}
-        onHide={handleClose}
+        onHide={saturnClose}
         backdrop="static"
         keyboard={false}
         centered

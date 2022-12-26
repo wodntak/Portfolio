@@ -9,14 +9,9 @@ import Col from 'react-bootstrap/Col';
 import earthmenu from './MenuStyle/Earth_menu.module.scss';
 import earthani from './AnimationStyle/Earth_animation.module.scss';
 
-import { useState } from 'react';
 
 
-const Earth = ({checked}) => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+const Earth = ({checked, earthshow, earthClose, earthShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={earthmenu.Tooltip} {...props}>
@@ -32,14 +27,14 @@ const Earth = ({checked}) => {
         placement="top"
         overlay={renderTooltip}
         >
-            {checked ? <div id={earthani.earth_animode}/> : <div id={earthmenu.earth_menumode} onClick={handleShow}/>}
+            {checked ? <div id={earthani.earth_animode}/> : <div id={earthmenu.earth_menumode} onClick={earthShow}/>}
         </OverlayTrigger>
 
         <Modal
-        show={show}
+        show={earthshow}
         size="lg"
         id={earthmenu.Modal}
-        onHide={handleClose}
+        onHide={earthClose}
         backdrop="static"
         keyboard={false}
         centered

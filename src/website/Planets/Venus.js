@@ -9,14 +9,8 @@ import Col from 'react-bootstrap/Col';
 import venusmenu from './MenuStyle/Venus_menu.module.scss'
 import venusani from './AnimationStyle/Venus_animation.module.scss';
 
-import { useState } from 'react';
 
-
-const Venus = ({checked}) => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+const Venus = ({checked, venusshow, venusClose, venusShow}) => {
 
     const renderTooltip = (props) => (
         <Tooltip id={venusmenu.Tooltip} {...props}>
@@ -31,14 +25,14 @@ const Venus = ({checked}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-            {checked ? <div id={venusani.venus_animode}/> : <div id={venusmenu.venus_menumode} onClick={handleShow}/>}
+            {checked ? <div id={venusani.venus_animode}/> : <div id={venusmenu.venus_menumode} onClick={venusShow}/>}
         </OverlayTrigger>
 
         <Modal
-        show={show}
+        show={venusshow}
         size="lg"
         id={venusmenu.Modal}
-        onHide={handleClose}
+        onHide={venusClose}
         backdrop="static"
         keyboard={false}
         centered
@@ -50,10 +44,11 @@ const Venus = ({checked}) => {
         <Carousel id={venusmenu.Carousel}>
       <Carousel.Item>
         <h3>Education</h3>
+        
       </Carousel.Item>
 
       <Carousel.Item>
-        
+        <h3>Experience</h3>
       </Carousel.Item>
 
     </Carousel>

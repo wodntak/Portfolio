@@ -10,7 +10,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-const Mercury = ({checked, show, handleClose, mercuryShow}) => {
+const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
 
 
     const renderTooltip = (props) => (
@@ -29,10 +29,10 @@ const Mercury = ({checked, show, handleClose, mercuryShow}) => {
         </OverlayTrigger>
 
         <Modal
-        show={show}
+        show={mercuryshow}
         size="lg"
         id={mercurymenu.Modal}
-        onHide={handleClose}
+        onHide={mercuryClose}
         backdrop="static"
         keyboard={false}
         centered

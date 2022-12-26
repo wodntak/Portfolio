@@ -9,13 +9,7 @@ import Col from 'react-bootstrap/Col';
 import uranusmenu from './MenuStyle/Uranus_menu.module.scss';
 import uranusani from './AnimationStyle/Uranus_animation.module.scss';
 
-import { useState } from 'react';
-
-const Uranus = ({checked}) => {
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+const Uranus = ({checked, uranusshow, uranusClose, uranusShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={uranusmenu.Tooltip} {...props}>
@@ -31,14 +25,14 @@ const Uranus = ({checked}) => {
         placement="top"
         overlay={renderTooltip}
         >
-            {checked ? <div id={uranusani.uranus_animode}/> : <div id={uranusmenu.uranus_menumode} onClick={handleShow}/>}
+            {checked ? <div id={uranusani.uranus_animode}/> : <div id={uranusmenu.uranus_menumode} onClick={uranusShow}/>}
         </OverlayTrigger>
 
         <Modal
-        show={show}
+        show={uranusshow}
         size="lg"
         id={uranusmenu.Modal}
-        onHide={handleClose}
+        onHide={uranusClose}
         backdrop="static"
         keyboard={false}
         centered
