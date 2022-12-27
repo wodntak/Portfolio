@@ -14,8 +14,8 @@ const Mars = ({checked, marsshow, marsClose, marsShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={marsmenu.Tooltip} {...props}>
-          Project 1
-          <p className={marsmenu.p}> 프로젝트에 대해서 </p>
+          프로젝트 1
+          <p className={marsmenu.p}> Erudite Learning Lab </p>
         </Tooltip>
     );
     
@@ -39,7 +39,7 @@ const Mars = ({checked, marsshow, marsClose, marsShow}) => {
         centered
       >
         <Modal.Header  closeButton closeVariant="white" className={marsmenu.Modal_Header}>
-          <Modal.Title className={marsmenu.Modal_Title}> Project 1</Modal.Title>
+          <Modal.Title className={marsmenu.Modal_Title}> 프로젝트 1 (Erudite Learning Lab) </Modal.Title>
         </Modal.Header>
         <Modal.Body className={marsmenu.Modal_Body}>
         <Carousel id={marsmenu.Carousel}>
