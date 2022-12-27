@@ -127,7 +127,7 @@ const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
                 </Col>
             </Row>
             <Row className={mercurymenu.text_Row} >
-                풋살, 영화
+                풋살, 영화시청
             </Row>
         </Col>
         <Col id={mercurymenu.aboutMesecond}>
