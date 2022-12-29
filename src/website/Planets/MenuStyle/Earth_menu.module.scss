@@ -123,7 +123,12 @@
         }
 
 .progress{
-    max-width: 45%;
+    max-width: 100%;
     border: 2px solid white;
     border-radius: 50px;
+}
+
+.icon{
+    fill:white;
+    margin-bottom: 15px;
 }

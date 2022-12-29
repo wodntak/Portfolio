@@ -3,9 +3,9 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Carousel from 'react-bootstrap/Carousel';
 import Modal from 'react-bootstrap/Modal';
-// import Container from 'react-bootstrap/Container';
-// import Row from 'react-bootstrap/Row';
-// import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import earthmenu from './MenuStyle/Earth_menu.module.scss';
 import earthani from './AnimationStyle/Earth_animation.module.scss';
@@ -44,11 +44,23 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
           <Modal.Title className={earthmenu.Modal_Title}>Skills</Modal.Title>
         </Modal.Header>
         <Modal.Body className={earthmenu.Modal_Body}>
-        <Carousel id={earthmenu.Carousel}>
+        <Carousel id={earthmenu.Carousel} interval={null}>
       <Carousel.Item>
-        <h3> Frontend </h3>
-          <p> Javascript </p>
-        <ProgressBar className={earthmenu.progress} animated now={45} />
+        <Container>
+          <h3> Frontend </h3>
+          <Row>
+          
+            <Col>
+                <img className={earthmenu.icon} src="https://www.freepnglogos.com/uploads/javascript-png/png-javascript-badge-picture-8.png" width="35" alt="javascript" />
+                Javascript
+              <ProgressBar className={earthmenu.progress} animated now={80} />
+            </Col>
+            <Col>
+            
+            </Col>
+          </Row>
+        </Container>
+       
       </Carousel.Item>
 
       <Carousel.Item>

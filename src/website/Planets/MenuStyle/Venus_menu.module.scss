@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'IM_Hyemin-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2106@1.1/IM_Hyemin-Bold.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 #venus_menumode{
     position: absolute;
     border-radius: 50%;
@@ -71,63 +78,14 @@
         height: 500px;
     }
     
-    #aboutMesecond{
-        height: 150px;
-        border: white 1px solid;
-        margin-right: 5px;
-        border-radius: 35%;
-    
-    }
-        .icon_Row{
-            margin-top: 5px;
-            height: 40%;
-        }
-    
-        .text_Row{
-            font-size: 20px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-        }
-    
-        .text_Row_email{
-            font-size: 18px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-            
-        }
-        
-    .icon{
-        fill:white;
-    }
-        .iconLeft{
-            text-align: right;
-        }
-    
-        .iconRight{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-        }
-    
-        .iconLeft_three{
-            text-align: right;
-            flex: 45%
-        }
-        .iconRight_three{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-            flex:55%
-        }
-    
 .timeline {
     list-style-type: none;
     position: relative;
     margin-left: 6%;
     font-size: 18px;
     padding-top: 3%;
+    font-family: 'IM_Hyemin-Bold';
+
 }
         
     .timeline:before {
