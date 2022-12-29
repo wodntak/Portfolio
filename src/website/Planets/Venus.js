@@ -25,7 +25,7 @@ const Venus = ({checked, venusshow, venusClose, venusShow}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-            {checked ? <div id={venusani.venus_animode}/> : <div id={venusmenu.venus_menumode} onClick={venusShow}/>}
+          {checked ? <div id={venusani.venus_animode}/> : <div id={venusmenu.venus_menumode} onClick={venusShow}/>}
         </OverlayTrigger>
 
         <Modal

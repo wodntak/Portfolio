@@ -48,9 +48,9 @@ const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
         {/* <p>Greetings, I am <b>Jaehyeon Yang</b>,who dreams of being a front-end developer.</p> */}
         <Row style={{marginTop:"45px"}}>
             <Col className={mercurymenu.text}>
-                <h4>'일을 시작했다면 끝을 보라'</h4> <h5> 주어진일은 끝까지 포기하지 않고 끝까지 해내는 개발자가 되고 싶습니다.
+                <h4>'일을 시작했다면 끝을 보라'</h4> <h5> 주어진일은 끝까지 포기하지 않고 끝까지 해내는 개발자가 되고 싶습니다.</h5>
                     
-                    좌우명, 왜 이것을 선택했는지, 살아온 배경 말레이시아에서 미국 유학하고 </h5>
+                    {/* 좌우명, 왜 이것을 선택했는지, 살아온 배경 말레이시아에서 미국 유학하고 */}
             </Col>
             <Col className={mercurymenu.text}>
                 <h5> Wherever</h5>

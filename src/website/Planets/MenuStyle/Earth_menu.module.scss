@@ -1,3 +1,7 @@
+@media screen and (min-width:1300px) and (min-height:800px) {
+    
+
+
 @font-face {
     font-family: 'SDSamliphopangche_Outline';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Outline.woff') format('woff');
@@ -122,13 +126,18 @@
             flex:55%
         }
 
-.progress{
-    max-width: 100%;
-    border: 2px solid white;
-    border-radius: 50px;
+#Row{
+    margin-bottom: 5%;
 }
 
-.icon{
-    fill:white;
-    margin-bottom: 15px;
+    .progress{
+        max-width: 100%;
+        border: 2px solid white;
+        border-radius: 50px;
+    }
+
+    .icon{
+        margin-bottom: 15px;
+    }
+
 }
