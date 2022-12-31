@@ -23,6 +23,7 @@
     inset 5px 0 10px 3px rgba(0,0,0,0.9),
     inset -10px 0 5px 1px rgba(255,255,255,0);
     background-image: url('/images/mercury-100.jpg');
+    background-image: 100%;
     background-position: center;
 }
 
@@ -37,13 +38,13 @@
     display: inline-block;
     border-radius: 10%;
     background-color: gray;
-    font-size: 25px;
+    font-size: 3.045066991473812vh;
     font-weight: bold;
     padding-bottom: 1.5%;
     margin-bottom: 1%;
 }
     .p{
-        font-size: 16px;
+        font-size: 1.94884287454324vh;
         
     }
 
@@ -55,45 +56,45 @@
 }
 
     .Modal_Header{
-       font-size: 20px;
+       font-size: 2.43605359317905vh;
        background-color: black;
        color: white;
-       border: white 2px solid;
+       border: white 0.243605359317905vh solid;
     }
 
     .Modal_Title{
-        font-size: 30px;
+        font-size: 3.6540803897685747vh;
         
     }
 
     .Modal_Body{
        background-color: black;
        color: white;
-       border: white 1px solid;
+       border: white 0.1218026796589525vh solid;
 
     }
 
 #Carousel{
-    height: 500px;
+    height: 60.90133982947625vh;
 }
     .text{
         font-family: 'IM_Hyemin-Bold';
     }
 #aboutMesecond{
-    height: 150px;
-    border-right: white 0.5px solid;
-    margin-right: 5px;
+    height: 18.270401948842874vh;
+    border-right: white 0.06090133982947625vh solid;
+    margin-right: 0.6090133982947625vh;
     border-radius: 50%;
     
 
 }
     .icon_Row{
-        margin-top: 5px;
+        margin-top: 0.6090133982947625vh;
         height: 40%;
     }
 
     .text_Row{
-        font-size: 20px;
+        font-size: 2.43605359317905vh;
         height: 60%;
         text-align: center;
         justify-content: center;
@@ -101,7 +102,7 @@
     }
 
     .text_Row_email{
-        font-size: 18px;
+        font-size: 2.192448233861145vh;
         height: 60%;
         text-align: center;
         justify-content: center;
@@ -117,9 +118,9 @@
     }
 
     .iconRight{
-        font-size: 22px;
+        font-size: 2.679658952496955vh;
         text-align: left;
-        margin-left: -15px;
+        margin-left: -1.8270401948842874vh;
     }
 
     .iconLeft_three{
@@ -127,8 +128,8 @@
         flex: 45%
     }
     .iconRight_three{
-        font-size: 22px;
+        font-size: 2.679658952496955vh;
         text-align: left;
-        margin-left: -15px;
+        margin-left: -1.8270401948842874vh;
         flex:55%
     }

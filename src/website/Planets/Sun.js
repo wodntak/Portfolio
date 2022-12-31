@@ -37,10 +37,10 @@ const Sun = ({checked, mercuryShow, venusShow, earthShow, marsShow, jupiterShow,
         <Offcanvas.Title onClick={() => {mercuryShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>About Me</Offcanvas.Title>
         <Offcanvas.Title onClick={() => {venusShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Education & Experience</Offcanvas.Title>
         <Offcanvas.Title onClick={() => {earthShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Skills</Offcanvas.Title>
-        <Offcanvas.Title onClick={() => {marsShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 1 (Personal website)</Offcanvas.Title>
-        <Offcanvas.Title onClick={() => {jupiterShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 2 (Erudite)</Offcanvas.Title>
-        <Offcanvas.Title onClick={() => {saturnShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 3 (Grocery shopping/Todos)</Offcanvas.Title>
-        <Offcanvas.Title onClick={() => {uranusShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 4 (Recommend Movie)</Offcanvas.Title>
+        <Offcanvas.Title onClick={() => {marsShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 1 (대학교 졸업작품)</Offcanvas.Title>
+        <Offcanvas.Title onClick={() => {jupiterShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 2 (개인 홈페이지)</Offcanvas.Title>
+        <Offcanvas.Title onClick={() => {saturnShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 3 (장보기/Todos)</Offcanvas.Title>
+        <Offcanvas.Title onClick={() => {uranusShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 4 (영화 및 드라마 추천)</Offcanvas.Title>
         <Offcanvas.Title onClick={() => {neptuneShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Contact Me</Offcanvas.Title>
        
         </Offcanvas>

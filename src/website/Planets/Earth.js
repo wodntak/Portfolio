@@ -130,7 +130,7 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
             <Col>
             <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="35" height="35" alt="C#" />
                 <span> C# </span>
-              <ProgressBar variant="success" className={earthmenu.progress} animated now={75} />
+              <ProgressBar variant="success" className={earthmenu.progress} animated now={68} />
             </Col>
 
             <Col>
@@ -143,13 +143,13 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
           <h3> Version Control </h3>
           <Row id={earthmenu.Row}>
             <Col>
-            <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="35" height="35" alt="Git" />
+            <img className={earthmenu.icon} src="https://img.icons8.com/color/48/null/git.png" width="35" height="35" alt="Git" />
                 <span> Git </span>
-              <ProgressBar variant="info" className={earthmenu.progress} animated now={75} />
+              <ProgressBar variant="info" className={earthmenu.progress} animated now={70} />
             </Col>
 
             <Col>
-              <img className={earthmenu.icon}  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="35" height="35" alt="Github"/>
+              <img className={earthmenu.icon}  src="https://img.icons8.com/color-glass/48/null/github--v1.png" width="35" height="35" alt="Github"/>
               <span> Github </span>
               <ProgressBar variant="info" className={earthmenu.progress} animated now={85} />
             </Col>
@@ -160,7 +160,51 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
       </Carousel.Item>
 
       <CarouselItem>
+      <Container>
+          <h3> Communication </h3>
 
+          <Row id={earthmenu.Row}>
+            <Col>          
+              <img className={earthmenu.icon} src="https://img.icons8.com/doodle/48/null/notion.png" width="45" height="45" alt="Notion"/>
+              <span className={earthmenu.span}> Notion </span>
+              <ProgressBar variant="warning" className={earthmenu.progress} animated now={77} />
+            </Col>
+
+            <Col>
+            <img className={earthmenu.icon} src="https://img.icons8.com/color/48/null/slack-new.png" width="45" height="45" alt="Slack"/>
+              <span> Slack </span>
+              <ProgressBar variant="warning" className={earthmenu.progress} animated now={75} />
+            </Col>
+          </Row>
+
+          <Row id={earthmenu.Row}>
+            <Col>
+            <img className={earthmenu.icon} src="https://img.icons8.com/fluency/48/null/evernote.png" width="45" height="45" alt="Evernote" />
+                <span>Evernote</span>
+              <ProgressBar variant="warning" className={earthmenu.progress} animated now={70} />
+            </Col>
+
+            <Col>
+            </Col>
+          </Row>
+
+          <h3> Web Hosting </h3>
+          <Row id={earthmenu.Row}>
+            <Col>
+            <img className={earthmenu.icon} src="https://img.icons8.com/color-glass/48/null/github--v1.png" width="35" height="35" alt="Github.io" />
+                <span> Github.io </span>
+              <ProgressBar variant="danger" className={earthmenu.progress} animated now={90} />
+            </Col>
+
+            <Col>
+              <img className={earthmenu.icon}  src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/null/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" width="35" height="35" alt="Netlify"/>
+              <span> Netlify </span>
+              <ProgressBar variant="danger" className={earthmenu.progress} animated now={75} />
+            </Col>
+          </Row>
+           
+          
+        </Container>
       </CarouselItem>
 
     </Carousel>

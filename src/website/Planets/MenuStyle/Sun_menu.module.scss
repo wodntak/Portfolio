@@ -35,16 +35,16 @@
 
     .Offcanvas_Title{
         text-align: center;
-        margin:25px;
-        font-size: 20px;
+        margin:3.045066991473812vh;
+        font-size:  2.43605359317905vh;
     }
 
     .Offcanvas_Title:after{
         content: "";
         display: block;
-        margin-top: 10px;
+        margin-top: 1.218026796589525vh;
         width: 0%;
-        border-bottom: 5px solid white;
+        border-bottom: 0.6090133982947625vh solid white;
         text-align: center;
         transition: all 0.5s ease;
     }
@@ -66,12 +66,12 @@
     display: inline-block;
     border-radius: 10%;
     background-color: red;
-    font-size: 30px;
+    font-size: 3.6540803897685747vh;
     font-weight: bold;
     padding-left: 5%;
 
 }
     .p{
-        font-size: 18px;
+        font-size: 2.192448233861145vh;
     }
    

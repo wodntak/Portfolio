@@ -6,10 +6,11 @@
 }
 
 body {
+    display: block;
     background-color: black;
     color: white;
     font-family: '양진체';
-    width: 130%;
+    min-width: 130%;
 }
 
 @function generate_star($number){

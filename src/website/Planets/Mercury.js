@@ -102,7 +102,7 @@ const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
         </Col>
       </Row>
     </Container>
-    <Container style={{marginTop:"5px"}}>
+    <Container style={{marginTop:"0.6090133982947625vh"}}>
       <Row>
         <Col id={mercurymenu.aboutMesecond}>
             <Row className={mercurymenu.icon_Row}>
@@ -145,7 +145,7 @@ const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
         </Col>
       </Row>
     </Container>
-    <Container style={{marginTop:"5px"}}>
+    <Container style={{marginTop:"0.6090133982947625vh"}}>
       <Row>
         <Col id={mercurymenu.aboutMesecond}>
             <Row className={mercurymenu.icon_Row}>
