@@ -38,13 +38,13 @@
     display: inline-block;
     border-radius: 10%;
     background-color: gray;
-    font-size: 3.045066991473812vh;
+    font-size: 25px;
     font-weight: bold;
     padding-bottom: 1.5%;
     margin-bottom: 1%;
 }
     .p{
-        font-size: 1.94884287454324vh;
+        font-size: 16px;
         
     }
 
@@ -56,45 +56,45 @@
 }
 
     .Modal_Header{
-       font-size: 2.43605359317905vh;
+       font-size: 20;
        background-color: black;
        color: white;
-       border: white 0.243605359317905vh solid;
+       border: white 2px solid;
     }
 
     .Modal_Title{
-        font-size: 3.6540803897685747vh;
+        font-size: 30px;
         
     }
 
     .Modal_Body{
        background-color: black;
        color: white;
-       border: white 0.1218026796589525vh solid;
+       border: white 1px solid;
 
     }
 
 #Carousel{
-    height: 60.90133982947625vh;
+    height: 500px;
 }
     .text{
         font-family: 'IM_Hyemin-Bold';
     }
 #aboutMesecond{
-    height: 18.270401948842874vh;
-    border-right: white 0.06090133982947625vh solid;
-    margin-right: 0.6090133982947625vh;
+    height: 150px;
+    border-right: white 0.5px solid;
+    margin-right: 5px;
     border-radius: 50%;
     
 
 }
     .icon_Row{
-        margin-top: 0.6090133982947625vh;
+        margin-top: 5px;
         height: 40%;
     }
 
     .text_Row{
-        font-size: 2.43605359317905vh;
+        font-size: 20px;
         height: 60%;
         text-align: center;
         justify-content: center;
@@ -102,7 +102,7 @@
     }
 
     .text_Row_email{
-        font-size: 2.192448233861145vh;
+        font-size: 18px;
         height: 60%;
         text-align: center;
         justify-content: center;

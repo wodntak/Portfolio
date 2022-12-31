@@ -10,7 +10,8 @@ body {
     background-color: black;
     color: white;
     font-family: '양진체';
-    min-width: 130%;
+    min-width: 130vw;
+    min-height: 57.013888888888886vw;
 }
 
 @function generate_star($number){
