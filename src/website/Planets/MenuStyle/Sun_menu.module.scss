@@ -69,6 +69,12 @@
     font-size: 3.6540803897685747vh;
     font-weight: bold;
     padding-left: 5%;
+    visibility: hidden;
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        visibility: visible;
+    }
 
 }
     .p{

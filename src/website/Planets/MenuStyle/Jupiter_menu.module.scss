@@ -35,6 +35,12 @@
     font-weight: bold;
     padding-bottom: 1.5%;
     margin-bottom: 1%;
+    visibility: hidden;
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        visibility: visible;
+    }
 }
     .p{
         font-size: 16px;
