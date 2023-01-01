@@ -8,14 +8,50 @@
 #sun_menumode{
     position: absolute;
     border-radius: 50%;
-    width: 450px;
-    height: 750px;
-    right: 90%;
-    box-shadow: inset 30px 0 40px 3px rgba(0,0,0,0.9),
-    inset -10px 0 4px 1px rgba(255,255,255,0.3),
-    inset 0 0 5px 90px rgba(255,200,0,0.4),
-    0 0 50px 50px rgba(255,0,0,0.3);
     background-image: url('/images/sunshot.jpg');
+    background-position: center;
+    background-image: 100%;
+    width: 31.25vw;
+    height: 52.083333333333336vw;
+    right: 90%;
+    box-shadow: inset 2.0833333333333335vw 0 2.7777777777777777vw 0.20833333333333334vw rgba(0,0,0,0.9),
+    inset -0.6944444444444444vw 0 0.2777777777777778vw 0.06944444444444445vw rgba(255,255,255,0.3),
+    inset 0 0 0.3472222222222222vw 6.25vw rgba(255,200,0,0.4),
+    0 0 3.4722222222222223vw 3.4722222222222223vw rgba(255,0,0,0.3);
+
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 300px;
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 20vh;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        // 테블릿 세로
+        top: 35vh;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 5vh;
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 0;
+    }
+    //오리지날
+    // width: 450px;
+    // height: 750px;
+    // right: 90%;
+    // box-shadow: inset 30px 0 40px 3px rgba(0,0,0,0.9),
+    // inset -10px 0 4px 1px rgba(255,255,255,0.3),
+    // inset 0 0 5px 90px rgba(255,200,0,0.4),
+    // 0 0 50px 50px rgba(255,0,0,0.3);
+
 }
 
 #sun_menumode:hover {
@@ -27,6 +63,7 @@
     color: white;
     background-color: black;
     text-align: center;
+    height: 100%;
 }
     .Offcanvas_Header{
         text-align: right;
@@ -70,7 +107,7 @@
     font-weight: bold;
     padding-left: 5%;
     visibility: hidden;
-    
+
     @media (min-width: 1200px) {
         // 데스크탑 일반
         visibility: visible;

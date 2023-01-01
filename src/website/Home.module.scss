@@ -10,8 +10,7 @@ body {
     background-color: black;
     color: white;
     font-family: '양진체';
-    min-width: 130vw;
-    min-height: 57.013888888888886vw;
+    min-width: 130%;
 }
 
 @function generate_star($number){
@@ -64,27 +63,129 @@ body {
     margin-left: 50%;
 }
 
-.h5_ani{
-    margin-left: 49.5%;
-    margin-top: 0.5%;
+// .h5_ani{
+//     margin-left: 49.5%;
+//     margin-top: 0.5%;
 
-}
+// }
 
 .h5_menu{
-    margin-left: 49%;
+    margin-left: -5%;
     margin-top: 0.5%;
-
+    font-size: 1.2vw;
 }
 
 .menuicon{
-    margin-left: 51.5%;
-    margin-top: 2%;
+    margin-top: 1vw;
     fill:white;
+    font-size: 5vh;
+    width: 3vw;
+    height: 3vw;
 }
 
-.aniicon{
-    margin-left: 53%;
-    margin-top: 2%;
-    fill:white;
+// .aniicon{
+//     margin-left: 53%;
+//     margin-top: 2%;
+//     fill:white;
+// }
+
+#desktopmode{
+    visibility: hidden;
 }
 
+#mobilemode{
+    @media (max-width: 1199px){
+        visibility: visible;
+    }
+    @media (min-width: 1200px){
+        visibility: hidden;
+    }
+}
+
+.introicon{
+    fill: white;
+    transform: rotate(45deg);
+    width: 40px;
+    height: 40px;
+    
+    @media (max-width: 575px){
+        //모바일 세로
+        margin-top: 230px;
+        margin-left: 15px;
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        margin-top: 10%;
+        margin-left: -287.35px;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) {
+        // 테블릿 세로
+        margin-top: 262.72px;
+        margin-left: -98.52px;;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 5vh;
+    }
+    
+    // @media (min-width: 1200px) {
+    //     //데스크탑
+    // }
+}
+
+.h5_intro{
+    font-size: 15px;
+    
+    transform: rotate(45deg);
+    
+    //데스크탑
+    // @media all and (min-width:1200px){
+
+    // }
+
+    //테블릿 
+    @media all and (min-width:768px) and (max-width:1023px)  {
+        margin-top: 8.5vh;
+        margin-left: -15vh;;
+    } 
+  
+    // 모바일 세로
+    @media all and (max-width:767px) and (orientation: portrait){
+        margin-left: 10%;
+        margin-top: -2%;
+    }
+
+    // 모바일 가로
+    @media all and (max-width:767px) and (orientation: landscape){
+        margin-top: 18vh;
+        margin-left: -40vh;
+    }
+
+    // @media (max-width: 575px){
+    //     //모바일 세로
+    //     top: 40vh;
+    // }
+    
+    // @media (min-width: 576px) and (max-width: 767px){
+    //     //모바일 가로
+    //     top: 20vh;
+    // }
+
+    // @media (min-width: 768px) and (max-width: 991px) {
+    //     // 테블릿 세로
+    //     top: 35vh;
+    // }
+    
+    // @media (min-width: 992px) and (max-width: 1199px) {
+    //     // 테블릿 가로
+    //     top: 5vh;
+    // }
+    
+    // @media (min-width: 1200px) {
+    //     // 데스크탑 일반
+    //     top: 0;
+    // }
+}
