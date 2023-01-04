@@ -6,13 +6,26 @@
 }
 
 body {
-    display: block;
+   // position: fixed;
+    display: inline-block;
     background-color: black;
     color: white;
     font-family: '양진체';
-    min-width: 130%;
+    min-width: 130vw;
+    margin: 0;
+   // overflow: hidden;
+   // touch-action: none;
 }
 
+// #viewer{
+//     width: 100vw;
+//     max-width: 580px;
+//     height: 100vh;
+//     overflow: hidden;
+//     margin: 0 auto;
+// }
+
+//배경 별 만드는 function
 @function generate_star($number){
     $x : random($number);
     $y : random($number);
@@ -26,6 +39,7 @@ body {
    @return $star;
 }
 
+//스크린 사이즈를 이용해서 랜덤으로 별 위치 정하기
 @mixin stars($number,$delay){
     width: 2px;
     height: 2px;
@@ -53,14 +67,17 @@ body {
     @include stars(1920, 0);
 }
 
+//반짝반짝 애니메이션
 @keyframes glow {
     0% {opacity: 0;}
     50% {opacity: 1;}
     100% {opacity: 0;}
 }
 
+//메뉴/애니메이션 스위치
 .switch{
     margin-left: 50%;
+    font-size: 1.8270401948842874vh;
 }
 
 // .h5_ani{
@@ -69,19 +86,21 @@ body {
 
 // }
 
-.h5_menu{
-    margin-left: -5%;
-    margin-top: 0.5%;
-    font-size: 1.2vw;
-}
+// //"여기를 클릭해보세요"
+// .h5_menu{
+//     margin-left: -5%;
+//     margin-top: 0.5%;
+//     font-size: 1.6vh;
+// }
 
-.menuicon{
-    margin-top: 1vw;
-    fill:white;
-    font-size: 5vh;
-    width: 3vw;
-    height: 3vw;
-}
+// //화살표 아이콘
+// .menuicon{
+//     margin-top: 1vw;
+//     fill:white;
+//     font-size: 5vh;
+//     width: 1.8vh;
+//     height: 1.8vh;
+// }
 
 // .aniicon{
 //     margin-left: 53%;
@@ -93,99 +112,54 @@ body {
     visibility: hidden;
 }
 
+//모바일에서만 우주선 보이게
 #mobilemode{
     @media (max-width: 1199px){
         visibility: visible;
+        @media (orientation:portrait){
+            margin-top: 52vw;
+        }
+        @media (orientation:landscape){
+            margin-top: 8%;
+            margin-left: -20%;
+        }
     }
     @media (min-width: 1200px){
         visibility: hidden;
     }
 }
 
+//우주선 아이콘
 .introicon{
     fill: white;
     transform: rotate(45deg);
-    width: 40px;
-    height: 40px;
     
-    @media (max-width: 575px){
-        //모바일 세로
-        margin-top: 230px;
-        margin-left: 15px;
+    @media (orientation:portrait){
+        width: 6vw;
+        height: 6vw;
     }
-    
-    @media (min-width: 576px) and (max-width: 767px){
-        //모바일 가로
-        margin-top: 10%;
-        margin-left: -287.35px;
+    @media (orientation:landscape){
+        width: 4vw;
+        height: 4vw;
     }
-
-    @media (min-width: 768px) and (max-width: 991px) {
-        // 테블릿 세로
-        margin-top: 262.72px;
-        margin-left: -98.52px;;
-    }
-    
-    @media (min-width: 992px) and (max-width: 1199px) {
-        // 테블릿 가로
-        top: 5vh;
-    }
-    
-    // @media (min-width: 1200px) {
-    //     //데스크탑
-    // }
 }
 
+//우주선 위에 menu
 .h5_intro{
-    font-size: 15px;
-    
     transform: rotate(45deg);
-    
-    //데스크탑
-    // @media all and (min-width:1200px){
+ 
 
-    // }
+    @media (orientation:portrait){
+        font-size: 2vw;
+        margin-top: 11vw;
+        margin-left: -5vw;
 
-    //테블릿 
-    @media all and (min-width:768px) and (max-width:1023px)  {
-        margin-top: 8.5vh;
-        margin-left: -15vh;;
-    } 
+    }
+    @media (orientation:landscape){
+        font-size: 1.5vw;
+        margin-top: 24%;
+        margin-left: -10%;
+
+    }
   
-    // 모바일 세로
-    @media all and (max-width:767px) and (orientation: portrait){
-        margin-left: 10%;
-        margin-top: -2%;
-    }
-
-    // 모바일 가로
-    @media all and (max-width:767px) and (orientation: landscape){
-        margin-top: 18vh;
-        margin-left: -40vh;
-    }
-
-    // @media (max-width: 575px){
-    //     //모바일 세로
-    //     top: 40vh;
-    // }
-    
-    // @media (min-width: 576px) and (max-width: 767px){
-    //     //모바일 가로
-    //     top: 20vh;
-    // }
-
-    // @media (min-width: 768px) and (max-width: 991px) {
-    //     // 테블릿 세로
-    //     top: 35vh;
-    // }
-    
-    // @media (min-width: 992px) and (max-width: 1199px) {
-    //     // 테블릿 가로
-    //     top: 5vh;
-    // }
-    
-    // @media (min-width: 1200px) {
-    //     // 데스크탑 일반
-    //     top: 0;
-    // }
 }
