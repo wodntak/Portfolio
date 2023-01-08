@@ -41,7 +41,7 @@ const Venus = ({checked, venusshow, venusClose, venusShow}) => {
           <Modal.Title className={venusmenu.Modal_Title}>Education & Other Activities</Modal.Title>
         </Modal.Header>
         <Modal.Body className={venusmenu.Modal_Body}>
-        <Carousel id={venusmenu.Carousel}>
+        <Carousel id={venusmenu.Carousel} interval={null}>
       <Carousel.Item>
         <h3 className={venusmenu.h3_education}>Education (학력)</h3>
         <Container className={venusmenu.timeline}>
