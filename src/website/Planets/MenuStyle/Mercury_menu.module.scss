@@ -125,66 +125,43 @@
 #Carousel{
     height: 80vh;
 }
-    .text{
-        font-family: 'IM_Hyemin-Bold';
-    }
-    
-#aboutMesecond{
-    height: 25vh;
-    border-right: white 0.5px solid;
-    margin-right: 0.3472222222222222vw;
-    border-radius: 50%;
-    display: block;
+    #circleRow{
+        margin-bottom: 3vh;
+    }   
 
-}
-    .icon_Row{
-        margin-top: 0.3472222222222222vw;
-        height: 40%;
-    }
+        #circle{
+            fill: white;
+            padding-top: 3.2vh;
+            height: 18vh;
+            width:  5vh;
+            margin-top: 1.5vh;
+            margin-bottom: 1.5vh;
+            border-right: white 0.5px solid;
+            margin-right: 0.3472222222222222vw;
+            border-radius: 50%;
 
-    .text_Row{
-        font-size: 1.3888888888888888vw;
-        height: 1vw;
-        text-align: center;
-        justify-content: center;
-        font-family: 'IM_Hyemin-Bold';
-        display: inline-flex;
-    }
 
-    .text_Row_email{
-        font-size: 1.25vw;
-        height: 1vw;
-        text-align: center;
-        justify-content: center;
-        font-family: 'IM_Hyemin-Bold';
-        
-    }
-    
-.icon{
-    fill:white;
-    width: 4.0833333333333335vw;
-    height: 4.0833333333333335vw;
-}
-    .iconLeft{
-        text-align: right;
-    }
+        }
 
-    .iconRight{
-        font-size: 1.5277777777777777vw;
-        text-align: left;
-        margin-left: -0.20416666666666667vw;
-    }
+            .icon{
+                // background-color: white;
+                // border-radius: 50%;
+                width: 5.7833333333333335vw;
+                height: 5.7833333333333335vw;
+            }
+            
+            span{
+                margin-left: 1vh;
+                font-family: 'SDSamliphopangche_Outline';
+                font-size: 4vw;
+            }
 
-    .iconLeft_three{
-        text-align: right;
-        flex: 45%
-    }
-    .iconRight_three{
-        font-size: 1.5277777777777777vw;
-        text-align: left;
-        margin-left: -0.20416666666666667vw;
-        flex:55%
-    }
+            h4{
+                margin-top: 2vh;
+                font-family: 'IM_Hyemin-Bold';
+                font-size: 3.4vw;
+            }
+
 }
 
 //가로 모달
@@ -210,68 +187,5 @@
            border: white 1px solid;
     
         }
-    
-    #Carousel{
-        height: 500px;
-    }
-        .text{
-            font-family: 'IM_Hyemin-Bold';
-        }
-        
-    #aboutMesecond{
-        height: 150px;
-        border-right: white 0.5px solid;
-        margin-right: 5px;
-        border-radius: 50%;
-        display: block;
-    
-    }
-        .icon_Row{
-            margin-top: 5px;
-            height: 40%;
-        }
-    
-        .text_Row{
-            font-size: 20px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-            font-family: 'IM_Hyemin-Bold';
-            display: inline-flex;
-        }
-    
-        .text_Row_email{
-            font-size: 18px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-            font-family: 'IM_Hyemin-Bold';
-            
-        }
-        
-    .icon{
-        fill:white;
-        width: 30px;
-        height: 30px;
-    }
-        .iconLeft{
-            text-align: right;
-        }
-    
-        .iconRight{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-        }
-    
-        .iconLeft_three{
-            text-align: right;
-            flex: 45%
-        }
-        .iconRight_three{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-            flex:55%
-        }
+
 }
