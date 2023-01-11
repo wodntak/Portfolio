@@ -48,7 +48,7 @@ const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
         {/* <p>Greetings, I am <b>Jaehyeon Yang</b>,who dreams of being a front-end developer.</p> */}
         <Row style={{marginTop:"45px"}}>
             <Col className={mercurymenu.text}>
-                <h4>'일을 시작했다면 끝을 보라'</h4> <h5> 주어진일은 끝까지 포기하지 않고 끝까지 해내는 개발자가 되고 싶습니다.</h5>
+                <b>'일을 시작했다면 끝을 보라'</b> <br/> 주어진일은 끝까지 포기하지 않고 끝까지 해내는 개발자가 되고 싶습니다.
                     
                     {/* 좌우명, 왜 이것을 선택했는지, 살아온 배경 말레이시아에서 미국 유학하고 */}
             </Col>
@@ -62,52 +62,52 @@ const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
       <Container>
       <Row id={mercurymenu.circleRow}>
         <Col id={mercurymenu.circle}>
-            <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="name"/>
+            <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/FEE195/5912AB/badge.png"  alt="name"/>
             <span>이름</span>
             <h4> 양재현 </h4>
         </Col>
         <Col id={mercurymenu.circle}>
-            <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/birthday.png"  alt="birthday"/>
+            <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/FEE195/5912AB/birthday.png"  alt="birthday"/>
             <span> 나이</span> 
             <h4>1996년 {<br></br>} 12월 12일생 </h4>
         </Col>
         <Col id={mercurymenu.circle}>
-            <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="address"/>
+            <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/FEE195/5912AB/worldwide-location.png"  alt="address"/>
             <span>거주지</span>
             <h4>서울시 송파구</h4>
         </Col>
       </Row>
       <Row id={mercurymenu.circleRow}>
         <Col id={mercurymenu.circle}>
-        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="experience"/>
+        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/FEE195/5912AB/resume.png"  alt="experience"/>
             <span>경력</span>
             <h4>신입</h4>
         </Col>
         <Col id={mercurymenu.circle}>
-        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="hobby"/>
+        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E5B2CA/7028E4/nintendo-switch-pro-controller.png"  alt="hobby"/>
             <span>취미</span>
             <h4>풋살, 영화시청</h4>
         </Col>
         <Col id={mercurymenu.circle}>
-        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="email"/>
+        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/FEE195/5912AB/new-post.png"  alt="email"/>
             <span>이메일</span>
             <h4>yyasu1212{<br></br>}@naver.com</h4>
         </Col>
       </Row>
       <Row id={mercurymenu.circleRow}>
         <Col id={mercurymenu.circle}>
-        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="phone"/>
+        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E5B2CA/7028E4/apple-phone.png"  alt="phone"/>
             <span>연락처</span>
             <h4>010-4332-5132</h4>
 
         </Col>
         <Col id={mercurymenu.circle}>
-        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="best"/>
+        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E5B2CA/7028E4/best-seller.png"  alt="best"/>
             <span>특기</span>
             <h4>요리</h4>
         </Col>
         <Col id={mercurymenu.circle}>
-        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E6E6E6/808080/badge.png"  alt="edu"/>
+        <img className={mercurymenu.icon} src="https://img.icons8.com/nolan/64/E5B2CA/7028E4/certificate.png"  alt="edu"/>
             <span>최종학력</span>
             <h4>University of Nebraska-Lincoln</h4>
         </Col>

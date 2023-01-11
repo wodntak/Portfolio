@@ -55,20 +55,6 @@
         // 데스크탑 일반
         top: 24vw;
     }
-
-    //오리지날
-    // position: absolute;
-    // border-radius: 50%;
-    // width: 40px;
-    // height: 40px;
-    // top: 45%;
-    // right: 83%;
-    // box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.15),
-    // inset 5px 0 10px 3px rgba(0,0,0,0.9),
-    // inset -10px 0 5px 1px rgba(255,255,255,0);
-    // background-image: url('/images/mercury-100.jpg');
-    // background-image: 100%;
-    // background-position: center;
 }
 
 #mercury_menumode:hover{
@@ -98,19 +84,22 @@
         
     }
 
-//세로 모달
-@media (orientation:portrait){
+
 #Modal{
     font-family: 'SDSamliphopangche_Outline';
     color: black;
     text-align: center;
     justify-content: center;
-}
+}    
+//세로 모달
+@media (orientation:portrait){
+    @media (max-width:767px){
     .Modal_Header{
        font-size: 1.3888888888888888vh;
        background-color: black;
        color: white;
        border: white 2px solid;
+
     }
     .Modal_Title{
         font-size: 4.0833333333333335vw;
@@ -119,18 +108,50 @@
        background-color: black;
        color: white;
        border: white 1px solid;
+       font-size: 2.5vh;
+
+       h3{
+        font-size: 3vh;
+       }
 
     }
+    }
+    @media (min-width:768px){
+        .Modal_Header{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: white;
+            border: white 2px solid;
+    
+        }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+            margin-left: -8vh;
+            margin-right: -8vh;
+           background-color: black;
+           color: white;
+           border: white 1px solid;
+           font-size: 2.5vh;
 
+           h3{
+            font-size: 3vh;
+           }
+        }
+        }
 #Carousel{
     height: 80vh;
+    width: 100%;
+
 }
     #circleRow{
         margin-bottom: 3vh;
     }   
 
         #circle{
-            fill: white;
             padding-top: 3.2vh;
             height: 18vh;
             width:  5vh;
@@ -139,15 +160,12 @@
             border-right: white 0.5px solid;
             margin-right: 0.3472222222222222vw;
             border-radius: 50%;
-
-
         }
-
             .icon{
                 // background-color: white;
                 // border-radius: 50%;
-                width: 5.7833333333333335vw;
-                height: 5.7833333333333335vw;
+                width: 5.5833333333333335vw;
+                height: 5.5833333333333335vw;
             }
             
             span{
@@ -159,19 +177,13 @@
             h4{
                 margin-top: 2vh;
                 font-family: 'IM_Hyemin-Bold';
-                font-size: 3.4vw;
+                font-size: 3vw;
             }
-
+        
 }
 
 //가로 모달
 @media (orientation:landscape){
-    #Modal{
-        font-family: 'SDSamliphopangche_Outline';
-        color: black;
-        text-align: center;
-        justify-content: center;
-    }
         .Modal_Header{
            font-size: 20px;
            background-color: black;
@@ -179,13 +191,53 @@
            border: white 2px solid;
         }
         .Modal_Title{
-            font-size: 30px;
+            font-size: 4.0833333333333335vh;
         }
         .Modal_Body{
            background-color: black;
            color: white;
            border: white 1px solid;
+           font-size: 2.5vh;
     
+           h3{
+            font-size: 3vh;
+           }
         }
-
+    #Carousel{
+        height: 70vh;
+        width: 100%;
+    }
+        #circleRow{
+            margin-bottom: 3vh;
+        }   
+        
+            #circle{
+                padding-top: 2.2vh;
+                height: 18vh;
+                width:  5vh;
+                margin-top: 1.5vh;
+                margin-bottom: 1.5vh;
+                border-right: white 0.5px solid;
+                margin-right: 0.3472222222222222vh;
+                border-radius: 50%;
+            }
+        
+            .icon{
+                // background-color: white;
+                // border-radius: 50%;
+                width: 5.7833333333333335vh;
+                height: 5.7833333333333335vh;
+            }
+                    
+            span{
+                margin-left: 1vh;
+                font-family: 'SDSamliphopangche_Outline';
+                font-size: 3vh;
+            }
+        
+            h4{
+                margin-top: 2vh;
+                font-family: 'IM_Hyemin-Bold';
+                font-size: 2.4vh;
+            }
 }

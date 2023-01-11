@@ -15,15 +15,45 @@
 #venus_menumode{
     position: absolute;
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    top: 42%;
+    width: 6.944444444444445vw;
+    height: 6.944444444444445vw;
     right: 73%;
-    box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.15),
-    inset 30px 0 40px 3px rgba(0,0,0,0.9),
-    inset -10px 0 4px 1px rgba(255,255,255,0.3);
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.15),
+    inset 0.3472222222222222vw 0 0.6944444444444444vw 0.20833333333333334vw rgba(0,0,0,0.9),
+    inset -0.6944444444444444vw 0 0.3472222222222222vw 0.06944444444444445vw rgba(255,255,255,0);
     background-image: url('/images/venus-180.jpg');
     background-position: center;
+
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 88vw;
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 23vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        top: 18vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        top: 58vw;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 33vw;
+
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 22vw;
+    }
 
 }
 
@@ -54,58 +84,58 @@
         
     }
 
-    #Modal{
-        font-family: 'SDSamliphopangche_Outline';
-        color: black;
-        text-align: center;
-        justify-content: center;
-    }
-    
-        .Modal_Header{
-           font-size: 20px;
-           background-color: black;
-           color: white;
-           border: goldenrod 2px solid;
-        }
-    
-        .Modal_Title{
-            font-size: 30px;
-            
-        }
-     
-        .Modal_Body{
-           background-color: black;
-           color: white;
-           border: goldenrod 1px solid;
-    
-        }
-    
-    #Carousel{
-        height: 500px;
-    }
-    
+#Modal{
+    font-family: 'SDSamliphopangche_Outline';
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
 .timeline {
     list-style-type: none;
     position: relative;
     margin-left: 6%;
-    font-size: 18px;
+    font-size: 2.092448233861145vh;
     padding-top: 3%;
     font-family: 'IM_Hyemin-Bold';
-
-}
-        
+}   
     .timeline:before {
         content: "";
         background: #fff;
         display: inline-block;
         position: absolute;
         left: 50%;
-        width: 5px;
+        width: 0.6090133982947625vh;
         height: 90%;
         border-radius: 1em;
     }
-
-    
+.h3_education{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #9cd3d3;
+    text-underline-position:under;
+    font-size: 2.6vh;
+    margin-top: 1.5vh;
+    margin-bottom: 3.5vh;
+}
+.h3_others{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ffcab0;
+    text-underline-position:under;
+    font-size: 2.6vh;
+    margin-top: 1.5vh;
+    margin-bottom: 3.5vh;
+}
+.timelineitem{
+    text-align: center;
+}
+.timelinedate{
+    text-align: left;
+    margin-left: 10%;
+}
+p{
+    font-size: 1.8270401948842874vh;
+}
 .timeline_Rowedu{
     margin-bottom: 12%;
 }
@@ -116,11 +146,38 @@
         position: absolute;
         border-radius: 50%;
         border: 3px solid #9cd3d3;
-        left: 49%;
-        width: 20px;
-        height: 20px;
+        @media (max-width: 575px){
+            //모바일 세로
+            left: 48%;
+        }
+        
+        @media (min-width: 576px) and (max-width: 767px){
+            //모바일 가로
+            left: 49.3%;
+        }
+    
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+            // 큰 모바일 가로
+            left: 49.3%;
+        }
+    
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+            // 테블릿 세로
+            left: 48.6%;
+        }
+        
+        @media (min-width: 992px) and (max-width: 1199px) {
+            // 테블릿 가로
+            left: 49%;
+        }
+        
+        @media (min-width: 1200px) {
+            // 데스크탑 일반
+            left: 49%;
+        }
+        width: 2.43605359317905vh;
+        height: 2.43605359317905vh;
     }
-
 .timeline_Rowother{
     margin-bottom: 12%;
 }
@@ -131,35 +188,103 @@
         position: absolute;
         border-radius: 50%;
         border: 3px solid #ffcab0;
-        left: 49%;
-        width: 20px;
-        height: 20px;
-    }
+        @media (max-width: 575px){
+            //모바일 세로
+            left: 48%;
+        }
         
+        @media (min-width: 576px) and (max-width: 767px){
+            //모바일 가로
+            left: 49.3%;
+        }
+    
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+            // 큰 모바일 가로
+            left: 49.3%;
+        }
+    
+        @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+            // 테블릿 세로
+            left: 48.6%;
+        }
+        
+        @media (min-width: 992px) and (max-width: 1199px) {
+            // 테블릿 가로
+            left: 49%;
+        }
+        
+        @media (min-width: 1200px) {
+            // 데스크탑 일반
+            left: 49%;
+        }
+        width: 2.43605359317905vh;
+        height: 2.43605359317905vh;
+    }
+//세로 모달
+@media (orientation:portrait){
+    #Carousel{
+        height: 80vh;
+        width: 100%;
+    }
+        //모바일
+        @media (max-width:767px){
+        .Modal_Header{
+           font-size: 1.3888888888888888vh;
+           background-color: black;
+           color: goldenrod;
+           border: goldenrod 2px solid;
+        }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+           background-color: black;
+           color: white;
+           border: goldenrod 1px solid;
+        }
+        }
+        //태블릿
+        @media (min-width:768px){
+            .Modal_Header{
+                margin-left: -8vh;
+                margin-right: -8vh;
+                font-size: 1.3888888888888888vh;
+                background-color: black;
+                color: goldenrod;
+                border: goldenrod 2px solid;
+        
+            }
+            .Modal_Title{
+                font-size: 4.0833333333333335vw;
+            }
+            .Modal_Body{
+                margin-left: -8vh;
+                margin-right: -8vh;
+               background-color: black;
+               color: white;
+               border: goldenrod 1px solid;
+            }
+        }
+    }
+    //가로 모달
+    @media (orientation:landscape){
+        #Carousel{
+            height: 70vh;
+            width: 100%;
+        }
+            .Modal_Header{
+               font-size: 20px;
+               background-color: black;
+               color: goldenrod;
+               border: goldenrod 2px solid;
+            }
+            .Modal_Title{
+                font-size: 4.0833333333333335vh;
+            }
+            .Modal_Body{
+               background-color: black;
+               color: white;
+               border: goldenrod 1px solid;
+            }
 
-.timelineitem{
-    text-align: center;
-}
-
-.timelinedate{
-    text-align: left;
-    margin-left: 10%;
-}
-
-p{
-    font-size: 15px;
-}
-
-.h3_education{
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #9cd3d3;
-    text-underline-position:under;
-}
-
-.h3_others{
-    text-align: center;
-    text-decoration: underline;
-    text-decoration-color: #ffcab0;
-    text-underline-position:under;
-}
+    }
