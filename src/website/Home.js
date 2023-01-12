@@ -67,8 +67,8 @@ const Home = () => {
         <Sun checked={checked} mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow}/>
         <Mercury checked={checked} mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>
         <Venus checked={checked} venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>
-        {/* <Earth checked={checked} earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>
-        <Mars checked={checked} marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>
+        <Earth checked={checked} earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>
+        {/* <Mars checked={checked} marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>
         <Jupiter checked={checked} jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>
         <Saturn checked={checked} saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>
         <Uranus checked={checked} uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>

@@ -49,17 +49,17 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
       <Carousel id={earthmenu.Carousel} interval={null}>
       <Carousel.Item>
         <Container>
-          <h3> Frontend </h3>
+          <h3 id={earthmenu.h3_frontend}> Frontend </h3>
 
           <Row id={earthmenu.Row}>
             <Col>
-              <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="35" height="35" alt="HTML"/>
+              <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"/>
               <span className={earthmenu.span}> HTML </span>
               <ProgressBar className={earthmenu.progress} animated now={90} />
             </Col>
 
             <Col>
-            <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="35" height="35" alt="CSS"/>
+            <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"  alt="CSS"/>
               <span> CSS </span>
               <ProgressBar className={earthmenu.progress} animated now={90} />
             </Col>
@@ -67,13 +67,13 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
 
           <Row id={earthmenu.Row}>
             <Col>
-            <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="35" height="35" alt="Javascript" />
+            <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="Javascript" />
                 <span> Javascript </span>
               <ProgressBar className={earthmenu.progress} animated now={85} />
             </Col>
 
             <Col>
-              <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" width="35" height="35" alt="Sass"/>
+              <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"  alt="Sass"/>
               <span> Sass </span>
               <ProgressBar className={earthmenu.progress} animated now={80} />
             </Col>
@@ -81,13 +81,13 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
 
           <Row id={earthmenu.Row}>
             <Col>
-              <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" width="35" height="35" alt="React"/>
+              <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"  alt="React"/>
               <span> React </span>
               <ProgressBar className={earthmenu.progress} animated now={65} />
             </Col>
 
             <Col>
-              <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" width="35" height="35" alt="Bootstrap" />
+              <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
               <span> Bootstrap </span>
               <ProgressBar className={earthmenu.progress} animated now={90} />
             </Col>
@@ -95,7 +95,7 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
 
           <Row id={earthmenu.Row}>
             <Col>
-              <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" width="35" height="35" alt="Redux"/>
+              <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"  alt="Redux"/>
               <span> Redux </span>
               <ProgressBar className={earthmenu.progress} animated now={25} />
             </Col>
@@ -110,17 +110,17 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
 
       <Carousel.Item>
       <Container>
-          <h3> Backend </h3>
+          <h3 id={earthmenu.h3_backend}> Backend </h3>
 
           <Row id={earthmenu.Row}>
             <Col>          
-              <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="45" height="45" alt="PHP"/>
+              <img className={earthmenu.icon2} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"/>
               <span className={earthmenu.span}> PHP </span>
               <ProgressBar variant="success" className={earthmenu.progress} animated now={75} />
             </Col>
 
             <Col>
-            <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" width="45" height="45" alt="Java"/>
+            <img className={earthmenu.icon2} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg" alt="Java"/>
               <span> Java </span>
               <ProgressBar variant="success" className={earthmenu.progress} animated now={90} />
             </Col>
@@ -128,28 +128,28 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
 
           <Row id={earthmenu.Row}>
             <Col>
-            <img className={earthmenu.icon} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="35" height="35" alt="C#" />
+            <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
                 <span> C# </span>
               <ProgressBar variant="success" className={earthmenu.progress} animated now={68} />
             </Col>
 
             <Col>
-              <img className={earthmenu.icon}  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="35" height="35" alt="MySQL"/>
+              <img className={earthmenu.icon1}  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
               <span> MySQL </span>
               <ProgressBar variant="success" className={earthmenu.progress} animated now={85} />
             </Col>
           </Row>
 
-          <h3> Version Control </h3>
+          <h3 id={earthmenu.h3_version}> Version Control </h3>
           <Row id={earthmenu.Row}>
             <Col>
-            <img className={earthmenu.icon} src="https://img.icons8.com/color/48/null/git.png" width="35" height="35" alt="Git" />
+            <img className={earthmenu.icon1} src="https://img.icons8.com/color/48/null/git.png" alt="Git" />
                 <span> Git </span>
               <ProgressBar variant="info" className={earthmenu.progress} animated now={70} />
             </Col>
 
             <Col>
-              <img className={earthmenu.icon}  src="https://img.icons8.com/color-glass/48/null/github--v1.png" width="35" height="35" alt="Github"/>
+              <img className={earthmenu.icon1}  src="https://img.icons8.com/color-glass/48/null/github--v1.png" alt="Github"/>
               <span> Github </span>
               <ProgressBar variant="info" className={earthmenu.progress} animated now={85} />
             </Col>
@@ -161,17 +161,16 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
 
       <CarouselItem>
       <Container>
-          <h3> Communication </h3>
-
+          <h3 id={earthmenu.h3_comm}> Communication </h3>
           <Row id={earthmenu.Row}>
             <Col>          
-              <img className={earthmenu.icon} src="https://img.icons8.com/doodle/48/null/notion.png" width="45" height="45" alt="Notion"/>
+              <img className={earthmenu.icon2} src="https://img.icons8.com/doodle/48/null/notion.png"  alt="Notion"/>
               <span className={earthmenu.span}> Notion </span>
               <ProgressBar variant="warning" className={earthmenu.progress} animated now={77} />
             </Col>
 
             <Col>
-            <img className={earthmenu.icon} src="https://img.icons8.com/color/48/null/slack-new.png" width="45" height="45" alt="Slack"/>
+            <img className={earthmenu.icon2} src="https://img.icons8.com/color/48/null/slack-new.png"  alt="Slack"/>
               <span> Slack </span>
               <ProgressBar variant="warning" className={earthmenu.progress} animated now={75} />
             </Col>
@@ -179,7 +178,7 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
 
           <Row id={earthmenu.Row}>
             <Col>
-            <img className={earthmenu.icon} src="https://img.icons8.com/fluency/48/null/evernote.png" width="45" height="45" alt="Evernote" />
+            <img className={earthmenu.icon2} src="https://img.icons8.com/fluency/48/null/evernote.png"  alt="Evernote" />
                 <span>Evernote</span>
               <ProgressBar variant="warning" className={earthmenu.progress} animated now={70} />
             </Col>
@@ -188,16 +187,16 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
             </Col>
           </Row>
 
-          <h3> Web Hosting </h3>
+          <h3 id={earthmenu.h3_webhosting}> Web Hosting </h3>
           <Row id={earthmenu.Row}>
             <Col>
-            <img className={earthmenu.icon} src="https://img.icons8.com/color-glass/48/null/github--v1.png" width="35" height="35" alt="Github.io" />
+            <img className={earthmenu.icon1} src="https://img.icons8.com/color-glass/48/null/github--v1.png" alt="Github.io" />
                 <span> Github.io </span>
               <ProgressBar variant="danger" className={earthmenu.progress} animated now={90} />
             </Col>
 
             <Col>
-              <img className={earthmenu.icon}  src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/null/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" width="35" height="35" alt="Netlify"/>
+              <img className={earthmenu.icon1}  src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/48/null/external-netlify-a-cloud-computing-company-that-offers-hosting-and-serverless-backend-services-for-static-websites-logo-shadow-tal-revivo.png" alt="Netlify"/>
               <span> Netlify </span>
               <ProgressBar variant="danger" className={earthmenu.progress} animated now={75} />
             </Col>

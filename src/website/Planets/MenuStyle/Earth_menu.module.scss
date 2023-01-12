@@ -5,20 +5,47 @@
     font-style: normal;
 }
 
-
-   
 #earth_menumode{
     position: absolute;
     border-radius: 50%;
-    width: 110px;
-    height: 110px;
-    top: 41%;
+    width: 7.638888888888889vw;
+    height: 7.638888888888889vw;
     right: 62%;
-    box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.15),
-    inset 30px 0 40px 3px rgba(0,0,0,0.9),
-    inset -10px 0 4px 1px rgba(255,255,255,0.3);
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.15),
+    inset 0.3472222222222222vw 0 0.6944444444444444vw 0.20833333333333334vw rgba(0,0,0,0.9),
+    inset -0.6944444444444444vw 0 0.3472222222222222vw 0.06944444444444445vw rgba(255,255,255,0);
     background-image: url('/images/earth-200.jpg');
     background-position: center;
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 87.7vw;
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 22.7vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        top: 17.7vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        top: 57.7vw;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 32.7vw;
+
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 21.7vw;
+    }
 }
 
 
@@ -49,46 +76,291 @@
         
     }
 
-    #Modal{
-        font-family: 'SDSamliphopangche_Outline';
-        color: black;
-        text-align: center;
-        justify-content: center;
-    }
-    
-        .Modal_Header{
-           font-size: 20px;
-           background-color: black;
-           color: white;
-           border: #41d8bf 2px solid;
-        }
-    
-        .Modal_Title{
-            font-size: 30px;
-            
-        }
-     
-        .Modal_Body{
-           background-color: black;
-           color: white;
-           border:#41d8bf 1px solid;
-    
-        }
-    
-    #Carousel{
-        height: 500px;
-    }
-        
-#Row{
-    margin-bottom: 5%;
+#h3_frontend{
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-underline-position:under;
+}    
+
+#h3_backend{
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-underline-position:under;
 }
 
-    .progress{
-        max-width: 100%;
-        border: 2px solid white;
-        border-radius: 50px;
+#h3_version{
+    text-decoration: underline;
+    text-decoration-color: #9cd3d3;
+    text-underline-position:under;
+}
+
+#h3_comm{
+    text-decoration: underline;
+    text-decoration-color: yellow;
+    text-underline-position:under;
+}
+
+#h3_webhosting{
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-underline-position:under;
+    text-underline-offset: 4px;
+}
+#Modal{
+    font-family: 'SDSamliphopangche_Outline';
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+//세로 모달
+@media (orientation:portrait){
+    #Carousel{
+        height: 80vh;
+        width: 100%;
+    }
+    //모바일
+    @media (max-width:767px){
+        .Modal_Header{
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: goldenrod;
+            border: goldenrod 2px solid;
+        }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+            background-color: black;
+            color: white;
+            border: goldenrod 1px solid;
+        }
+    }
+    //태블릿
+    @media (min-width:768px){
+        .Modal_Header{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: goldenrod;
+            border: goldenrod 2px solid;
+        }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            background-color: black;
+            color: white;
+            border: goldenrod 1px solid;
+        }
+    }
+}
+//가로 모달
+@media (orientation:landscape){
+    #Carousel{
+        height: 70vh;
+        width: 100%;
+    }
+    .Modal_Header{
+        font-size: 20px;
+        background-color: black;
+        color: goldenrod;
+        border: goldenrod 2px solid;
+     }
+    .Modal_Title{
+        font-size: 4.0833333333333335vh;
+    }
+    .Modal_Body{
+        background-color: black;
+        color: white;
+        border: goldenrod 1px solid;
+    }
+}       
+    @media (max-width: 575px){
+        //모바일 세로
+        #Row{
+            margin-top: 5vh;
+            margin-bottom: 10vh;
+        }
+            .progress{
+                max-width: 100%;
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 13px;
+            }
+        
+            .icon1{
+                margin-bottom: 5px;
+                width: 15px;
+                height: 15px;
+            }
+        
+            .icon2{
+                margin-bottom: 5px;
+                width: 25px;
+                height: 25px;
+            }
+
+            span{
+                font-size: 15px;
+            }
+
+            h3{
+                font-size: 20px;
+            }
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        #Row{
+            margin-bottom: 4vh;
+        }
+            .progress{
+                max-width: 100%;
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 2vh;
+            }
+        
+            .icon1{
+                margin-bottom: 5px;
+                width: 15px;
+                height: 15px;
+            }
+        
+            .icon2{
+                margin-bottom: 5px;
+                width: 25px;
+                height: 25px;
+            }
+
+            span{
+                font-size: 10px;
+            }
+
+            h3{
+                font-size: 15px;
+            }
     }
 
-    .icon{
-        margin-bottom: 15px;
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        #Row{
+            margin-bottom: 5vh;
+        }
+            .progress{
+                max-width: 100%;
+                border: 2px solid white;
+                border-radius: 50px;
+                height: 2vh;
+            }
+        
+            .icon1{
+                margin-bottom: 1vh;
+                width: 15px;
+                height: 15px;
+            }
+        
+            .icon2{
+                margin-bottom: 1vh;
+                width: 25px;
+                height: 25px;
+            }
+
+            span{
+                font-size: 15px;
+            }
+
+            h3{
+                font-size: 20px;
+            }
     }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        #Row{
+            margin-top: 3vh;
+            margin-bottom: 8.5vh;
+        }
+            .progress{
+                max-width: 100%;
+                border: 2px solid white;
+                border-radius: 50px;
+            }
+        
+            .icon1{
+                margin-bottom: 2vh;
+                width: 35px;
+                height: 35px;
+            }
+        
+            .icon2{
+                margin-bottom: 2vh;
+                width: 45px;
+                height: 45px;
+            }
+
+            span{
+                font-size: 20px;
+            }
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        #Row{
+            margin-bottom: 8.5vh;
+        }
+            .progress{
+                max-width: 100%;
+                border: 2px solid white;
+                border-radius: 50px;
+            }
+        
+            .icon1{
+                margin-bottom: 15px;
+                width: 35px;
+                height: 35px;
+            }
+        
+            .icon2{
+                margin-bottom: 15px;
+                width: 45px;
+                height: 45px;
+            }
+
+            span{
+                font-size: 20px;
+            }
+    }
+
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        #Row{
+            margin-bottom: 8.5vh;
+        }
+            .progress{
+                max-width: 100%;
+                border: 2px solid white;
+                border-radius: 50px;
+            }
+        
+            .icon1{
+                margin-bottom: 15px;
+                width: 35px;
+                height: 35px;
+            }
+        
+            .icon2{
+                margin-bottom: 15px;
+                width: 45px;
+                height: 45px;
+            }
+
+            span{
+                font-size: 20px;
+            }
+    }        
+        
