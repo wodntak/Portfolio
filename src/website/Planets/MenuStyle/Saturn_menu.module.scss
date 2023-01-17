@@ -10,13 +10,52 @@
 #saturn_menumode{
     position: absolute;
     border-radius: 50%;
-    width: 250px;
-    height: 250px;
-    top: 33%;
+    width: 17.36111111111111vw;
+    height: 17.36111111111111vw;
     right: 3%;
-    box-shadow: 5px 5px 15px 15px rgba(255,255,255,0.2);
-    background-image: url('/images/saturn-full.jpg');
-    background-position: center;
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.08);
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 83vw;
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        url('/images/saturn-mobile.png');
+
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 19vw;
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        url('/images/saturn.png');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        top: 14vw;
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        url('/images/saturn.png');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        top: 53vw;
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        url('/images/saturn.png');
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 29vw;
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        url('/images/saturn.png');
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 18vw;
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        url('/images/saturn.png');
+    }
 }
 
 #saturn_ring {
@@ -24,8 +63,8 @@
     top: 15%;
     left: -20%;
     border-radius: 50%; 
-    width: 350px;
-    height: 200px;
+    width: 24.305555555555557vw;
+    height: 13.88888888888889vw;
     background: radial-gradient(
     rgba(24,19,25,0) 0%,
     rgba(53,52,51,0) 52%,
@@ -51,31 +90,95 @@
     rgba(24,19,25,0) 100%);
 }
 
+
 #saturn_top{
     position: absolute;
-    width: 250px;
-    height: 125px;
-    border-radius: 250px 250px 0 0;
-    box-shadow: 
-    inset 70px 0px 60px -40px rgba(0,0,0,0.9),
-    inset -60px 0px 40px -20px rgba(255,255,255,0.3);
-    background-image: url('/images/saturn-full.jpg');
-    background-position: 50% 40.5%;
+    width: 17.36111111111111vw;
+    height: 8.680555555555555vw;
+    border-radius: 17.36111111111111vw 17.36111111111111vw 0 0;
+    background-position: 50% 0%;
+    object-fit: contain;
 
+    @media (max-width: 575px){
+        //모바일 세로
+        background-image: url('/images/saturn-mobile.png');
+
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        background-image: url('/images/saturn-mobile.png');
+
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        background-image: url('/images/saturn.png');
+
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        background-image: url('/images/saturn.png');
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        background-image: url('/images/saturn.png');
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        background-image: url('/images/saturn.png');
+    }
 }
 
 #saturn_bottom{
     position: absolute;
-    width: 250px;
-    height: 125px;
-    top: 50%;
-    border-radius: 0 0 250px 250px;
-    box-shadow:
-    inset 70px 0px 60px -40px rgba(0,0,0,0.9),
-    inset -60px 0px 40px -20px rgba(255,255,255,0.3);
-    background-image: url('/images/saturn-full.jpg');
-    background-position: 50% 50%;
+    width: 17.36111111111111vw;
+    height: 8.680555555555555vw;
+    border-radius: 0 0 17.36111111111111vw 17.36111111111111vw;
+    background-position: 50% 100%;
+    object-fit: contain;
 
+
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 50%;
+        background-image: url('/images/saturn-mobile.png');
+
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 50%;
+        background-image: url('/images/saturn.png');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        top: 12vw;
+        top: 50%;
+        background-image: url('/images/saturn.png');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        top: 50%;
+        background-image: url('/images/saturn.png');
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 50%;
+        background-image: url('/images/saturn.png');
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 50%;
+        background-image: url('/images/saturn.png');
+    }
 }
 
 
@@ -131,60 +234,5 @@
            color: white;
            border: #8f8787 1px solid;
     
-        }
-    
-    #Carousel{
-        height: 500px;
-    }
-    
-    #aboutMesecond{
-        height: 150px;
-        border: white 1px solid;
-        margin-right: 5px;
-        border-radius: 35%;
-    
-    }
-        .icon_Row{
-            margin-top: 5px;
-            height: 40%;
-        }
-    
-        .text_Row{
-            font-size: 20px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-        }
-    
-        .text_Row_email{
-            font-size: 18px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-            
-        }
-        
-    .icon{
-        fill:white;
-    }
-        .iconLeft{
-            text-align: right;
-        }
-    
-        .iconRight{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-        }
-    
-        .iconLeft_three{
-            text-align: right;
-            flex: 45%
-        }
-        .iconRight_three{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-            flex:55%
         }
     

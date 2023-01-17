@@ -11,10 +11,9 @@
     width: 7.638888888888889vw;
     height: 7.638888888888889vw;
     right: 62%;
-    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.15),
-    inset 0.3472222222222222vw 0 0.6944444444444444vw 0.20833333333333334vw rgba(0,0,0,0.9),
-    inset -0.6944444444444444vw 0 0.3472222222222222vw 0.06944444444444445vw rgba(255,255,255,0);
-    background-image: url('/images/earth-200.jpg');
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.08);
+    background-image: radial-gradient(circle 7.638888888888889vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.7)), radial-gradient(circle 12.5vw at 6.25vw 5.555555555555555vw, rgba(255,255,255,.1), rgba(0,0,0,0)),
+    url('/images/earth-200.jpg');
     background-position: center;
     @media (max-width: 575px){
         //모바일 세로
@@ -123,8 +122,8 @@
         .Modal_Header{
             font-size: 1.3888888888888888vh;
             background-color: black;
-            color: goldenrod;
-            border: goldenrod 2px solid;
+            color: #41d8bf;
+            border: #41d8bf 2px solid;
         }
         .Modal_Title{
             font-size: 4.0833333333333335vw;
@@ -132,7 +131,7 @@
         .Modal_Body{
             background-color: black;
             color: white;
-            border: goldenrod 1px solid;
+            border: #41d8bf 1px solid;
         }
     }
     //태블릿
@@ -142,8 +141,8 @@
             margin-right: -8vh;
             font-size: 1.3888888888888888vh;
             background-color: black;
-            color: goldenrod;
-            border: goldenrod 2px solid;
+            color: #41d8bf;
+            border: #41d8bf 2px solid;
         }
         .Modal_Title{
             font-size: 4.0833333333333335vw;
@@ -153,7 +152,7 @@
             margin-right: -8vh;
             background-color: black;
             color: white;
-            border: goldenrod 1px solid;
+            border: #41d8bf 1px solid;
         }
     }
 }
@@ -166,8 +165,8 @@
     .Modal_Header{
         font-size: 20px;
         background-color: black;
-        color: goldenrod;
-        border: goldenrod 2px solid;
+        color: #41d8bf;
+        border: #41d8bf 2px solid;
      }
     .Modal_Title{
         font-size: 4.0833333333333335vh;
@@ -175,7 +174,7 @@
     .Modal_Body{
         background-color: black;
         color: white;
-        border: goldenrod 1px solid;
+        border: #41d8bf 1px solid;
     }
 }       
     @media (max-width: 575px){

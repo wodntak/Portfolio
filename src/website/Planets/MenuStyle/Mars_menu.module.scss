@@ -8,15 +8,43 @@
 #mars_menumode{
     position: absolute;
     border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    top: 43%;
+    width: 5.555555555555555vw;
+    height: 5.555555555555555vw;
     right: 53%;
-    box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.2),
-    inset 30px 0 40px 3px rgba(0,0,0,0.9),
-    inset -10px 0 4px 1px rgba(255,255,255,0.3);
-    background-image: url('/images/mars-170.jpg');
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.08);
+    background-image: radial-gradient(circle 5.555555555555555vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.65)), radial-gradient(circle 12.5vw at 6.25vw 5.555555555555555vw, rgba(255,255,255,.1), rgba(0,0,0,0)),
+    url('/images/mars-170.jpg');
     background-position: center;
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 88.7vw;
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 23.7vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        top: 18.7vw;
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        top: 58.7vw;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 33.7vw;
+
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 22.7vw;
+    }
 }
 
 #mars_menumode:hover{
@@ -52,78 +80,73 @@
         text-align: center;
         justify-content: center;
     }
-    
-        .Modal_Header{
-           font-size: 20px;
-           background-color: black;
-           color: white;
-           border: #c3195d 2px solid;
-        }
-    
-        .Modal_Title{
-            font-size: 30px;
-            
-        }
-     
-        .Modal_Body{
-           background-color: black;
-           color: white;
-           border: #c3195d 1px solid;
-    
-        }
-    
+
+//세로 모달
+@media (orientation:portrait){
     #Carousel{
-        height: 500px;
+        height: 80vh;
+        width: 100%;
     }
-    
-    #aboutMesecond{
-        height: 150px;
-        border: white 1px solid;
-        margin-right: 5px;
-        border-radius: 35%;
-    
+    //모바일
+    @media (max-width:767px){
+        .Modal_Header{
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: #c3195d;
+            border: #c3195d 2px solid;
+        }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+            background-color: black;
+            color: white;
+            border: #c3195d 1px solid;
+        }
     }
-        .icon_Row{
-            margin-top: 5px;
-            height: 40%;
+    //태블릿
+    @media (min-width:768px){
+        .Modal_Header{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: #c3195d;
+            border: #c3195d 2px solid;
         }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            background-color: black;
+            color: white;
+            border: #c3195d 1px solid;
+        }
+    }
+}
+//가로 모달
+@media (orientation:landscape){
+    #Carousel{
+        height: 70vh;
+        width: 100%;
+    }
+    .Modal_Header{
+        font-size: 20px;
+        background-color: black;
+        color: #c3195d;
+        border: #c3195d 2px solid;
+     }
+    .Modal_Title{
+        font-size: 4.0833333333333335vh;
+    }
+    .Modal_Body{
+        background-color: black;
+        color: white;
+        border: #c3195d 1px solid;
+    }
+}       
     
-        .text_Row{
-            font-size: 20px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-        }
-    
-        .text_Row_email{
-            font-size: 18px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-            
-        }
         
-    .icon{
-        fill:white;
-    }
-        .iconLeft{
-            text-align: right;
-        }
-    
-        .iconRight{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-        }
-    
-        .iconLeft_three{
-            text-align: right;
-            flex: 45%
-        }
-        .iconRight_three{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-            flex:55%
-        }
     

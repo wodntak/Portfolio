@@ -18,10 +18,9 @@
     height: 2.7777777777777777vw;
     border-radius: 50%;
     right: 83%;
-    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.15),
-    inset 0.3472222222222222vw 0 0.6944444444444444vw 0.20833333333333334vw rgba(0,0,0,0.9),
-    inset -0.6944444444444444vw 0 0.3472222222222222vw 0.06944444444444445vw rgba(255,255,255,0);
-    background-image: url('/images/mercury-100.jpg');
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.08);
+    background-image: radial-gradient(circle 2.7777777777777777vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.65)), radial-gradient(circle 12.5vw at 6.25vw 5.555555555555555vw, rgba(255,255,255,.1), rgba(0,0,0,0)), 
+    url('/images/mercury-100.jpg');
     background-image: 100%;
     background-position: center;
 
