@@ -10,6 +10,7 @@
 #saturn_menumode{
     position: absolute;
     border-radius: 50%;
+    background-color:black;
     width: 17.36111111111111vw;
     height: 17.36111111111111vw;
     right: 3%;
@@ -17,48 +18,35 @@
     @media (max-width: 575px){
         //모바일 세로
         top: 83vw;
-        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
-        url('/images/saturn-mobile.png');
-
     }
     
     @media (min-width: 576px) and (max-width: 767px){
         //모바일 가로
         top: 19vw;
-        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
-        url('/images/saturn.png');
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
         // 큰 모바일 가로
         top: 14vw;
-        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
-        url('/images/saturn.png');
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
         // 테블릿 세로
         top: 53vw;
-        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
-        url('/images/saturn.png');
     }
     
     @media (min-width: 992px) and (max-width: 1199px) {
         // 테블릿 가로
         top: 29vw;
-        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
-        url('/images/saturn.png');
     }
     
     @media (min-width: 1200px) {
         // 데스크탑 일반
         top: 18vw;
-        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
-        url('/images/saturn.png');
     }
 }
 
-#saturn_ring {
+#saturn_ring{
     position: absolute;
     top: 15%;
     left: -20%;
@@ -96,19 +84,21 @@
     width: 17.36111111111111vw;
     height: 8.680555555555555vw;
     border-radius: 17.36111111111111vw 17.36111111111111vw 0 0;
-    background-position: 50% 0%;
-    object-fit: contain;
+    background-repeat: no-repeat;
 
     @media (max-width: 575px){
         //모바일 세로
         background-image: url('/images/saturn-mobile.png');
+        background-position-y: 0vw;
+        background-position-x: -1.3vw;
 
     }
     
     @media (min-width: 576px) and (max-width: 767px){
         //모바일 가로
-        background-image: url('/images/saturn-mobile.png');
-
+        background-image: url('/images/saturn.png');
+        background-position-y: 0vw;
+        background-position-x: -9.5vw;
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
@@ -129,7 +119,9 @@
     
     @media (min-width: 1200px) {
         // 데스크탑 일반
-        background-image: url('/images/saturn.png');
+       background-image: url('/images/saturn.png');
+       background-position-y: 0vw;
+       background-position-x: 0vw;
     }
 }
 
@@ -138,21 +130,23 @@
     width: 17.36111111111111vw;
     height: 8.680555555555555vw;
     border-radius: 0 0 17.36111111111111vw 17.36111111111111vw;
-    background-position: 50% 100%;
-    object-fit: contain;
+    background-repeat: no-repeat;
 
 
     @media (max-width: 575px){
         //모바일 세로
         top: 50%;
         background-image: url('/images/saturn-mobile.png');
-
+        background-position-y: -8.680555555555555vw;
+        background-position-x: -1.3vw;
     }
     
     @media (min-width: 576px) and (max-width: 767px){
         //모바일 가로
         top: 50%;
         background-image: url('/images/saturn.png');
+        background-position-y: -8.680555555555555vw;
+        background-position-x: -9.5vw;
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
@@ -178,6 +172,8 @@
         // 데스크탑 일반
         top: 50%;
         background-image: url('/images/saturn.png');
+        background-position-y: -8.680555555555555vw;
+        background-position-x: 0vw;
     }
 }
 

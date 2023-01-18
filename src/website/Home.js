@@ -11,9 +11,9 @@ import Jupiter from './Planets/Jupiter';
 import Saturn from './Planets/Saturn';
 import Uranus from './Planets/Uranus';
 import Neptune from './Planets/Neptune';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// import Container from 'react-bootstrap/Container';
+// import Row from 'react-bootstrap/Row';
+// import Col from 'react-bootstrap/Col';
 
 import { useState } from 'react';
 
@@ -29,8 +29,8 @@ const Home = () => {
     const [marsshow, setMars] = useState(false);
     const [jupitershow, setJupiter] = useState(false);
     const [saturnshow, setSaturn] = useState(false);
-    const [uranusshow, setUranus] = useState(false);
-    const [neptuneshow, setNeptune] = useState(false);
+    // const [uranusshow, setUranus] = useState(false);
+    // const [neptuneshow, setNeptune] = useState(false);
 
     const mercuryClose = () => setMercury(false);
     const venusClose = () => setVenus(false);
@@ -38,8 +38,8 @@ const Home = () => {
     const marsClose = () => setMars(false);
     const jupiterClose = () => setJupiter(false);
     const saturnClose = () => setSaturn(false);
-    const uranusClose = () => setUranus(false);
-    const neptuneClose = () => setNeptune(false);
+    // const uranusClose = () => setUranus(false);
+    // const neptuneClose = () => setNeptune(false);
 
     const mercuryShow = () => setMercury(true);
     const venusShow = () => setVenus(true);
@@ -56,7 +56,8 @@ const Home = () => {
       <div id={background.star2}></div>
       <div id={background.star3}></div>
       {/* <div id={background.star4}></div> */}
-        <Sun checked={checked} mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow}/>
+        <Sun checked={checked} mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} />
+        {/* uranusShow={uranusShow} neptuneShow={neptuneShow} */}
         <Mercury checked={checked} mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>
         <Venus checked={checked} venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>
         <Earth checked={checked} earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>
