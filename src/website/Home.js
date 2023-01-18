@@ -9,8 +9,8 @@ import Earth from './Planets/Earth';
 import Mars from './Planets/Mars';
 import Jupiter from './Planets/Jupiter';
 import Saturn from './Planets/Saturn';
-import Uranus from './Planets/Uranus';
-import Neptune from './Planets/Neptune';
+// import Uranus from './Planets/Uranus';
+// import Neptune from './Planets/Neptune';
 // import Container from 'react-bootstrap/Container';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
@@ -47,8 +47,8 @@ const Home = () => {
     const marsShow = () => setMars(true);
     const jupiterShow = () => setJupiter(true);
     const saturnShow = () => setSaturn(true);
-    const uranusShow = () => setUranus(true);
-    const neptuneShow = () => setNeptune(true);
+    // const uranusShow = () => setUranus(true);
+    // const neptuneShow = () => setNeptune(true);
 
     return (
     <>
