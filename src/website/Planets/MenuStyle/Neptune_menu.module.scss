@@ -9,15 +9,54 @@
 #neptune_menumode{
     position: absolute;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    top: 40%;
+    width: 10.416666666666666vw;
+    height: 10.416666666666666vw;
     right: -30%;
-    box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.2),
-    inset 30px 0 40px 3px rgba(0,0,0,0.9),
-    inset -10px 0 4px 1px rgba(255,255,255,0.3);
-    background-image: url('/images/neptune-400.jpg');
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.08);
     background-position: center;
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 87vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/neptune-mobile.jpg');
+
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 22vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/neptune-400.jpg');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        top: 17vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/neptune-400.jpg');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        top: 56vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/neptune-400.jpg');
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 32vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/neptune-400.jpg');
+
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 21vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/neptune-400.jpg');
+    }
 }
 
 
@@ -49,84 +88,76 @@
         
     }
 
-    #Modal{
-        font-family: 'SDSamliphopangche_Outline';
-        color: black;
-        text-align: center;
-        justify-content: center;
-    }
-    
-        .Modal_Header{
-           font-size: 20px;
-           background-color: black;
-           color: white;
-           border: blue 2px solid;
-        }
-    
-        .Modal_Title{
-            font-size: 30px;
-            
-        }
-     
-        .Modal_Body{
-           background-color: black;
-           color: white;
-           border: blue 1px solid;
-    
-        }
-    
+#Modal{
+    font-family: 'SDSamliphopangche_Outline';
+    color: black;
+    text-align: center;
+    justify-content: center;
+}
+//세로 모달
+@media (orientation:portrait){
     #Carousel{
-        height: 500px;
+        height: 80vh;
+        width: 100%;
     }
-    
-    #aboutMesecond{
-        height: 150px;
-        border: white 1px solid;
-        margin-right: 5px;
-        border-radius: 35%;
-    
+    //모바일
+    @media (max-width:767px){
+        .Modal_Header{
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: #876464;
+            border: #876464 2px solid;
+        }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+            background-color: black;
+            color: white;
+            border: #876464 1px solid;
+        }
     }
-        .icon_Row{
-            margin-top: 5px;
-            height: 40%;
+    //태블릿
+    @media (min-width:768px){
+        .Modal_Header{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: #876464;
+            border: #876464 2px solid;
         }
-    
-        .text_Row{
-            font-size: 20px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
         }
-    
-        .text_Row_email{
-            font-size: 18px;
-            height: 60%;
-            text-align: center;
-            justify-content: center;
-            
+        .Modal_Body{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            background-color: black;
+            color: white;
+            border: #876464 1px solid;
         }
-        
-    .icon{
-        fill:white;
     }
-        .iconLeft{
-            text-align: right;
-        }
-    
-        .iconRight{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-        }
-    
-        .iconLeft_three{
-            text-align: right;
-            flex: 45%
-        }
-        .iconRight_three{
-            font-size: 22px;
-            text-align: left;
-            margin-left: -15px;
-            flex:55%
-        }
+}
+//가로 모달
+@media (orientation:landscape){
+    #Carousel{
+        height: 70vh;
+        width: 100%;
+    }
+    .Modal_Header{
+        font-size: 20px;
+        background-color: black;
+        color: #876464;
+        border: #876464 2px solid;
+     }
+    .Modal_Title{
+        font-size: 4.0833333333333335vh;
+    }
+    .Modal_Body{
+        background-color: black;
+        color: white;
+        border: #876464 1px solid;
+    }
+}    
     

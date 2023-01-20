@@ -27,8 +27,8 @@ const Saturn = ({checked, saturnshow, saturnClose, saturnShow}) => {
         overlay={renderTooltip}
         >
             {checked ? <div id={saturnani.saturn_animode}/>   :
-            <div id={saturnmenu.saturn_menumode} onClick={saturnShow}> <div id={saturnmenu.saturn_bottom}/> <div id={saturnmenu.saturn_ring}/> 
-            <div id={saturnmenu.saturn_top} /></div>}        
+            <section id={saturnmenu.saturn_menumode} onClick={saturnShow}> <section id={saturnmenu.saturn_bottom}/> <section id={saturnmenu.saturn_ring}/> 
+            <section id={saturnmenu.saturn_top} /></section>}        
         </OverlayTrigger>
 
         <Modal

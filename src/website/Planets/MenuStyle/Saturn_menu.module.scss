@@ -10,7 +10,9 @@
 #saturn_menumode{
     position: absolute;
     border-radius: 50%;
-    background-color:black;
+    border-collapse: collapse;
+    border: hidden 1px;
+    background-color: rgba(122,115,105,1);
     width: 17.36111111111111vw;
     height: 17.36111111111111vw;
     right: 3%;
@@ -80,6 +82,7 @@
 
 
 #saturn_top{
+    display:inline;
     position: absolute;
     width: 17.36111111111111vw;
     height: 8.680555555555555vw;
@@ -89,39 +92,39 @@
     @media (max-width: 575px){
         //모바일 세로
         background-image: url('/images/saturn-mobile.png');
-        background-position-y: 0vw;
-        background-position-x: -1.3vw;
+        background-size: 100%;
+
 
     }
     
     @media (min-width: 576px) and (max-width: 767px){
         //모바일 가로
         background-image: url('/images/saturn.png');
-        background-position-y: 0vw;
-        background-position-x: -9.5vw;
+        background-size: 100%;
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
         // 큰 모바일 가로
         background-image: url('/images/saturn.png');
-
+        background-size: 100%;
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
         // 테블릿 세로
         background-image: url('/images/saturn.png');
+        background-size: 100%;
     }
     
     @media (min-width: 992px) and (max-width: 1199px) {
         // 테블릿 가로
         background-image: url('/images/saturn.png');
+        background-size: 100%;
     }
     
     @media (min-width: 1200px) {
         // 데스크탑 일반
        background-image: url('/images/saturn.png');
-       background-position-y: 0vw;
-       background-position-x: 0vw;
+       background-size: 100%;
     }
 }
 
@@ -129,56 +132,61 @@
     position: absolute;
     width: 17.36111111111111vw;
     height: 8.680555555555555vw;
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.08),
+    inset -1.3888888888888888vw -2.0833333333333335vw 2.7777777777777777vw -2.7777777777777777vw rgba(0,0,0,0.9);
     border-radius: 0 0 17.36111111111111vw 17.36111111111111vw;
     background-repeat: no-repeat;
 
 
     @media (max-width: 575px){
         //모바일 세로
-        top: 50%;
-        background-image: url('/images/saturn-mobile.png');
+        top: 49%;
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        url('/images/saturn-mobile.png');
+        background-size: 100%;
         background-position-y: -8.680555555555555vw;
-        background-position-x: -1.3vw;
     }
     
     @media (min-width: 576px) and (max-width: 767px){
         //모바일 가로
-        top: 50%;
+        top: 49%;
         background-image: url('/images/saturn.png');
+        background-size: 100%;
         background-position-y: -8.680555555555555vw;
-        background-position-x: -9.5vw;
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
         // 큰 모바일 가로
-        top: 12vw;
-        top: 50%;
+        top: 49%;
         background-image: url('/images/saturn.png');
+        background-size: 100%;
+        background-position-y: -8.680555555555555vw;
     }
 
     @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
         // 테블릿 세로
-        top: 50%;
+        top: 49%;
         background-image: url('/images/saturn.png');
+        background-size: 100%;
+        background-position-y: -8.680555555555555vw;
     }
     
     @media (min-width: 992px) and (max-width: 1199px) {
         // 테블릿 가로
-        top: 50%;
+        top: 49%;
         background-image: url('/images/saturn.png');
+        background-size: 100%;
+        background-position-y: -8.680555555555555vw;
     }
     
     @media (min-width: 1200px) {
         // 데스크탑 일반
-        top: 50%;
+        top: 49%;
         background-image: url('/images/saturn.png');
+        background-size: 100%;
         background-position-y: -8.680555555555555vw;
-        background-position-x: 0vw;
     }
 }
-
-
-
 #saturn_menumode:hover{
     transform: scale(1.08);
     transition: transform 2s;
@@ -212,23 +220,71 @@
         text-align: center;
         justify-content: center;
     }
-    
+//세로 모달
+@media (orientation:portrait){
+    #Carousel{
+        height: 80vh;
+        width: 100%;
+    }
+    //모바일
+    @media (max-width:767px){
         .Modal_Header{
-           font-size: 20px;
-           background-color: black;
-           color: white;
-           border: #8f8787 2px solid;
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: #8f8787;
+            border: #8f8787 2px solid;
         }
-    
         .Modal_Title{
-            font-size: 30px;
-            
+            font-size: 4.0833333333333335vw;
         }
-     
         .Modal_Body{
-           background-color: black;
-           color: white;
-           border: #8f8787 1px solid;
-    
+            background-color: black;
+            color: white;
+            border: #8f8787 1px solid;
         }
+    }
+    //태블릿
+    @media (min-width:768px){
+        .Modal_Header{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            font-size: 1.3888888888888888vh;
+            background-color: black;
+            color: #8f8787;
+            border: #8f8787 2px solid;
+        }
+        .Modal_Title{
+            font-size: 4.0833333333333335vw;
+        }
+        .Modal_Body{
+            margin-left: -8vh;
+            margin-right: -8vh;
+            background-color: black;
+            color: white;
+            border: #8f8787 1px solid;
+        }
+    }
+}
+//가로 모달
+@media (orientation:landscape){
+    #Carousel{
+        height: 70vh;
+        width: 100%;
+    }
+    .Modal_Header{
+        font-size: 20px;
+        background-color: black;
+        color: #8f8787;
+        border: #8f8787 2px solid;
+     }
+    .Modal_Title{
+        font-size: 4.0833333333333335vh;
+    }
+    .Modal_Body{
+        background-color: black;
+        color: white;
+        border: #8f8787 1px solid;
+    }
+}        
+
     

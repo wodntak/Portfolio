@@ -8,15 +8,54 @@
 #uranus_menumode{
     position: absolute;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    top: 40%;
+    width: 10.416666666666666vw;
+    height: 10.416666666666666vw;
     right: -15%;
-    box-shadow: 5px 5px 15px 5px rgba(255,255,255,0.2),
-    inset 30px 0 40px 3px rgba(0,0,0,0.9),
-    inset -10px 0 4px 1px rgba(255,255,255,0.3);
-    background-image: url('/images/uranus-full.jpg');
+    box-shadow: 0.3472222222222222vw 0.3472222222222222vw  1.0416666666666667vw 0.3472222222222222vw rgba(255,255,255,0.08);
     background-position: center;
+    @media (max-width: 575px){
+        //모바일 세로
+        top: 87vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/uranus-full.jpg');
+
+    }
+    
+    @media (min-width: 576px) and (max-width: 767px){
+        //모바일 가로
+        top: 22vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/uranus-full.jpg');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+        // 큰 모바일 가로
+        top: 17vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/uranus-full.jpg');
+    }
+
+    @media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+        // 테블릿 세로
+        top: 56vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/uranus-full.jpg');
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+        // 테블릿 가로
+        top: 32vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/uranus-full.jpg');
+
+    }
+    
+    @media (min-width: 1200px) {
+        // 데스크탑 일반
+        top: 21vw;
+        background-image: radial-gradient(circle 10.416666666666666vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)),radial-gradient(circle 3.661111111111111vw at 3.4722222222222223vw 2.4722222222222223vw, rgba(255,255,255,.4), rgba(0,0,0,0)),
+        url('/images/uranus-full.jpg');
+    }
 }
 
 
