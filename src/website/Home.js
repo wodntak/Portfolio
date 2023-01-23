@@ -11,13 +11,15 @@ import Jupiter from './Planets/Jupiter';
 import Saturn from './Planets/Saturn';
 import Uranus from './Planets/Uranus';
 import Neptune from './Planets/Neptune';
+import SecondHome from './SecondHome';
 
 import { useState } from 'react';
-
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 
 const Home = () => {
+  const navigate = useNavigate();
 
     const [checked, setChecked] = useState(false);
     const [mercuryshow, setMercury] = useState(false);
@@ -47,12 +49,13 @@ const Home = () => {
     const uranusShow = () => setUranus(true);
     const neptuneShow = () => setNeptune(true);
 
+
     return (
     <>
       <div id={background.star1}></div>
       <div id={background.star2}></div>
       <div id={background.star3}></div>
-      {/* <div id={background.star4}></div> */}
+      <div id={background.star4}></div>
         <Sun checked={checked} mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow}/>
         <Mercury checked={checked} mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>
         <Venus checked={checked} venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>
@@ -60,8 +63,8 @@ const Home = () => {
         <Mars checked={checked} marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>
         <Jupiter checked={checked} jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>
         <Saturn checked={checked} saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>
-        <Uranus checked={checked} uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>
-        <Neptune checked={checked} neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>
+        {/* <Uranus checked={checked} uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>
+        <Neptune checked={checked} neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/> */}
         
       <Form>
         <Form.Check 
@@ -77,8 +80,14 @@ const Home = () => {
       <div id={!checked ? background.mobilemode : background.desktopmode}>
         <img className={background.introicon} src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/null/external-Space-location-bearicons-outline-color-bearicons.png" alt="spaceship"/>
         <div className={background.h5_intro}> Menu </div>
-
-      </div>   
+      </div>
+        <button
+        onClick={() => navigate("./SecondHome")}>
+        click me
+        </button>
+        {/* <Routes>
+          <Route path="/SecondHome" element={<SecondHome/>} />
+        </Routes> */}
     </>
 
     );
