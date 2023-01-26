@@ -7,9 +7,8 @@ import Modal from 'react-bootstrap/Modal';
 // import Row from 'react-bootstrap/Row';
 // import Col from 'react-bootstrap/Col';
 import neptunemenu from './MenuStyle/Neptune_menu.module.scss';
-import neptuneani from './AnimationStyle/Neptune_animation.module.scss';
 
-const Neptune = ({checked, neptuneshow, neptuneClose, neptuneShow}) => {
+const Neptune = ({neptuneshow, neptuneClose, neptuneShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={neptunemenu.Tooltip} {...props}>
@@ -25,7 +24,7 @@ const Neptune = ({checked, neptuneshow, neptuneClose, neptuneShow}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-            {checked ? <div id={neptuneani.neptune_animode}/> : <div id={neptunemenu.neptune_menumode} onClick={neptuneShow}/>}
+          <div id={neptunemenu.neptune_menumode} onClick={neptuneShow}/>
         </OverlayTrigger>
 
         <Modal

@@ -8,12 +8,11 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import earthmenu from './MenuStyle/Earth_menu.module.scss';
-import earthani from './AnimationStyle/Earth_animation.module.scss';
 import { CarouselItem } from 'react-bootstrap';
 
 
 
-const Earth = ({checked, earthshow, earthClose, earthShow}) => {
+const Earth = ({ earthshow, earthClose, earthShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={earthmenu.Tooltip} {...props}>
@@ -29,7 +28,7 @@ const Earth = ({checked, earthshow, earthClose, earthShow}) => {
         placement="top"
         overlay={renderTooltip}
         >
-            {checked ? <div id={earthani.earth_animode}/> : <div id={earthmenu.earth_menumode} onClick={earthShow}/>}
+        <div id={earthmenu.earth_menumode} onClick={earthShow}/>
         </OverlayTrigger>
 
         <Modal

@@ -7,10 +7,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import marsmenu from './MenuStyle/Mars_menu.module.scss';
-import marsani from './AnimationStyle/Mars_animation.module.scss';
 
 
-const Mars = ({checked, marsshow, marsClose, marsShow}) => {
+const Mars = ({ marsshow, marsClose, marsShow}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={marsmenu.Tooltip} {...props}>
@@ -26,7 +25,7 @@ const Mars = ({checked, marsshow, marsClose, marsShow}) => {
       placement="bottom"
       overlay={renderTooltip}
       >
-        {checked ? <div id={marsani.mars_animode}/> : <div id={marsmenu.mars_menumode} onClick={marsShow}/>}
+      <div id={marsmenu.mars_menumode} onClick={marsShow}/>
       </OverlayTrigger>
 
       <Modal

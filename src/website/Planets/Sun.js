@@ -3,12 +3,11 @@ import Offcanvas from 'react-bootstrap/Offcanvas';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import sunmenuStyle from './MenuStyle/Sun_menu.module.scss';
-import sunaniStyle from './AnimationStyle/Sun_animation.module.scss';
 
 import { useState } from 'react';
 
 
-const Sun = ({checked, mercuryShow, venusShow, earthShow, marsShow, jupiterShow, saturnShow, uranusShow, neptuneShow}, ...props) => {
+const Sun = ({ mercuryShow, venusShow, earthShow, marsShow, jupiterShow, saturnShow, uranusShow, neptuneShow, setNextpage, nextpage}, ...props) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -27,9 +26,9 @@ const Sun = ({checked, mercuryShow, venusShow, earthShow, marsShow, jupiterShow,
         placement="right"
         overlay={renderTooltip}
         >
-        {checked ? <div id={sunaniStyle.sun_animode}/>  : 
+
         <div onClick={toggleShow} className="me-2" id={sunmenuStyle.sun_menumode}>
-        </div>}
+        </div>
         </OverlayTrigger>
         <Offcanvas id={sunmenuStyle.Offcanvas} show={show} onHide={handleClose} {...props}>
         <Offcanvas.Header className={sunmenuStyle.Offcanvas_Header} closeButton closeVariant="white">
@@ -40,8 +39,8 @@ const Sun = ({checked, mercuryShow, venusShow, earthShow, marsShow, jupiterShow,
         <Offcanvas.Title onClick={() => {marsShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 1 (대학교 졸업작품)</Offcanvas.Title>
         <Offcanvas.Title onClick={() => {jupiterShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 2 (개인 홈페이지)</Offcanvas.Title>
         <Offcanvas.Title onClick={() => {saturnShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 3 (장보기/Todos)</Offcanvas.Title>
-        <Offcanvas.Title onClick={() => {uranusShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Project 4 (포트폴리오)</Offcanvas.Title>
-        <Offcanvas.Title onClick={() => {neptuneShow(); toggleShow();}} className={sunmenuStyle.Offcanvas_Title}>Contact Me</Offcanvas.Title>
+        <Offcanvas.Title onClick={() => {uranusShow(); toggleShow(); setNextpage(!nextpage);}} className={sunmenuStyle.Offcanvas_Title}>Project 4 (포트폴리오)</Offcanvas.Title>
+        <Offcanvas.Title onClick={() => {neptuneShow(); toggleShow(); setNextpage(!nextpage);}} className={sunmenuStyle.Offcanvas_Title}>Contact Me</Offcanvas.Title>
        
         </Offcanvas>
     </>

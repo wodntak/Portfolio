@@ -1,6 +1,5 @@
 import React from 'react';
 import mercurymenu from './MenuStyle/Mercury_menu.module.scss';
-import mercuryani from './AnimationStyle/Mercury_animation.module.scss';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
 import Carousel from 'react-bootstrap/Carousel';
@@ -10,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
+const Mercury = ({ mercuryshow, mercuryClose, mercuryShow}) => {
 
 
     const renderTooltip = (props) => (
@@ -25,7 +24,7 @@ const Mercury = ({checked, mercuryshow, mercuryClose, mercuryShow}) => {
         placement="top"
         overlay={renderTooltip}
         >
-            {checked ? <div id={mercuryani.mercury_animode}/> : <div id={mercurymenu.mercury_menumode} onClick={mercuryShow}/>}
+          <div id={mercurymenu.mercury_menumode} onClick={mercuryShow}/>
         </OverlayTrigger>
 
         <Modal

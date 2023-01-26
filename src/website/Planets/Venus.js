@@ -7,10 +7,9 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import venusmenu from './MenuStyle/Venus_menu.module.scss'
-import venusani from './AnimationStyle/Venus_animation.module.scss';
 
 
-const Venus = ({checked, venusshow, venusClose, venusShow}) => {
+const Venus = ({ venusshow, venusClose, venusShow}) => {
 
     const renderTooltip = (props) => (
         <Tooltip id={venusmenu.Tooltip} {...props}>
@@ -25,7 +24,7 @@ const Venus = ({checked, venusshow, venusClose, venusShow}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-          {checked ? <div id={venusani.venus_animode}/> : <div id={venusmenu.venus_menumode} onClick={venusShow}/>}
+        <div id={venusmenu.venus_menumode} onClick={venusShow}/>
         </OverlayTrigger>
 
         <Modal

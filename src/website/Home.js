@@ -1,6 +1,5 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Form from 'react-bootstrap/Form';
 import background from './Home.module.scss';
 import Sun from './Planets/Sun.js';
 import Mercury from './Planets/Mercury';
@@ -11,6 +10,9 @@ import Jupiter from './Planets/Jupiter';
 import Saturn from './Planets/Saturn';
 import Uranus from './Planets/Uranus';
 import Neptune from './Planets/Neptune';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 import { useState } from 'react';
 
@@ -18,9 +20,7 @@ import { useState } from 'react';
 
 
 const Home = () => {
-
-    const [checked, setChecked] = useState(false);
-    const [nextpage, setNextpage] = useState(false);
+    const [nextpage, setNextpage] = useState(true);
 
     const [mercuryshow, setMercury] = useState(false);
     const [venusshow, setVenus] = useState(false);
@@ -54,18 +54,18 @@ const Home = () => {
       <div id={background.star1}></div>
       <div id={background.star2}></div>
       <div id={background.star3}></div>
-      {/* <div id={background.star4}></div> */}
-       {nextpage && <Sun checked={checked} mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow}/>} 
-       {nextpage && <Mercury checked={checked} mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>}
-       {nextpage && <Venus checked={checked} venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>}
-       {nextpage && <Earth checked={checked} earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>}
-       {nextpage && <Mars checked={checked} marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>}
-       {nextpage && <Jupiter checked={checked} jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>}
-       {nextpage && <Saturn checked={checked} saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>}
-       {!nextpage && <Uranus checked={checked} uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>}
-       {!nextpage && <Neptune checked={checked} neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>}
+      <div id={background.star4}></div>
+       {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} />} 
+       {nextpage && <Mercury mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>}
+       {nextpage && <Venus venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>}
+       {nextpage && <Earth earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>}
+       {nextpage && <Mars marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>}
+       {nextpage && <Jupiter jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>}
+       {nextpage && <Saturn saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>}
+       {!nextpage && <Uranus uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>}
+       {!nextpage &&<Neptune neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>}
         
-      <Form>
+      {/* <Form>
         <Form.Check 
         type="switch"
         id="custom-switch"
@@ -75,16 +75,35 @@ const Home = () => {
         onChange={(e) => setChecked(e.currentTarget.checked)} 
       />
         
-      </Form>
-      <div id={!checked && nextpage ? background.mobilemode : background.desktopmode}>
+      </Form> */}
+      <div id={nextpage ? background.mobilemode : background.desktopmode}>
         <img className={background.introicon} src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/null/external-Space-location-bearicons-outline-color-bearicons.png" alt="spaceship"/>
         <div className={background.h5_intro}> Menu </div>
       </div>   
 
-      <button id={background.nextpageButton}
-      onClick={() => setNextpage(!nextpage)}>
-        Click Me
-      </button>
+      {nextpage ?
+      <Container id={background.more1} onClick={() => setNextpage(!nextpage)}>
+        <Row >
+          <Col>
+            <h3 className={background.click1}> 더보기 click!</h3>
+          </Col>
+          <Col>
+            <img className={background.nextpageButton1} src="https://img.icons8.com/nolan/96/chevron-right.png" alt="nextpage1"/>
+          </Col>
+        </Row>
+      </Container>
+       : <Container id={background.more2} onClick={() => setNextpage(!nextpage)}>
+         <Row>
+          <Col>
+            <h3 className={background.click2}> 더보기 click!</h3>
+          </Col>
+          <Col>
+            <img className={background.nextpageButton2} src="https://img.icons8.com/nolan/96/1A6DFF/C822FF/chevron-left.png" alt="nextpage2"/>
+          </Col>
+        </Row>
+      </Container>}
+
+      
     </>
 
     );
