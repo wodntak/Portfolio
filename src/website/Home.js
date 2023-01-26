@@ -62,8 +62,8 @@ const Home = () => {
        {nextpage && <Mars checked={checked} marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>}
        {nextpage && <Jupiter checked={checked} jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>}
        {nextpage && <Saturn checked={checked} saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>}
-        <Uranus checked={checked} uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>
-        <Neptune checked={checked} neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>
+       {!nextpage && <Uranus checked={checked} uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>}
+       {!nextpage && <Neptune checked={checked} neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>}
         
       <Form>
         <Form.Check 
