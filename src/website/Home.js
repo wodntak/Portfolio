@@ -20,6 +20,8 @@ import { useState } from 'react';
 const Home = () => {
 
     const [checked, setChecked] = useState(false);
+    const [nextpage, setNextpage] = useState(false);
+
     const [mercuryshow, setMercury] = useState(false);
     const [venusshow, setVenus] = useState(false);
     const [earthshow, setEarth] = useState(false);
@@ -53,13 +55,13 @@ const Home = () => {
       <div id={background.star2}></div>
       <div id={background.star3}></div>
       {/* <div id={background.star4}></div> */}
-        <Sun checked={checked} mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow}/>
-        <Mercury checked={checked} mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>
-        <Venus checked={checked} venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>
-        <Earth checked={checked} earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>
-        <Mars checked={checked} marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>
-        <Jupiter checked={checked} jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>
-        <Saturn checked={checked} saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>
+       {nextpage && <Sun checked={checked} mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow}/>} 
+       {nextpage && <Mercury checked={checked} mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>}
+       {nextpage && <Venus checked={checked} venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>}
+       {nextpage && <Earth checked={checked} earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>}
+       {nextpage && <Mars checked={checked} marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>}
+       {nextpage && <Jupiter checked={checked} jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>}
+       {nextpage && <Saturn checked={checked} saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>}
         <Uranus checked={checked} uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>
         <Neptune checked={checked} neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>
         
@@ -74,14 +76,18 @@ const Home = () => {
       />
         
       </Form>
-      <div id={!checked ? background.mobilemode : background.desktopmode}>
+      <div id={!checked && nextpage ? background.mobilemode : background.desktopmode}>
         <img className={background.introicon} src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/null/external-Space-location-bearicons-outline-color-bearicons.png" alt="spaceship"/>
         <div className={background.h5_intro}> Menu </div>
-
       </div>   
+
+      <button id={background.nextpageButton}
+      onClick={() => setNextpage(!nextpage)}>
+        Click Me
+      </button>
     </>
 
     );
-};
+}
 
 export default Home;

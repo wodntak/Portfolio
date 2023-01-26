@@ -14,9 +14,13 @@ body {
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: hidden;
    // overflow-y: hidden;
 }
 
+body::-webkit-scrollbar{
+    display: none;
+}
 
 
 //배경 별 만드는 function
@@ -194,4 +198,11 @@ body {
 
     }
   
+}
+
+//버튼
+#nextpageButton{
+    position:fixed;
+    left: 40%;
+    top: 70%;
 }
