@@ -7,7 +7,7 @@ import sunmenuStyle from './MenuStyle/Sun_menu.module.scss';
 import { useState } from 'react';
 
 
-const Sun = ({ mercuryShow, venusShow, earthShow, marsShow, jupiterShow, saturnShow, uranusShow, neptuneShow, setNextpage, nextpage}, ...props) => {
+const Sun = ({ mercuryShow, venusShow, earthShow, marsShow, jupiterShow, saturnShow, uranusShow, neptuneShow, setNextpage, nextpage, swap, setSwap}, ...props) => {
     const [show, setShow] = useState(false);
 
     const handleClose = () => setShow(false);
@@ -27,7 +27,7 @@ const Sun = ({ mercuryShow, venusShow, earthShow, marsShow, jupiterShow, saturnS
         overlay={renderTooltip}
         >
 
-        <div onClick={toggleShow} className="me-2" id={sunmenuStyle.sun_menumode}>
+        <div onClick={toggleShow} className="me-2" id={sunmenuStyle.sun_menumode} nextpage={nextpage} swap={swap} onAnimationEnd={() => setSwap(0)}>
         </div>
         </OverlayTrigger>
         <Offcanvas id={sunmenuStyle.Offcanvas} show={show} onHide={handleClose} {...props}>

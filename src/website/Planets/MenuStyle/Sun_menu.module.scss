@@ -60,15 +60,11 @@
         width: 31.25vw;
         height: 52.083333333333336vw;
     }
-    
-    //오리지날
-    // width: 450px;
-    // height: 750px;
-    // right: 90%;
-    // box-shadow: inset 30px 0 40px 3px rgba(0,0,0,0.9),
-    // inset -10px 0 4px 1px rgba(255,255,255,0.3),
-    // inset 0 0 5px 90px rgba(255,200,0,0.4),
-    // 0 0 50px 50px rgba(255,0,0,0.3);
+}
+
+//태양 다음 페이지
+#sun_menumode[swap="1"]{
+    animation: swappage 5s 1;
 
 }
 //마우스 올리면 크기 크게
@@ -150,3 +146,13 @@
         font-size: 2.192448233861145vh;
     }
    
+
+//페이지 넘겨지는 애니메이션
+@keyframes swappage {
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+}       

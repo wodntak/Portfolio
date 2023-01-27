@@ -18,6 +18,7 @@ import { useState } from 'react';
 
 const Home = () => {
     const [nextpage, setNextpage] = useState(true);
+    const [swap, setSwap] = useState(0);
 
     const [mercuryshow, setMercury] = useState(false);
     const [venusshow, setVenus] = useState(false);
@@ -46,13 +47,25 @@ const Home = () => {
     const uranusShow = () => setUranus(true);
     const neptuneShow = () => setNeptune(true);
 
+    const delay = ms => new Promise(
+      resolve => setTimeout(resolve, ms)
+    );
+
+    const nextpagefunction = async event =>{
+      setSwap(1);
+      await delay(2000);  
+      setNextpage(!nextpage); 
+      console.log(swap);
+
+    }
+
     return (
-    <>
-      <div id={background.star1}></div>
-      <div id={background.star2}></div>
-      <div id={background.star3}></div>
-      <div id={background.star4}></div>
-       {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} />} 
+    <div id={background.bodyy}>
+      <div id={background.star1} swap={swap} onAnimationEnd={() => setSwap(0)}></div>
+      <div id={background.star2} ></div>
+      <div id={background.star3} ></div>
+      <div id={background.star4} swap={swap} onAnimationEnd={() => setSwap(0)}></div>
+       {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} swap={swap} setSwap={setSwap} />} 
        {nextpage && <Mercury mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>}
        {nextpage && <Venus venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>}
        {nextpage && <Earth earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>}
@@ -61,35 +74,24 @@ const Home = () => {
        {nextpage && <Saturn saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>}
        {!nextpage && <Uranus uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>}
        {!nextpage &&<Neptune neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>}
-        
-      {/* <Form>
-        <Form.Check 
-        type="switch"
-        id="custom-switch"
-        className={background.switch}
-        checked={checked}
-        label={checked ? "애니메이션 모드 (미완성)" : "메뉴 모드"}
-        onChange={(e) => setChecked(e.currentTarget.checked)} 
-      />
-        
-      </Form> */}
+      
       <div id={nextpage ? background.mobilemode : background.desktopmode}>
         <img className={background.introicon} src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/null/external-Space-location-bearicons-outline-color-bearicons.png" alt="spaceship"/>
         <div className={background.h5_intro}> Menu </div>
       </div>   
 
       {nextpage ?
-      <div id={background.more1} onClick={() => setNextpage(!nextpage)}>
+      <div id={background.more1} onClick={() => nextpagefunction()}>
         <p className={background.click1}> 더보기 click!</p>
         <img className={background.nextpageButton1} src="https://img.icons8.com/nolan/96/chevron-right.png" alt="nextpage1"/>
       </div>
-      : <div id={background.more2} onClick={() => setNextpage(!nextpage)}>
+      : <div id={background.more2} onClick={() => nextpagefunction()}>
           <img className={background.nextpageButton2} src="https://img.icons8.com/nolan/96/1A6DFF/C822FF/chevron-left.png" alt="nextpage2"/>
           <p className={background.click2}> 더보기 click!</p>
         </div>}
 
       
-    </>
+    </div>
 
     );
 }

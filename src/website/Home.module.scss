@@ -6,7 +6,6 @@
 }
 
 body {
-    //position: absolute;
     display: inline-block;
     background-color: black;
     color: white;
@@ -15,11 +14,15 @@ body {
     height: 100%;
     margin: 0;
     overflow: hidden;
-   // overflow-y: hidden;
 }
 
 body::-webkit-scrollbar{
     display: none;
+}
+
+#bodyy[swap="1"]{
+    animation: swappage1 5s 1;
+
 }
 
 
@@ -51,21 +54,25 @@ body::-webkit-scrollbar{
 }
 
 #star1{
-
     @include stars(2000, 0.2);
 }
 #star2{
-
     @include stars(2000, 0.4);
 }
 #star3{
-
     @include stars(2000,0.6);
 }
 #star4{
-
     @include stars(2000, 0);
 }
+
+#star1[swap="1"]{
+    animation: swappage 5s 1;
+}
+#star4[swap="1"]{
+    animation: swappage 5s 1;
+}
+
 
 //반짝반짝 애니메이션
 @keyframes glow {
@@ -436,22 +443,46 @@ body::-webkit-scrollbar{
     0% {
         left: 78%;
       }
-      50% {
+    50% {
         left: 80%;     
-      }
-      100%{
+    }
+    100%{
         left: 78%;
-      }
+    }
 }
 //버튼 애니메이션 (왼쪽)
 @keyframes arrow2 {
     0% {
         right: 63%;
       }
-      50% { 
+    50% { 
         right: 65%; 
-       }
-      100% {
+    }
+    100% {
         right: 63%;     
+    }
+}
+
+//페이지 넘겨지는 애니메이션
+@keyframes swappage {
+    from {
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+}     
+
+
+@keyframes swappage1{
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
       }
 }
