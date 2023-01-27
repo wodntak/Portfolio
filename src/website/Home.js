@@ -10,9 +10,6 @@ import Jupiter from './Planets/Jupiter';
 import Saturn from './Planets/Saturn';
 import Uranus from './Planets/Uranus';
 import Neptune from './Planets/Neptune';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
 import { useState } from 'react';
 
@@ -82,26 +79,14 @@ const Home = () => {
       </div>   
 
       {nextpage ?
-      <Container id={background.more1} onClick={() => setNextpage(!nextpage)}>
-        <Row >
-          <Col>
-            <h3 className={background.click1}> 더보기 click!</h3>
-          </Col>
-          <Col>
-            <img className={background.nextpageButton1} src="https://img.icons8.com/nolan/96/chevron-right.png" alt="nextpage1"/>
-          </Col>
-        </Row>
-      </Container>
-       : <Container id={background.more2} onClick={() => setNextpage(!nextpage)}>
-         <Row>
-          <Col>
-            <h3 className={background.click2}> 더보기 click!</h3>
-          </Col>
-          <Col>
-            <img className={background.nextpageButton2} src="https://img.icons8.com/nolan/96/1A6DFF/C822FF/chevron-left.png" alt="nextpage2"/>
-          </Col>
-        </Row>
-      </Container>}
+      <div id={background.more1} onClick={() => setNextpage(!nextpage)}>
+        <p className={background.click1}> 더보기 click!</p>
+        <img className={background.nextpageButton1} src="https://img.icons8.com/nolan/96/chevron-right.png" alt="nextpage1"/>
+      </div>
+      : <div id={background.more2} onClick={() => setNextpage(!nextpage)}>
+          <img className={background.nextpageButton2} src="https://img.icons8.com/nolan/96/1A6DFF/C822FF/chevron-left.png" alt="nextpage2"/>
+          <p className={background.click2}> 더보기 click!</p>
+        </div>}
 
       
     </>

@@ -171,67 +171,287 @@ body::-webkit-scrollbar{
     }
   
 }
-//버튼, 더보기 div
-#more1{
-    position: fixed;
-    width: 15vw;
-    height: 5vw;
-    left: 70%;
-    top: 70%;
-    animation-name: arrow1;
-    animation-duration: 2s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
+
+@media (max-width: 575px){
+    //모바일 세로
+
+    //버튼, 더보기 div (오른쪽)
+    #more1{
+        display: flex;
+        position: fixed;
+        left: 65%;
+        top: 105vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    //버튼, 더보기 div (왼쪽)
+    #more2{
+        display: flex;
+        position: fixed;
+        right: 65%;
+        top: 105vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow2;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    //h3 (오른쪽)
+    .click1{
+        font-size: 1.3vw;
+    }
+
+    //h3 (왼쪽)
+    .click2{
+        font-size: 1.3vw;
+    }
 }
 
-//h3 (오른쪽)
-.click1{
-    font-size: 1.3vw;
-    justify-content: center;
-    text-align: center;
+@media (min-width: 576px) and (max-width: 767px){
+    //모바일 가로
+     //버튼, 더보기 div (오른쪽)
+     #more1{
+        display: flex;
+        position: fixed;
+        left: 65%;
+        top: 40vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    //버튼, 더보기 div (왼쪽)
+    #more2{
+        display: flex;
+        position: fixed;
+        right: 65%;
+        top: 40vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow2;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    //h3 (오른쪽)
+    .click1{
+        font-size: 1.3vw;
+        margin-top: 0.7vw;
+    }
+    //h3 (왼쪽)
+    .click2{
+        font-size: 1.3vw;
+        margin-top: 0.7vw;
+    }
 }
 
+@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+    // 큰 모바일 가로
+     //버튼, 더보기 div (오른쪽)
+     #more1{
+        display: flex;
+        position: fixed;
+        left: 65%;
+        top: 35vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
 
-//버튼 (오른쪽)
-.nextpageButton1{
-    width: 4.4722222222222223vw;
-    height: 4.4722222222222223vw;
+    //버튼, 더보기 div (왼쪽)
+    #more2{
+        display: flex;
+        position: fixed;
+        right: 65%;
+        top: 35vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow2;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    //h3 (오른쪽)
+    .click1{
+        font-size: 1.3vw;
+        margin-top: 1vw;
+    }
+
+    //h3 (왼쪽)
+    .click2{
+        font-size: 1.3vw;
+        margin-top: 1vw;
+    }
 }
-//버튼 (왼쪽)
-.nextpageButton2{
-    position:fixed;
-    left: 20%;
-    top: 70%;
-    width: 4.4722222222222223vw;
-    height: 4.4722222222222223vw;
-    animation-name: arrow;
-    animation-direction: normal;
-    animation-duration: 6s;
-    animation-delay: 0s;
-    animation-iteration-count: infinite;
+
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+    // 테블릿 세로
+     //버튼, 더보기 div (오른쪽)
+     #more1{
+        display: flex;
+        position: fixed;
+        left: 65%;
+        top: 75vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    //버튼, 더보기 div (왼쪽)
+    #more2{
+        display: flex;
+        position: fixed;
+        right: 65%;
+        top: 75vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow2;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    //h3 (오른쪽)
+    .click1{
+        font-size: 2.3vw;
+    }
+
+    //h3 (왼쪽)
+    .click2{
+        font-size: 2.3vw;
+    }    
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    // 테블릿 가로
+     //버튼, 더보기 div (오른쪽)
+     #more1{
+        display: flex;
+        position: fixed;
+        left: 65%;
+        top: 50vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    //버튼, 더보기 div (왼쪽)
+    #more2{
+        display: flex;
+        position: fixed;
+        right: 65%;
+        top: 50vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow2;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    //h3 (오른쪽)
+    .click1{
+        font-size: 1.7vw;
+        margin-top: 0.5vw;
+    }
+
+    //h3 (왼쪽)
+    .click2{
+        font-size: 1.7vw;
+        margin-top: 0.5vw;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    // 데스크탑 일반
+    //버튼, 더보기 div (오른쪽)
+    #more1{
+        display: flex;
+        position: fixed;
+        left: 65%;
+        top: 40vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow1;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+
+    //버튼, 더보기 div (왼쪽)
+    #more2{
+        display: flex;
+        position: fixed;
+        right: 65%;
+        top: 40vw;
+        width: 32vw;
+        height: 8vw;
+        animation-name: arrow2;
+        animation-duration: 2s;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+    }
+    //h3 (오른쪽)
+    .click1{
+        font-size: 1.3vw;
+        margin-top: 1vw;
+    }
+
+    //h3 (왼쪽)
+    .click2{
+        font-size: 1.3vw;
+        margin-top: 1vw;
+    }    
+}
+    //버튼 (오른쪽)
+    .nextpageButton1{
+        width: 4.4722222222222223vw;
+        height: 4.4722222222222223vw;
+    }
+    //버튼 (왼쪽)
+    .nextpageButton2{
+        width: 4.4722222222222223vw;
+        height: 4.4722222222222223vw;
+    }
 
 //버튼 애니메이션 (오른쪽)
 @keyframes arrow1 {
     0% {
-        left: 73%;
+        left: 78%;
       }
       50% {
-        left: 75%;     
+        left: 80%;     
       }
       100%{
-        left: 73%;
+        left: 78%;
       }
 }
 //버튼 애니메이션 (왼쪽)
 @keyframes arrow2 {
     0% {
-        left: 0;
+        right: 63%;
       }
       50% { 
-        left: calc(80% - 200px); 
+        right: 65%; 
        }
       100% {
-        left: 0;     
+        right: 63%;     
       }
 }
