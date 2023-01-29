@@ -22,9 +22,7 @@ body::-webkit-scrollbar{
 
 #bodyy[swap="1"]{
     animation: swappage1 5s 1;
-
 }
-
 
 //배경 별 만드는 function
 @function generate_star($number){
@@ -57,10 +55,10 @@ body::-webkit-scrollbar{
     @include stars(2000, 0.2);
 }
 #star2{
-    @include stars(2000, 0.4);
+    @include stars(2000, 1.4);
 }
 #star3{
-    @include stars(2000,0.6);
+    @include stars(2000, 1.6);
 }
 #star4{
     @include stars(2000, 0);
@@ -81,14 +79,7 @@ body::-webkit-scrollbar{
     100% {opacity: 0;}
 }
 
-//메뉴/애니메이션 스위치
-.switch{
-    position: fixed;
-    margin-left: 45%;
-    font-size: 1.8270401948842874vh;
-}
-
-
+//모바일에서만 우주선 보이게
 #desktopmode{
     visibility: hidden;
 }
@@ -149,6 +140,17 @@ body::-webkit-scrollbar{
     }
 }
 
+//페이지 이동시 메뉴 사라지게 (우주선 아이콘)
+#mobilemode[pagenumber="1"]{
+    animation: disappear 2s 1;
+
+}
+
+#mobilemode[pagenumber="-1"]{
+    animation: appear 3s 1;
+
+}
+
 //우주인헬멧 아이콘
 .introicon{
     fill: white;
@@ -168,15 +170,10 @@ body::-webkit-scrollbar{
 
     @media (orientation:portrait){
         font-size: 2vw;
-
-
     }
     @media (orientation:landscape){
         font-size: 1.5vw;
-
-
     }
-  
 }
 
 @media (max-width: 575px){
@@ -336,7 +333,6 @@ body::-webkit-scrollbar{
     .click1{
         font-size: 2.3vw;
     }
-
     //h3 (왼쪽)
     .click2{
         font-size: 2.3vw;
@@ -469,20 +465,38 @@ body::-webkit-scrollbar{
         -webkit-transform: rotate(0deg);
         -o-transform: rotate(0deg);
         transform: rotate(0deg);
-      }
-      to {
+    }
+    to {
         -webkit-transform: rotate(360deg);
         -o-transform: rotate(360deg);
         transform: rotate(360deg);
-      }
+    }
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }     
 
-
-@keyframes swappage1{
+//물체 사라지는 애니메이션
+@keyframes disappear {
     from {
         opacity: 1;
       }
       to {
         opacity: 0;
+      }
+}     
+//물체 다시 나타나는 애니메이션
+@keyframes appear {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
       }
 }

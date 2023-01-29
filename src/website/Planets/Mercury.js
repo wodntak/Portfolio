@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 
-const Mercury = ({ mercuryshow, mercuryClose, mercuryShow}) => {
+const Mercury = ({ mercuryshow, mercuryClose, mercuryShow, pagenumber}) => {
 
 
     const renderTooltip = (props) => (
@@ -24,7 +24,7 @@ const Mercury = ({ mercuryshow, mercuryClose, mercuryShow}) => {
         placement="top"
         overlay={renderTooltip}
         >
-          <div id={mercurymenu.mercury_menumode} onClick={mercuryShow}/>
+          <div id={mercurymenu.mercury_menumode} onClick={mercuryShow} pagenumber={pagenumber}/>
         </OverlayTrigger>
 
         <Modal

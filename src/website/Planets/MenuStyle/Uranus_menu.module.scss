@@ -167,4 +167,21 @@
             margin-left: -15px;
             flex:55%
         }
-    
+//물체 사라지는 애니메이션
+@keyframes disappear {
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+}     
+//물체 다시 나타나는 애니메이션
+@keyframes appear {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}

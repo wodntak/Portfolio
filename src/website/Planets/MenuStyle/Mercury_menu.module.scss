@@ -55,7 +55,16 @@
         top: 24vw;
     }
 }
+//사라지고 나타나는 애니메이션 페이지
+#mercury_menumode[pagenumber="1"]{
+    animation: disappear 2s 1;
 
+}
+
+#mercury_menumode[pagenumber="-1"]{
+    animation: appear 3s 1;
+
+}
 #mercury_menumode:hover{
     transform: scale(1.15);
     transition: transform 2s;
@@ -183,25 +192,25 @@
 
 //가로 모달
 @media (orientation:landscape){
-        .Modal_Header{
-           font-size: 20px;
-           background-color: black;
-           color: white;
-           border: white 2px solid;
+    .Modal_Header{
+        font-size: 20px;
+        background-color: black;
+        color: white;
+        border: white 2px solid;
+    }
+    .Modal_Title{
+        font-size: 4.0833333333333335vh;
+    }
+    .Modal_Body{
+        background-color: black;
+        color: white;
+        border: white 1px solid;
+        font-size: 2.5vh;
+
+        h3{
+        font-size: 3vh;
         }
-        .Modal_Title{
-            font-size: 4.0833333333333335vh;
-        }
-        .Modal_Body{
-           background-color: black;
-           color: white;
-           border: white 1px solid;
-           font-size: 2.5vh;
-    
-           h3{
-            font-size: 3vh;
-           }
-        }
+    }
     #Carousel{
         height: 70vh;
         width: 100%;
@@ -239,4 +248,22 @@
                 font-family: 'IM_Hyemin-Bold';
                 font-size: 2.4vh;
             }
+}
+//물체 사라지는 애니메이션
+@keyframes disappear {
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+}     
+//물체 다시 나타나는 애니메이션
+@keyframes appear {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
 }

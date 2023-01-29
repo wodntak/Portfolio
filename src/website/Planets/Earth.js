@@ -12,7 +12,7 @@ import { CarouselItem } from 'react-bootstrap';
 
 
 
-const Earth = ({ earthshow, earthClose, earthShow}) => {
+const Earth = ({ earthshow, earthClose, earthShow, pagenumber}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={earthmenu.Tooltip} {...props}>
@@ -28,7 +28,7 @@ const Earth = ({ earthshow, earthClose, earthShow}) => {
         placement="top"
         overlay={renderTooltip}
         >
-        <div id={earthmenu.earth_menumode} onClick={earthShow}/>
+        <div id={earthmenu.earth_menumode} onClick={earthShow} pagenumber={pagenumber}/>
         </OverlayTrigger>
 
         <Modal

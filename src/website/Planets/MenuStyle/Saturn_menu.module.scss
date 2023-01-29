@@ -191,6 +191,49 @@
     transform: scale(1.08);
     transition: transform 2s;
 }
+//사라지고 나타나는 애니메이션 페이지
+#saturn_menumode[pagenumber="1"]{
+    animation: disappear 2s 1;
+
+}
+
+#saturn_menumode[pagenumber="-1"]{
+    animation: appear 3s 1;
+
+}
+
+//사라지고 나타나는 애니메이션 페이지
+#saturn_bottom[pagenumber="1"]{
+    animation: disappear 2s 1;
+
+}
+
+#saturn_bottom[pagenumber="-1"]{
+    animation: appear 3s 1;
+
+}
+
+//사라지고 나타나는 애니메이션 페이지
+#saturn_top[pagenumber="1"]{
+    animation: disappear 2s 1;
+
+}
+
+#saturn_top[pagenumber="-1"]{
+    animation: appear 3s 1;
+
+}
+
+//사라지고 나타나는 애니메이션 페이지
+#saturn_ring[pagenumber="1"]{
+    animation: disappear 2s 1;
+
+}
+
+#saturn_ring[pagenumber="-1"]{
+    animation: appear 3s 1;
+
+}
 
 #Tooltip {
     font-family: 'SDSamliphopangche_Outline';
@@ -286,5 +329,22 @@
         border: #8f8787 1px solid;
     }
 }        
-
+//물체 사라지는 애니메이션
+@keyframes disappear {
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+}     
+//물체 다시 나타나는 애니메이션
+@keyframes appear {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}
     

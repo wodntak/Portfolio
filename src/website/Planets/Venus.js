@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 import venusmenu from './MenuStyle/Venus_menu.module.scss'
 
 
-const Venus = ({ venusshow, venusClose, venusShow}) => {
+const Venus = ({ venusshow, venusClose, venusShow, pagenumber}) => {
 
     const renderTooltip = (props) => (
         <Tooltip id={venusmenu.Tooltip} {...props}>
@@ -24,7 +24,7 @@ const Venus = ({ venusshow, venusClose, venusShow}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-        <div id={venusmenu.venus_menumode} onClick={venusShow}/>
+        <div id={venusmenu.venus_menumode} onClick={venusShow} pagenumber={pagenumber}/>
         </OverlayTrigger>
 
         <Modal

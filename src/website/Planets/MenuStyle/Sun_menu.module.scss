@@ -62,9 +62,14 @@
     }
 }
 
-//태양 다음 페이지
-#sun_menumode[swap="1"]{
-    animation: swappage 5s 1;
+//태양 애니메이션 페이지
+#sun_menumode[pagenumber="1"]{
+    animation: disappear 2s 1;
+
+}
+
+#sun_menumode[pagenumber="-1"]{
+    animation: appear 3s 1;
 
 }
 //마우스 올리면 크기 크게
@@ -147,12 +152,21 @@
     }
    
 
-//페이지 넘겨지는 애니메이션
-@keyframes swappage {
+//물체 사라지는 애니메이션
+@keyframes disappear {
     from {
         opacity: 1;
       }
       to {
         opacity: 0;
       }
-}       
+}     
+//물체 다시 나타나는 애니메이션
+@keyframes appear {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}

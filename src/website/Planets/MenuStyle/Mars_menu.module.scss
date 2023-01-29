@@ -46,6 +46,16 @@
         top: 22.7vw;
     }
 }
+//사라지고 나타나는 애니메이션 페이지
+#mars_menumode[pagenumber="1"]{
+    animation: disappear 2s 1;
+
+}
+
+#mars_menumode[pagenumber="-1"]{
+    animation: appear 3s 1;
+
+}
 
 #mars_menumode:hover{
     transform: scale(1.15);
@@ -148,5 +158,23 @@
     }
 }       
     
+//물체 사라지는 애니메이션
+@keyframes disappear {
+    from {
+        opacity: 1;
+      }
+      to {
+        opacity: 0;
+      }
+}     
+//물체 다시 나타나는 애니메이션
+@keyframes appear {
+    from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+}
         
     

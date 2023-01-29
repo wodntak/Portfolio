@@ -9,7 +9,7 @@ import Modal from 'react-bootstrap/Modal';
 import saturnmenu from './MenuStyle/Saturn_menu.module.scss';
 
 
-const Saturn = ({ saturnshow, saturnClose, saturnShow}) => {
+const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={saturnmenu.Tooltip} {...props}>
@@ -26,8 +26,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow}) => {
         overlay={renderTooltip}
         >
             
-            <section id={saturnmenu.saturn_menumode} onClick={saturnShow}> <section id={saturnmenu.saturn_bottom}/> <section id={saturnmenu.saturn_ring}/> 
-            <section id={saturnmenu.saturn_top} /></section>
+            <section id={saturnmenu.saturn_menumode} onClick={saturnShow} pagenumber={pagenumber}> <section id={saturnmenu.saturn_bottom}/> <section id={saturnmenu.saturn_ring} pagenumber={pagenumber}/> 
+            <section id={saturnmenu.saturn_top} pagenumber={pagenumber}/></section>
         </OverlayTrigger>
 
         <Modal

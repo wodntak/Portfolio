@@ -17,7 +17,11 @@ import { useState } from 'react';
 
 
 const Home = () => {
+    //행성 위치 바꾸는 요소
     const [nextpage, setNextpage] = useState(true);
+    //페이지 번호 체크 요소
+    const [pagenumber, setPagenumber] = useState(0);
+    //페이지 바뀔때 애니메이션 요소
     const [swap, setSwap] = useState(0);
 
     const [mercuryshow, setMercury] = useState(false);
@@ -54,9 +58,7 @@ const Home = () => {
     const nextpagefunction = async event =>{
       setSwap(1);
       await delay(2000);  
-      setNextpage(!nextpage); 
-      console.log(swap);
-
+      setNextpage((nextpage) => !nextpage); 
     }
 
     return (
@@ -65,27 +67,27 @@ const Home = () => {
       <div id={background.star2} ></div>
       <div id={background.star3} ></div>
       <div id={background.star4} swap={swap} onAnimationEnd={() => setSwap(0)}></div>
-       {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} swap={swap} setSwap={setSwap} />} 
-       {nextpage && <Mercury mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow}/>}
-       {nextpage && <Venus venusshow={venusshow} venusClose={venusClose} venusShow={venusShow}/>}
-       {nextpage && <Earth earthshow={earthshow} earthClose={earthClose} earthShow={earthShow}/>}
-       {nextpage && <Mars marsshow={marsshow} marsClose={marsClose} marsShow={marsShow}/>}
-       {nextpage && <Jupiter jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow}/>}
-       {nextpage && <Saturn saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow}/>}
-       {!nextpage && <Uranus uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow}/>}
-       {!nextpage &&<Neptune neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow}/>}
+       {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} pagenumber={pagenumber} />} 
+       {nextpage && <Mercury mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow} pagenumber={pagenumber}/>}
+       {nextpage && <Venus venusshow={venusshow} venusClose={venusClose} venusShow={venusShow} pagenumber={pagenumber}/>}
+       {nextpage && <Earth earthshow={earthshow} earthClose={earthClose} earthShow={earthShow} pagenumber={pagenumber}/>}
+       {nextpage && <Mars marsshow={marsshow} marsClose={marsClose} marsShow={marsShow} pagenumber={pagenumber}/>}
+       {nextpage && <Jupiter jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow} pagenumber={pagenumber}/>}
+       {nextpage && <Saturn saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow} pagenumber={pagenumber}/>}
+       {!nextpage && <Uranus uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow} pagenumber={pagenumber}/>}
+       {!nextpage &&<Neptune neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow} pagenumber={pagenumber}/>}
       
-      <div id={nextpage ? background.mobilemode : background.desktopmode}>
+      <div id={nextpage ? background.mobilemode : background.desktopmode} pagenumber={pagenumber}>
         <img className={background.introicon} src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/null/external-Space-location-bearicons-outline-color-bearicons.png" alt="spaceship"/>
         <div className={background.h5_intro}> Menu </div>
-      </div>   
+      </div>
 
       {nextpage ?
-      <div id={background.more1} onClick={() => nextpagefunction()}>
+      <div id={background.more1} onClick={() => {nextpagefunction(); setPagenumber(1);}}>
         <p className={background.click1}> 더보기 click!</p>
         <img className={background.nextpageButton1} src="https://img.icons8.com/nolan/96/chevron-right.png" alt="nextpage1"/>
       </div>
-      : <div id={background.more2} onClick={() => nextpagefunction()}>
+      : <div id={background.more2} onClick={() => {nextpagefunction(); setPagenumber(-1);}}>
           <img className={background.nextpageButton2} src="https://img.icons8.com/nolan/96/1A6DFF/C822FF/chevron-left.png" alt="nextpage2"/>
           <p className={background.click2}> 더보기 click!</p>
         </div>}

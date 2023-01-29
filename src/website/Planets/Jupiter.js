@@ -8,7 +8,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import jupitermenu from './MenuStyle/Jupiter_menu.module.scss';
 
-const Jupiter = ({ jupitershow, jupiterClose, jupiterShow}) => {
+const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={jupitermenu.Tooltip} {...props}>
@@ -24,7 +24,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow}) => {
         placement="top"
         overlay={renderTooltip}
         >
-          <div id={jupitermenu.jupiter_menumode} onClick={jupiterShow}/>
+          <div id={jupitermenu.jupiter_menumode} onClick={jupiterShow} pagenumber={pagenumber}/>
         </OverlayTrigger>
 
         <Modal

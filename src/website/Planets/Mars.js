@@ -9,7 +9,7 @@ import Col from 'react-bootstrap/Col';
 import marsmenu from './MenuStyle/Mars_menu.module.scss';
 
 
-const Mars = ({ marsshow, marsClose, marsShow}) => {
+const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={marsmenu.Tooltip} {...props}>
@@ -25,7 +25,7 @@ const Mars = ({ marsshow, marsClose, marsShow}) => {
       placement="bottom"
       overlay={renderTooltip}
       >
-      <div id={marsmenu.mars_menumode} onClick={marsShow}/>
+      <div id={marsmenu.mars_menumode} onClick={marsShow} pagenumber={pagenumber}/>
       </OverlayTrigger>
 
       <Modal
