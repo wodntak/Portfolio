@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 // import Col from 'react-bootstrap/Col';
 import neptunemenu from './MenuStyle/Neptune_menu.module.scss';
 
-const Neptune = ({neptuneshow, neptuneClose, neptuneShow}) => {
+const Neptune = ({neptuneshow, neptuneClose, neptuneShow ,pagenumber}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={neptunemenu.Tooltip} {...props}>
@@ -24,7 +24,7 @@ const Neptune = ({neptuneshow, neptuneClose, neptuneShow}) => {
         placement="bottom"
         overlay={renderTooltip}
         >
-          <div id={neptunemenu.neptune_menumode} onClick={neptuneShow}/>
+          <div id={neptunemenu.neptune_menumode} onClick={neptuneShow} pagenumber={pagenumber}/>
         </OverlayTrigger>
 
         <Modal

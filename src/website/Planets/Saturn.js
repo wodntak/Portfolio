@@ -26,8 +26,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
         overlay={renderTooltip}
         >
             
-            <section id={saturnmenu.saturn_menumode} onClick={saturnShow} pagenumber={pagenumber}> <section id={saturnmenu.saturn_bottom}/> <section id={saturnmenu.saturn_ring} pagenumber={pagenumber}/> 
-            <section id={saturnmenu.saturn_top} pagenumber={pagenumber}/></section>
+            <section id={saturnmenu.saturn_menumode} onClick={saturnShow} pagenumber={pagenumber}> <section id={saturnmenu.saturn_bottom} /> <section id={saturnmenu.saturn_ring} pagenumber={pagenumber}/> 
+            <section id={saturnmenu.saturn_top} /></section>
         </OverlayTrigger>
 
         <Modal

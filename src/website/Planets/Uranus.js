@@ -8,7 +8,7 @@ import Modal from 'react-bootstrap/Modal';
 // import Col from 'react-bootstrap/Col';
 import uranusmenu from './MenuStyle/Uranus_menu.module.scss';
 
-const Uranus = ({ uranusshow, uranusClose, uranusShow}) => {
+const Uranus = ({ uranusshow, uranusClose, uranusShow, pagenumber}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={uranusmenu.Tooltip} {...props}>
@@ -24,7 +24,7 @@ const Uranus = ({ uranusshow, uranusClose, uranusShow}) => {
         placement="top"
         overlay={renderTooltip}
         >
-          <div id={uranusmenu.uranus_menumode} onClick={uranusShow}/>
+          <div id={uranusmenu.uranus_menumode} onClick={uranusShow} pagenumber={pagenumber}/>
         </OverlayTrigger>
 
         <Modal

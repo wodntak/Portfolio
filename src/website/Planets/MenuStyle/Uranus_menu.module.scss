@@ -58,7 +58,16 @@
     }
 }
 
+//사라지고 나타나는 애니메이션 페이지
+#uranus_menumode[pagenumber="-1"]{
+    animation: disappear 2s 1;
 
+}
+
+#uranus_menumode[pagenumber="1"]{
+    animation: appear 3s 1;
+
+}
 
 #uranus_menumode:hover{
     transform: scale(1.15);
@@ -171,17 +180,21 @@
 @keyframes disappear {
     from {
         opacity: 1;
+        scale: 1;
       }
       to {
         opacity: 0;
+        scale: 0.2;
       }
 }     
 //물체 다시 나타나는 애니메이션
 @keyframes appear {
     from {
         opacity: 0;
+        scale: 0.2;
       }
       to {
         opacity: 1;
+        scale: 1;
       }
 }
