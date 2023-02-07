@@ -46,22 +46,24 @@ body::-webkit-scrollbar{
     background-color: white;
     border-radius: 50%;
     animation-name: glow;
-    animation-duration: 1.7s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-delay: $delay + s;
 }
 
 #star1{
-    @include stars(2000, 0.2);
+    position: fixed;
+    @include stars(1920, 0.2);
 }
 #star2{
-    @include stars(2000, 1.4);
+    @include stars(1920, 1.5);
 }
 #star3{
-    @include stars(2000, 1.6);
+    @include stars(1920, 2);
 }
 #star4{
-    @include stars(2000, 0);
+    position: fixed;
+    @include stars(1920, 0);
 }
 
 #star1[swap="1"]{
