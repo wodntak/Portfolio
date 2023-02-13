@@ -224,17 +224,6 @@
 
 }
 
-//사라지고 나타나는 애니메이션 페이지
-#saturn_ring[pagenumber="1"]{
-    animation: disappear 2s 1;
-
-}
-
-#saturn_ring[pagenumber="-1"]{
-    animation: appear 3s 1;
-
-}
-
 #Tooltip {
     font-family: 'SDSamliphopangche_Outline';
     position: fixed;
@@ -350,4 +339,4 @@
         opacity: 1;
         scale: 1;
       }
-} 
+}
