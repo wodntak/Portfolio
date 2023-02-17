@@ -50,7 +50,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <Carousel.Item>
                       <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/Eruditemain.png"
+                        src="./personal/Home.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -58,7 +58,31 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <Carousel.Item>
                       <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/showcase.png"
+                        src="./personal/About.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/Resume.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/Skills.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/Contact.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -71,28 +95,16 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   </Col>
                 </Row>
                 <Row className={jupitermenu.contentsRow}>
-                <Col xs={4} md={6} lg={6} className={jupitermenu.contenttext}>
+                <Col xs={4} md={6} lg={3} className={jupitermenu.contenttext}>
                   웹사이트의 footer 부분에는 처음페이지로 돌아갈 수 있는 버튼과 웹사이트 방문자의 숫자를 표시하였습니다. 방문자 숫자는 데이터베이스에 따로 저장 되어 누적 방문자 숫자를 표시합니다.
                   </Col>
-                  <Col xs={8} md={6} lg={6} className={jupitermenu.contentimageCol}>
-                  <Carousel fade interval={5000} touch={false} controls={false} pause={'hover'} >
-                    <Carousel.Item>
+                  <Col xs={8} md={6} lg={9} className={jupitermenu.contentimageCol}>
                       <img
-                        id={jupitermenu.contentimage}
-                        src="./Erudite/Login_scene.png"
+                        id={jupitermenu.longimage}
+                        src="./personal/footer.png"
                         className='img-thumbnail'
                         alt='...'
                       />
-                    </Carousel.Item>
-                    <Carousel.Item>
-                      <img
-                        id={jupitermenu.contentimage}
-                        src="./Erudite/Login_scene2.png"
-                        className='img-thumbnail'
-                        alt='...'
-                      />
-                    </Carousel.Item>
-                  </Carousel>
                   </Col>
                 </Row>
               </Container>
@@ -102,11 +114,11 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
             <Container id={jupitermenu.firstpage}>
                 <Row className={jupitermenu.contentsRow}>
                   <Col xs={8} md={6} lg={6} className={jupitermenu.contentimageCol}>
-                  <Carousel fade interval={5000} touch={false} controls={false} pause={'hover'}>
+                  <Carousel fade interval={5000} touch={false} controls={false} pause={'hover'} variant="dark">
                     <Carousel.Item>
                       <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/Game4(treasure).png"
+                        src="./personal/signin.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -114,7 +126,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <Carousel.Item>
                       <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/Game4.png"
+                        src="./personal/register.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -134,7 +146,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   <Col xs={8} md={6} lg={6} className={jupitermenu.contentimageCol}>
                   <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/game_result.png"
+                        src="./"
                         className='img-thumbnail'
                         alt='...'
                       />

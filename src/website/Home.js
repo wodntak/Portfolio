@@ -67,7 +67,7 @@ const Home = () => {
       <div id={background.star2} ></div>
       <div id={background.star3} ></div>
       <div id={background.star4} swap={swap} onAnimationEnd={() => setSwap(0)}></div>
-       {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} pagenumber={pagenumber} />} 
+       {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} pagenumber={pagenumber} setPagenumber={setPagenumber}/>} 
        {nextpage && <Mercury mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow} pagenumber={pagenumber}/>}
        {nextpage && <Venus venusshow={venusshow} venusClose={venusClose} venusShow={venusShow} pagenumber={pagenumber}/>}
        {nextpage && <Earth earthshow={earthshow} earthClose={earthClose} earthShow={earthShow} pagenumber={pagenumber}/>}
@@ -75,7 +75,7 @@ const Home = () => {
        {nextpage && <Jupiter jupitershow={jupitershow} jupiterClose={jupiterClose} jupiterShow={jupiterShow} pagenumber={pagenumber}/>}
        {nextpage && <Saturn saturnshow={saturnshow} saturnClose={saturnClose} saturnShow={saturnShow} pagenumber={pagenumber}/>}
        {!nextpage && <Uranus uranusshow={uranusshow} uranusClose={uranusClose} uranusShow={uranusShow} pagenumber={pagenumber}/>}
-       {!nextpage &&<Neptune neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow} pagenumber={pagenumber}/>}
+       {!nextpage &&<Neptune neptuneshow={neptuneshow} neptuneClose={neptuneClose} neptuneShow={neptuneShow} pagenumber={pagenumber} />}
       
       <div id={nextpage ? background.mobilemode : background.desktopmode} pagenumber={pagenumber}>
         <img className={background.introicon} src="https://img.icons8.com/external-bearicons-outline-color-bearicons/64/null/external-Space-location-bearicons-outline-color-bearicons.png" alt="spaceship"/>
@@ -83,15 +83,14 @@ const Home = () => {
       </div>
 
       {nextpage ?
-      <div id={background.more1} onClick={() => {nextpagefunction(); setPagenumber(1);}}>
+      <div id={background.more1} onClick={() => {setPagenumber(1); nextpagefunction();}}>
         <p className={background.click1}> 더보기 click!</p>
         <img className={background.nextpageButton1} src="https://img.icons8.com/nolan/96/chevron-right.png" alt="nextpage1"/>
       </div>
-      : <div id={background.more2} onClick={() => {nextpagefunction(); setPagenumber(-1);}}>
+      : <div id={background.more2} onClick={() => {setPagenumber(-1); nextpagefunction();}}>
           <img className={background.nextpageButton2} src="https://img.icons8.com/nolan/96/1A6DFF/C822FF/chevron-left.png" alt="nextpage2"/>
           <p className={background.click2}> 더보기 click!</p>
         </div>}
-
       
     </div>
 
