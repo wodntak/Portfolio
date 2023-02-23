@@ -170,7 +170,7 @@
 @media (max-width: 575px){
     //모바일 세로
     .contentsRow{
-        margin-bottom: 13vh;
+        margin-bottom: 11vh;
     }
         .contentimageCol{
             margin: auto 0;
@@ -191,6 +191,7 @@
             margin: auto 0;
             margin-top: 5vw;
            margin-left: 0px;
+           margin-bottom: 5vw;
             font-family: 'IM_Hyemin-Bold';
         }
         .span{
@@ -321,7 +322,7 @@
 @media (min-width: 1200px) {
     // 데스크탑 일반
     .contentsRow{
-            margin-bottom: 5vw;
+            margin-bottom: 4vw;
     }
         .contentimageCol{
             margin: auto 0;

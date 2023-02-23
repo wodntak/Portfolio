@@ -49,7 +49,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
             <Carousel.Item>
               <Container id={marsmenu.firstpage}>
                 <Row className={marsmenu.contentsRow}>
-                  <Col xs={8} md={6} lg={6} className={marsmenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={6} className={marsmenu.contentimageCol}>
                   <Carousel fade interval={5000} touch={true} controls={false} pause={'hover'} variant="dark">
                     <Carousel.Item>
                       <img
@@ -69,16 +69,16 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                     </Carousel.Item>
                   </Carousel>
                   </Col>
-                  <Col xs={4} md={6} lg={6} className={marsmenu.contenttext}>
+                  <Col xs={12} md={6} lg={6} className={marsmenu.contenttext}>
                     <b>Erudite</b>는 대학교 4학년 그룹 프로젝트의 팀명이며, 이 때 진행했던 프로젝트는 "First Steps to Reading Fluency"입니다. 영유아들이 게임을 통해 보다 쉽게 영단어의 발음을 익히기 쉽게하기 위해 제작되었습니다.
     
                   </Col>
                 </Row>
                 <Row className={marsmenu.contentsRow}>
-                <Col xs={4} md={6} lg={6} className={marsmenu.contenttext}>
+                <Col xs={12} md={6} lg={6} className={marsmenu.contenttext}>
                     게임의 로그인 화면입니다. 영유아들이 쉽게 로그인하기 위해 그림으로 비밀번호를 대채하였으며 정보 보호를 위해 비밀번호는 데이터베이스에 저장될때 암호화하여 저장하였습니다.
                   </Col>
-                  <Col xs={8} md={6} lg={6} className={marsmenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={6} className={marsmenu.contentimageCol}>
                   <Carousel fade interval={5000} touch={false} controls={false} pause={'hover'} >
                     <Carousel.Item>
                       <img
@@ -105,7 +105,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
             <Carousel.Item>
             <Container id={marsmenu.firstpage}>
                 <Row className={marsmenu.contentsRow}>
-                  <Col xs={8} md={6} lg={6} className={marsmenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={6} className={marsmenu.contentimageCol}>
                   <Carousel fade interval={5000} touch={false} controls={false} pause={'hover'}>
                     <Carousel.Item>
                       <img
@@ -125,15 +125,15 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                     </Carousel.Item>
                   </Carousel>
                   </Col>
-                  <Col xs={4} md={6} lg={6} className={marsmenu.contenttext}>
+                  <Col xs={12} md={6} lg={6} className={marsmenu.contenttext}>
                     게임의 진행화면입니다. 각 단어의 소리와 함께 카운트 다운이 시작되며 클릭시 애니메이션과 함께 정답은 다이아몬드, 오답은 돌덩이로 나타냈습니다.
                   </Col>
                 </Row>
                 <Row className={marsmenu.contentsRow}>
-                <Col xs={4} md={6} lg={6} className={marsmenu.contenttext}>
+                <Col xs={12} md={6} lg={6} className={marsmenu.contenttext}>
                     게임 결과 화면입니다. 정확도에 따라 문구가 다르게 나타나며 게임 종료시 결과는 웹사이트로 보내져 기록되게 됩니다.
                   </Col>
-                  <Col xs={8} md={6} lg={6} className={marsmenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={6} className={marsmenu.contentimageCol}>
                   <img
                         id={marsmenu.contentimage}
                         src="./Erudite/game_result.png"

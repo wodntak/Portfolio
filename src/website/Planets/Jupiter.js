@@ -45,7 +45,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
         <Carousel.Item>
               <Container id={jupitermenu.firstpage}>
                 <Row className={jupitermenu.contentsRow}>
-                  <Col xs={8} md={6} lg={6} className={jupitermenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={6} className={jupitermenu.contentimageCol}>
                   <Carousel fade interval={5000} touch={true} controls={false} pause={'hover'} variant="dark">
                     <Carousel.Item>
                       <img
@@ -89,16 +89,16 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     </Carousel.Item>
                   </Carousel>
                   </Col>
-                  <Col xs={4} md={6} lg={6} className={jupitermenu.contenttext}>
+                  <Col xs={12} md={6} lg={6} className={jupitermenu.contenttext}>
                   HTML, CSS, Javascript로 처음 제작해본 웹사이트입니다. 추후에 백엔드를 추가 함으로써 PHP로 제작하였습니다. 웹사이트를 제작할때 페이지 이동 없이 하나의 페이지에
                   모든 정보가 들어갈 수 있도록 스크롤하여 다음 페이지를 보는 형식으로 제작되었습니다.    
                   </Col>
                 </Row>
                 <Row className={jupitermenu.contentsRow}>
-                <Col xs={4} md={6} lg={3} className={jupitermenu.contenttext}>
+                <Col xs={12} md={6} lg={3} className={jupitermenu.contenttext}>
                   웹사이트의 footer 부분에는 처음페이지로 돌아갈 수 있는 버튼과 웹사이트 방문자의 숫자를 표시하였습니다. 방문자 숫자는 데이터베이스에 따로 저장 되어 누적 방문자 숫자를 표시합니다.
                   </Col>
-                  <Col xs={8} md={6} lg={9} className={jupitermenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={9} className={jupitermenu.contentimageCol}>
                       <img
                         id={jupitermenu.longimage}
                         src="./personal/footer.png"
@@ -113,7 +113,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
             <Carousel.Item>
             <Container id={jupitermenu.firstpage}>
                 <Row className={jupitermenu.contentsRow}>
-                  <Col xs={8} md={6} lg={6} className={jupitermenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={6} className={jupitermenu.contentimageCol}>
                   <Carousel fade interval={5000} touch={false} controls={false} pause={'hover'} variant="dark">
                     <Carousel.Item>
                       <img
@@ -149,17 +149,17 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     </Carousel.Item>
                   </Carousel>
                   </Col>
-                  <Col xs={4} md={6} lg={6} className={jupitermenu.contenttext}>
+                  <Col xs={12} md={6} lg={6} className={jupitermenu.contenttext}>
                     로그인과 회원가입 화면입니다. 이름, 이메일, 아이디 형식을 정함으로 방문자들이 형식에 맞게 진행해야 로그인 및 회원가입이 진행되도록 하였습니다. 만약 형식에 맞지 않게 회원가입을 진행하였을시에는
                     alert창으로 잘못된 부분을 알려줄 수 있도록 제작하였습니다.
                   </Col>
                 </Row>
                 <Row className={jupitermenu.contentsRow}>
-                <Col xs={4} md={6} lg={3} className={jupitermenu.contenttext}>
+                <Col xs={12} md={6} lg={3} className={jupitermenu.contenttext}>
                     로그인이 성공했을때 보게 되는 페이지 입니다. 사용자의 이름을 표시하고 로그아웃을 누를 시 처음 화면으로 돌아가게 됩니다. My Messages 버튼을 누를 시 사용자가 보냈던 메세지들을
                     한번에 확인 할 수 있도록 하였습니다.
                   </Col>
-                  <Col xs={8} md={6} lg={9} className={jupitermenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={9} className={jupitermenu.contentimageCol}>
                   <img
                         id={jupitermenu.longimage2}
                         src="./personal/loggedin.png"
