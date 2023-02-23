@@ -131,6 +131,22 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         alt='...'
                       />
                     </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/error1.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/error2.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
                   </Carousel>
                   </Col>
                   <Col xs={4} md={6} lg={6} className={jupitermenu.contenttext}>
@@ -139,14 +155,14 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   </Col>
                 </Row>
                 <Row className={jupitermenu.contentsRow}>
-                <Col xs={4} md={6} lg={6} className={jupitermenu.contenttext}>
-                    로그인이 성공했을때 보게 되는 페이지 입니다. 사용자의 이름을 표시하고 Contact 페이지에 새로운 메세지 페이지가 추가 되어 웹사이트의 관리자에게 메세지가 전송 될 수 있또록 하였습니다.
-                    또한 자신이 보낸 메세지를 확인 할 수 있는 페이지도 만들어 사용자가 자신이 보낸 메세지들을 확인 할 수 있도록 하였습니다.
+                <Col xs={4} md={6} lg={3} className={jupitermenu.contenttext}>
+                    로그인이 성공했을때 보게 되는 페이지 입니다. 사용자의 이름을 표시하고 로그아웃을 누를 시 처음 화면으로 돌아가게 됩니다. My Messages 버튼을 누를 시 사용자가 보냈던 메세지들을
+                    한번에 확인 할 수 있도록 하였습니다.
                   </Col>
-                  <Col xs={8} md={6} lg={6} className={jupitermenu.contentimageCol}>
+                  <Col xs={8} md={6} lg={9} className={jupitermenu.contentimageCol}>
                   <img
-                        id={jupitermenu.contentimage}
-                        src="./"
+                        id={jupitermenu.longimage2}
+                        src="./personal/loggedin.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -163,7 +179,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <Carousel.Item>
                       <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/page1.png"
+                        src="./personal/contact_loggedin.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -171,7 +187,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <Carousel.Item>
                       <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/page2.png"
+                        src="./personal/message.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -179,7 +195,31 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <Carousel.Item>
                       <img
                         id={jupitermenu.contentimage}
-                        src="./Erudite/page3.png"
+                        src="./personal/message_error1.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/message_sent.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/message_error2.png"
+                        className='img-thumbnail'
+                        alt='...'
+                      />
+                    </Carousel.Item>
+                    <Carousel.Item>
+                      <img
+                        id={jupitermenu.contentimage}
+                        src="./personal/messagepage.png"
                         className='img-thumbnail'
                         alt='...'
                       />
@@ -187,8 +227,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   </Carousel>
                   </Col>
                   <Col xs={12} md={6} lg={6} className={jupitermenu.contenttext}>
-                  학생들의 성적을 관리 할 수 있는 페이지입니다. 게임별로 정확도와 반응시간 등을 수치로 나타내고 보기 쉽게 그래프로도 나타내 학생 개개인의 실력 향상을 쉽게 볼 수 있게 하였습니다. 데이터를 .csv파일로 변환하여
-                  한번의 클릭으로 다운로드 할 수 있도록 하였습니다.
+                   로그인이 성공했을경우 보게되는 Contact페이지 입니다. 로그인한 사용자는 메세지를 보낼 수 있는 기능이 추가 되어있고 메세지를 보낼때 입력 양식과 데이터베이스 입력 값이 일치 하지 않는다면 에러 메세지를 띄우고,
+                   메세지가 성공적으로 보내져 데이터베이스에 들어가게 되면 성공했다는 메세지를 띄웁니다. 메뉴바에 "My Messages"를 클릭할 시에 보이는 메세지 페이지는 지금까지 사용자가 보낸 메세지를 한번에 확인 할 수 있도록 하였습니다.
 
                   </Col>
                 </Row>
@@ -205,8 +245,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <span className={jupitermenu.span}><b>기타 설명</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={jupitermenu.contenttext}>
-                  이 프로젝트의 가장 큰 목표는 간결함이였습니다. 저희 프로젝트의 목표는 영유아들의 영어실력을 향상시키기 위함으로 영유아들의 학습을 최우선으로 게임 및 웹사이트를 최대한 간결하고 쉽게 만들기 위해 버튼들을 많이 사용하였으며, 
-                  학부모들과 선생님들도 몇번의 클릭만으로 쉽게 유아들의 실력을 확인 할 수 있도록 제작되었습니다. 현재는 프로젝트와 웹사이트 모두 중단된 상태입니다.
+                  이 웹사이트는 처음 제작해본 포트폴리오용 웹사이트 입니다. 스크롤 형식의 웹사이트로 페이지 이동 없이 한 페이지에서 모든 정보를 볼 수 있도록 제작되었습니다. 사용자들이 보다 재미있게 사이트를 접할 수 있도록 버튼이나 애니메이션들을 
+                  넣어서 제작하였습니다. 
                 </Col>
               </Row>
               <Row className={jupitermenu.contentsRow}>
@@ -231,20 +271,14 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   CSS
                 </Badge>{' '}
                 <Badge pill bg="success">
-                  C#
-                </Badge>{' '}
-                <Badge pill bg="success">
-                  ASP.NET
+                  PHP
                 </Badge>{' '}
                 <Badge pill bg="success">
                   MySQL
                 </Badge>{' '}
                 <Badge pill bg="light" text="dark">
-                  Unity
+                  MAMP
                 </Badge>{''}
-                <Badge pill bg="light" text="dark">
-                  C++
-                </Badge>{' '}
                 </Col>
               </Row>
             </Carousel.Item>
@@ -259,9 +293,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                     <span className={jupitermenu.span}><b>배운점</b></span>
                   </Col>
                 <Col xs={8} md={8} lg={8} className={jupitermenu.contenttext}>
-                  전체적으로 1년동안 이 프로젝트를 통해 새로운 언어 및 기술을 배웠을 뿐만 아니라 소통과 협업이 얼마나 중요한지 깨닫게 되는 경험이었습니다. 이 프로젝트는 작년의 그룹프로젝트를 개선, 새로운 게임 개발 및 웹사이트로 배포하는 프로젝트였습니다. 이미 시작된 프로젝트를 이어받아 개선하는 과정에서 처음부터 시작하는게 아닌 다른 사람의 프로젝트를 개선하기 위해서는
-                  기존의 프로젝트를 완벽히 이해해야 했습니다. 그 뿐만이 아니라 새로운 게임을 만들면서 기존 프로젝트의 유지 개발 및 새로운 프로젝트까지 경험해 볼 수 있는 경험이었습니다. 매주 회의을 통해서 스폰서에게 저희의 성과를 보여줌과 동시에 피드백을 받고 그 피드백을 토대로
-                  프로젝트를 진행해 나갔습니다. 저는 팀의 개발 매니저로써 각각 팀원들에게 개발 파트를 부여하고 매주 성과를 끝으로 점검하고 결과를 github의 main에 병합하였습니다.
+                  이 웹사이트를 제작하면서 PHP와 Bootstrap을 처음 접해봤으며, 웹 개발의 Frontend와 Backend를 동시에 경험해 볼 수 있는 기회였습니다. 처음에 HTML로 제작되었던 페이지를
+                  PHP로 바꾸게 되면서 발생하는 오류들을 고치면서 PHP에 대해 많이 배웠으며 Bootstrap의 많은 기능들을 시도해볼 수 있는 좋은 기회였습니다.
                 </Col>
               </Row>
             </Carousel.Item>

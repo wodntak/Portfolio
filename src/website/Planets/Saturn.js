@@ -13,8 +13,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
     
     const renderTooltip = (props) => (
         <Tooltip id={saturnmenu.Tooltip} {...props}>
-          Project 1
-          <p className={saturnmenu.p}> 프로젝트에 대해서 </p>
+          프로젝트 3
+          <p className={saturnmenu.p}> 장볼때 유용하게 쓸 수 있는 Todo 프로젝트 입니다. </p>
         </Tooltip>
     );
     
@@ -40,7 +40,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
         centered
       >
         <Modal.Header  closeButton closeVariant="white" className={saturnmenu.Modal_Header}>
-          <Modal.Title className={saturnmenu.Modal_Title}> Project 1</Modal.Title>
+          <Modal.Title className={saturnmenu.Modal_Title}> 프로젝트 3 (장보기 / Todos)</Modal.Title>
         </Modal.Header>
         <Modal.Body className={saturnmenu.Modal_Body}>
         <Carousel id={saturnmenu.Carousel}>

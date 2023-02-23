@@ -63,9 +63,9 @@ const Home = () => {
 
     return (
     <div id={background.bodyy}>
-      <div id={background.star1} swap={swap} onAnimationEnd={() => setSwap(0)}></div>
+      {/* <div id={background.star1} swap={swap} onAnimationEnd={() => setSwap(0)}></div> */}
       <div id={background.star2} ></div>
-      <div id={background.star3} ></div>
+      {/* <div id={background.star3} ></div> */}
       <div id={background.star4} swap={swap} onAnimationEnd={() => setSwap(0)}></div>
        {nextpage && <Sun mercuryShow={mercuryShow} venusShow={venusShow} earthShow={earthShow} marsShow={marsShow} jupiterShow={jupiterShow} saturnShow={saturnShow} uranusShow={uranusShow} neptuneShow={neptuneShow} nextpage={nextpage} setNextpage={setNextpage} pagenumber={pagenumber} setPagenumber={setPagenumber}/>} 
        {nextpage && <Mercury mercuryshow={mercuryshow} mercuryClose={mercuryClose} mercuryShow={mercuryShow} pagenumber={pagenumber}/>}
