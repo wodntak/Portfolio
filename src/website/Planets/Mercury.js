@@ -47,9 +47,11 @@ const Mercury = ({ mercuryshow, mercuryClose, mercuryShow, pagenumber}) => {
         {/* <p>Greetings, I am <b>Jaehyeon Yang</b>,who dreams of being a front-end developer.</p> */}
         <Row style={{marginTop:"45px"}}>
             <Col className={mercurymenu.text}>
-                <b>'일을 시작했다면 끝을 보라'</b> <br/> 주어진일은 끝까지 포기하지 않고 끝까지 해내는 개발자가 되고 싶습니다.
-                    
-                    {/* 좌우명, 왜 이것을 선택했는지, 살아온 배경 말레이시아에서 미국 유학하고 */}
+                <b>'일을 시작했다면 끝을 보라'</b> <br/> 한번 시작했다면 잘 풀리지 않더라고 포기하지 않고 주어진일은 끝까지 해내는 개발자가 되고 싶습니다.
+                <br/>
+                <br/>
+                대학을 다니고 개발을 시작하면서 눈에 바로 보여지고 머릿속의 그림들을 코딩으로 풀어내는 프론트엔드 개발에 흥미를 느껴 프론트엔드 개발자가 되고 싶다는 생각을 했습니다.
+                
             </Col>
             <Col className={mercurymenu.text}>
                 <h5> Wherever</h5>
