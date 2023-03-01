@@ -156,10 +156,10 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                 </Row>
                 <Row className={jupitermenu.contentsRow}>
                 <Col xs={12} md={6} lg={3} className={jupitermenu.contenttext}>
-                    로그인이 성공했을때 보게 되는 페이지 입니다. 사용자의 이름을 표시하고 로그아웃을 누를 시 처음 화면으로 돌아가게 됩니다. My Messages 버튼을 누를 시 사용자가 보냈던 메세지들을
+                    로그인이 성공했을때 보게 되는 메뉴바 입니다. 사용자의 이름을 표시하고 로그아웃을 누를 시 처음 화면으로 돌아가게 됩니다. My Messages 버튼을 누를 시 사용자가 보냈던 메세지들을
                     한번에 확인 할 수 있도록 하였습니다.
                   </Col>
-                  <Col xs={12} md={6} lg={9} className={jupitermenu.contentimageCol}>
+                  <Col xs={12} md={6} lg={9} className={jupitermenu.contentimageCol} >
                   <img
                         id={jupitermenu.longimage2}
                         src="./personal/loggedin.png"
@@ -280,6 +280,30 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   MAMP
                 </Badge>{''}
                 </Col>
+              </Row>
+              <Row className={jupitermenu.contentsRow}>
+                <Col xs={5} md={4} lg={4} className={jupitermenu.contentimageCol} >
+                  <img 
+                  src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
+                  className={jupitermenu.contentimage_icon} 
+                  alt=""/>
+                    <span className={jupitermenu.span}><b>사이트</b></span>
+                  </Col>
+                <Col xs={7} md={8} lg={8} className={jupitermenu.contenttext}>
+                  wodntak.github.io
+                </Col>
+              </Row>
+              <Row className={jupitermenu.contentsRow}>
+                <Col xs={5} md={4} lg={4} className={jupitermenu.contentimageCol} >
+                  <img 
+                  src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
+                  className={jupitermenu.contentimage_icon} 
+                  alt=""/>
+                    <span className={jupitermenu.span}><b>깃헙</b></span>
+                  </Col>
+                <Col xs={7} md={8} lg={8} className={jupitermenu.contenttext}>
+                  github.com/wodntak/wodntak.github.io
+                </Col> 
               </Row>
             </Carousel.Item>
 

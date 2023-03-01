@@ -37,7 +37,7 @@ const Uranus = ({ uranusshow, uranusClose, uranusShow, pagenumber}) => {
         centered
       >
         <Modal.Header  closeButton closeVariant="white" className={uranusmenu.Modal_Header}>
-          <Modal.Title className={uranusmenu.Modal_Title}> Project 4 (장보기/Todos) - 개발중</Modal.Title>
+          <Modal.Title className={uranusmenu.Modal_Title}> Project 4 (장보기/Todos) - 준비중</Modal.Title>
         </Modal.Header>
         <Modal.Body className={uranusmenu.Modal_Body}>
         <Carousel id={uranusmenu.Carousel}>

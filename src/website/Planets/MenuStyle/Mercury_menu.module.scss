@@ -101,6 +101,7 @@
 }    
 //세로 모달
 @media (orientation:portrait){
+    //모바일
     @media (max-width:767px){
     .Modal_Header{
        font-size: 1.3888888888888888vh;
@@ -120,10 +121,24 @@
 
        h3{
         font-size: 3vh;
-       }
+        }
+
+        p{
+            font-size: 2vh;
+            font-family: 'IM_Hyemin-Bold';
+
+        }
+
+        .tag{
+            font-family: 'IM_Hyemin-Bold';
+            font-size: 2.3vh;
+            text-decoration: underline;
+            text-underline-offset: 5px;
+        }
 
     }
     }
+    //태블릿
     @media (min-width:768px){
         .Modal_Header{
             margin-left: -8vh;
@@ -146,8 +161,21 @@
            font-size: 2.5vh;
 
            h3{
-            font-size: 3vh;
-           }
+            font-size: 3.5vh;
+            }
+    
+            p{
+                font-size: 2.5vh;
+                font-family: 'IM_Hyemin-Bold';
+    
+            }
+    
+            .tag{
+                font-family: 'IM_Hyemin-Bold';
+                font-size: 3vh;
+                text-decoration: underline;
+                text-underline-offset: 5px;
+            }
         }
         }
 #Carousel{
@@ -208,7 +236,20 @@
         font-size: 2.5vh;
 
         h3{
-        font-size: 3vh;
+        font-size: 4vh;
+        }
+
+        p{
+            font-size: 2.7vh;
+            font-family: 'IM_Hyemin-Bold';
+
+        }
+
+        .tag{
+            font-family: 'IM_Hyemin-Bold';
+            font-size: 3vh;
+            text-decoration: underline;
+            text-underline-offset: 5px;
         }
     }
     #Carousel{
