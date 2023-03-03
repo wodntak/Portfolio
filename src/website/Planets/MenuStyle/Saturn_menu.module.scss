@@ -190,6 +190,7 @@
 #saturn_menumode:hover{
     transform: scale(1.08);
     transition: transform 2s;
+    cursor: pointer;
 }
 //사라지고 나타나는 애니메이션 페이지
 #saturn_menumode[pagenumber="1"]{
@@ -339,4 +340,180 @@
         opacity: 1;
         scale: 1;
       }
+}
+
+//컨텐츠 크기 조절
+@media (max-width: 575px){
+    //모바일 세로
+    .contentsRow{
+        margin-bottom: 3.5vh;
+    }
+        .contentimageCol{
+            margin: auto 0;
+            font-size: 15px;
+        }
+            #contentimage{
+                width: 350px;
+                height: 150px;
+            }
+            .contentimage_icon{
+                width: 25px;
+                height: 25px;
+                margin-left: -5px;
+            }
+        .contenttext{
+            font-size: 4px;
+            text-align: center;
+            margin: auto 0;
+            margin-top: 1vw;
+           margin-left: 0px;
+           margin-bottom: 1vw;
+            font-family: 'IM_Hyemin-Bold';
+        }
+        .span{
+            font-size: 14px;
+        }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    //모바일 가로
+    .contentsRow{
+        margin-bottom: 5vw;
+    }
+        .contentimageCol{
+            margin: auto 0;
+            font-size: 15px;
+        }
+            #contentimage{
+                width: 250px;
+                height: 110px;
+            }
+            .contentimage_icon{
+                width: 25px;
+                height: 25px;
+            }
+        .contenttext{
+            margin-top: 2px;
+            font-size: 8px;
+            text-align: center;
+            font-family: 'IM_Hyemin-Bold';
+        }
+        .span{
+            font-size: 10px;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+    // 큰 모바일 가로
+    .contentsRow{
+        margin-bottom: 5vw;
+    }
+        .contentimageCol{
+            margin: auto 0;
+            font-size: 15px;
+        }
+            #contentimage{
+                width: 250px;
+                height: 110px;
+            }
+            .contentimage_icon{
+                width: 25px;
+                height: 25px;
+            }
+        .contenttext{
+            margin-top: 2px;
+            font-size: 8px;
+            text-align: center;
+            font-family: 'IM_Hyemin-Bold';
+        }
+        .span{
+            font-size: 10px;
+        }
+}
+
+@media (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
+    // 테블릿 세로
+    .contentsRow{
+        margin-bottom: 25vw;
+    }
+        .contentimageCol{
+            margin: auto 0;
+            font-size: 15px;
+        }
+            #contentimage{
+                width: 350px;
+                height: 310px;
+            }
+            .contentimage_icon{
+                width: 35px;
+                height: 35px;
+            }
+        .contenttext{
+            margin: auto 0;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'IM_Hyemin-Bold';
+        }
+        .span{
+            font-size: 25px;
+        }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    // 테블릿 가로
+    .contentsRow{
+        margin-bottom: 5vw;
+    }
+        .contentimageCol{
+            margin: auto 0;
+            font-size: 15px;
+        }
+            #contentimage{
+                width: 350px;
+                height: 210px;
+            }
+            .contentimage_icon{
+                width: 35px;
+                height: 35px;
+            }
+        .contenttext{
+            margin: auto 0;
+            font-size: 20px;
+            text-align: center;
+            font-family: 'IM_Hyemin-Bold';
+        }
+        .span{
+            font-size: 25px;
+        }
+}
+
+@media (min-width: 1200px) {
+    // 데스크탑 일반
+    .contentsRow{
+            margin-bottom: 4vw;
+    }
+        .contentimageCol{
+            margin: auto 0;
+            font-size: 20px;
+            
+        }
+            #contentimage{
+                width: 25vw;
+                height: 14vw;
+            }
+            .contentimage_icon{
+                width: 25px;
+                height: 25px;
+                margin-right: 10px;
+            }
+        .contenttext{
+            font-size: 17px;
+            text-align: center;
+            margin: auto 0;
+            font-family: 'IM_Hyemin-Bold';
+        }
+        .span{
+            font-size: 24px;
+        }
+    
 }

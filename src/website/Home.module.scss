@@ -399,6 +399,9 @@ body::-webkit-scrollbar{
         animation-delay: 0s;
         animation-iteration-count: infinite;
     }
+    #more1:hover{
+        cursor: pointer;
+    }
 
     //버튼, 더보기 div (왼쪽)
     #more2{
@@ -412,6 +415,9 @@ body::-webkit-scrollbar{
         animation-duration: 2s;
         animation-delay: 0s;
         animation-iteration-count: infinite;
+    }
+    #more2:hover{
+        cursor: pointer;
     }
     //h3 (오른쪽)
     .click1{

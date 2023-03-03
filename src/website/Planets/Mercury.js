@@ -46,16 +46,16 @@ const Mercury = ({ mercuryshow, mercuryClose, mercuryShow, pagenumber}) => {
         <h3>반갑습니다, 프론트엔드 개발자를 꿈꾸는 <b>양재현</b>입니다.</h3>
         <Row style={{marginTop:"45px"}}>
             <Col className={mercurymenu.text}>
-               <p className={mercurymenu.p}> <span className={mercurymenu.tag}>'일을 시작했다면 끝을 보라'</span> <br/> 한번 시작했다면 잘 풀리지 않더라고 포기하지 않고 주어진일은 끝까지 해내는 개발자가 되고 싶습니다.</p>
+               <p className={mercurymenu.p}> <span className={mercurymenu.tag}>'일을 시작했다면 끝을 보라'</span> <br/> 한번 시작했다면 잘 풀리지 않더라고 포기하지 않고 주어진 일은 끝까지 해내는 개발자가 되고 싶습니다.</p>
                 <br/>
                 <br/>
-                <p className={mercurymenu.p}> 대학을 다니고 개발을 시작하면서 눈에 바로 보여지고 머릿속의 그림들을 코딩으로 풀어내는 프론트엔드 개발에 흥미를 느껴 프론트엔드 개발자가 되고 싶다는 생각을 했습니다.</p>
+                <p className={mercurymenu.p}> 대학을 다니고 개발을 시작하면서 눈에 바로 보여지고 머릿속의 그림들을 코딩으로 풀어내는 프론트엔드 개발에 흥미를 느껴 프론트엔드 개발자가 되고 싶다고 생각했습니다.</p>
             </Col>
             <Col className={mercurymenu.text}>
-            <p className={mercurymenu.p}>개발자로써 물론 실력도 중요하지만 프론트엔드 개발자 혼자서 완성된 웹사이트를 만들 수 없듯이 여러명의 사람들과 협업과 소통을 해야하므로 협업과 소통이 제일 중요하다고 생각합니다.</p>
+            <p className={mercurymenu.p}>개발자로서 물론 실력도 중요하지만 프론트엔드 개발자 혼자서 완성된 웹사이트를 만들 수 없듯이 여러 명의 사람들과 협업과 소통을 해야 하므로 협업과 소통이 제일 중요하다고 생각합니다.</p>
               <br/>
               <br/>
-              <p className={mercurymenu.p}>모두에게 인정받고 실력있는 개발자가 될때까지 노력하는<span className={mercurymenu.tag}>개발자</span>가 되도록 하겠습니다.</p>
+              <p className={mercurymenu.p}>모두에게 인정받고 실력 있는 <span className={mercurymenu.tag}>개발자</span>가 될 때까지 노력하도록 하겠습니다.</p>
             </Col>
         </Row>
         </Container>

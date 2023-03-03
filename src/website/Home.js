@@ -84,12 +84,12 @@ const Home = () => {
 
       {nextpage ?
       <div id={background.more1} onClick={() => {setPagenumber(1); nextpagefunction();}}>
-        <p className={background.click1}> 더보기 click!</p>
+        <p className={background.click1}> 더 보기 click!</p>
         <img className={background.nextpageButton1} src="https://img.icons8.com/nolan/96/chevron-right.png" alt="nextpage1"/>
       </div>
       : <div id={background.more2} onClick={() => {setPagenumber(-1); nextpagefunction();}}>
           <img className={background.nextpageButton2} src="https://img.icons8.com/nolan/96/1A6DFF/C822FF/chevron-left.png" alt="nextpage2"/>
-          <p className={background.click2}> 더보기 click!</p>
+          <p className={background.click2}> 더 보기 click!</p>
         </div>}
       
     </div>

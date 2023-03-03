@@ -53,7 +53,7 @@
     @media (min-width: 1200px) {
         // 데스크탑 일반
         top: 16vw;
-        background-image: radial-gradient(circle 27.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 180px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
+        background-image: radial-gradient(circle 20.833333333333332vw at 0 0, rgba(0,0,0,0), rgba(0,0,0,0), rgba(0,0,0,.8)), radial-gradient(circle 400px at 90px 80px, rgba(255,255,255,.5), rgba(0,0,0,0)),
         url('/images/jupiter-demo.jpeg');
         
     }
@@ -72,6 +72,7 @@
 #jupiter_menumode:hover{
     transform: scale(1.08);
     transition: transform 2s;
+    cursor: pointer;
 }
 
 #Tooltip {
