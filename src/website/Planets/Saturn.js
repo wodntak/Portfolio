@@ -56,6 +56,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/firstpage1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -64,6 +65,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/firstpage2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -86,6 +88,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/tooltip.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -94,6 +97,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/mobilefirstpage.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -102,6 +106,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/menubar.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -121,6 +126,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/aboutme1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -129,6 +135,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/aboutme2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -149,6 +156,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/education1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -157,6 +165,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/education2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -176,6 +185,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/skills1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -184,6 +194,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/skills2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -192,6 +203,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/skills3.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -213,6 +225,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/mars1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -221,6 +234,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/mars2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -229,6 +243,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/mars3.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -237,6 +252,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/jupiter1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -245,6 +261,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/jupiter2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -253,6 +270,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/jupiter3.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -272,6 +290,7 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                         src="./Portfolio/contact.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -289,7 +308,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={saturnmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={saturnmenu.span}><b>기타 설명</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={saturnmenu.contenttext}>
@@ -302,7 +322,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={saturnmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={saturnmenu.span}><b>사용된 기술</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={saturnmenu.contenttext}>
@@ -331,7 +352,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={saturnmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={saturnmenu.span}><b>사이트</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={saturnmenu.contenttext}>
@@ -343,7 +365,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={saturnmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={saturnmenu.span}><b>깃헙</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={saturnmenu.contenttext}>
@@ -358,7 +381,8 @@ const Saturn = ({ saturnshow, saturnClose, saturnShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={saturnmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={saturnmenu.span}><b>배운점</b></span>
                   </Col>
                 <Col xs={8} md={8} lg={8} className={saturnmenu.contenttext}>

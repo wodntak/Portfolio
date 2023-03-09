@@ -57,6 +57,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/Eruditemain.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -65,6 +66,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/showcase.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -86,6 +88,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/Login_scene.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -94,6 +97,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/Login_scene2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -113,6 +117,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/Game4(treasure).png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -121,6 +126,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/Game4.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -139,6 +145,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/game_result.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                   </Col>
                 </Row>
@@ -156,6 +163,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/page1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -164,6 +172,7 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                         src="./Erudite/page2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -191,7 +200,9 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={marsmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"
+                  />
                     <span className={marsmenu.span}><b>기타 설명</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={marsmenu.contenttext}>
@@ -204,7 +215,9 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={marsmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"
+                  />
                     <span className={marsmenu.span}><b>사용된 기술</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={marsmenu.contenttext}>
@@ -245,7 +258,9 @@ const Mars = ({ marsshow, marsClose, marsShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={marsmenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"
+                  />
                     <span className={marsmenu.span}><b>배운점</b></span>
                   </Col>
                 <Col xs={8} md={8} lg={8} className={marsmenu.contenttext}>

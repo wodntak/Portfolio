@@ -53,6 +53,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/Home.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -61,6 +62,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/About.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -69,6 +71,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/Resume.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -77,6 +80,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/Skills.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -85,6 +89,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/Contact.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -104,6 +109,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/footer.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                   </Col>
                 </Row>
@@ -121,6 +127,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/signin.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -129,6 +136,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/register.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -137,6 +145,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/error1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -145,6 +154,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/error2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -165,6 +175,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/loggedin.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                   </Col>
                 </Row>
@@ -182,6 +193,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/contact_loggedin.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -190,6 +202,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/message.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -198,6 +211,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/message_error1.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -206,6 +220,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/message_sent.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -214,6 +229,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/message_error2.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                     <Carousel.Item>
@@ -222,6 +238,7 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                         src="./personal/messagepage.png"
                         className='img-thumbnail'
                         alt='...'
+                        loading="lazy"
                       />
                     </Carousel.Item>
                   </Carousel>
@@ -241,7 +258,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={jupitermenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={jupitermenu.span}><b>기타 설명</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={jupitermenu.contenttext}>
@@ -254,7 +272,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={jupitermenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={jupitermenu.span}><b>사용된 기술</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={jupitermenu.contenttext}>
@@ -289,7 +308,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={jupitermenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={jupitermenu.span}><b>사이트</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={jupitermenu.contenttext}>
@@ -301,7 +321,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={jupitermenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={jupitermenu.span}><b>깃헙</b></span>
                   </Col>
                 <Col xs={7} md={8} lg={8} className={jupitermenu.contenttext}>
@@ -316,7 +337,8 @@ const Jupiter = ({ jupitershow, jupiterClose, jupiterShow, pagenumber}) => {
                   <img 
                   src="https://img.icons8.com/nolan/64/1A6DFF/C822FF/unchecked-circle.png" 
                   className={jupitermenu.contentimage_icon} 
-                  alt=""/>
+                  alt=""
+                  loading="lazy"/>
                     <span className={jupitermenu.span}><b>배운점</b></span>
                   </Col>
                 <Col xs={8} md={8} lg={8} className={jupitermenu.contenttext}>

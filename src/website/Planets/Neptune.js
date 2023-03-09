@@ -40,19 +40,19 @@ const Neptune = ({neptuneshow, neptuneClose, neptuneShow ,pagenumber}) => {
         <Modal.Body className={neptunemenu.Modal_Body}>
         <Container id={neptunemenu.Carousel}>
           <Row>
-            <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/facebook.png" alt="" onClick={ ()=> window.open("https://www.facebook.com/yang.jaehyeon.7")}/>
+            <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/facebook.png" alt="" onClick={ ()=> window.open("https://www.facebook.com/yang.jaehyeon.7")} loading="lazy"/>
             <span className={neptunemenu.icontext}>페이스북</span>
           </Row>
           <Row>
-          <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/instagram-new.png" alt="" onClick={ ()=> window.open("https://www.instagram.com/ywogus96/")}/>
+          <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/instagram-new.png" alt="" onClick={ ()=> window.open("https://www.instagram.com/ywogus96/")} loading="lazy"/>
           <span className={neptunemenu.icontext}>인스타그램</span>
           </Row>
           <Row>
-          <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/github.png" alt="" onClick={ ()=> window.open("https://github.com/wodntak")}/>
+          <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/github.png" alt="" onClick={ ()=> window.open("https://github.com/wodntak")} loading="lazy"/>
           <span className={neptunemenu.icontext}>깃헙</span>
           </Row>
           <Row>
-          <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/line-me.png" alt="" onClick={ ()=> window.open("https://line.me/ti/p/QOrS8IPOTj")}/>
+          <img className={neptunemenu.icon} src="https://img.icons8.com/cute-clipart/128/null/line-me.png" alt="" onClick={ ()=> window.open("https://line.me/ti/p/QOrS8IPOTj")} loading="lazy"/>
           <span className={neptunemenu.icontext}>라인</span>
           </Row>
         </Container>
