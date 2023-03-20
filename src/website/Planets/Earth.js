@@ -96,7 +96,7 @@ const Earth = ({ earthshow, earthClose, earthShow, pagenumber}) => {
             <Col>
               <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"  alt="Redux"/>
               <span> Redux </span>
-              <ProgressBar className={earthmenu.progress} animated now={25} />
+              <ProgressBar className={earthmenu.progress} animated now={10} />
             </Col>
 
             <Col>
@@ -115,7 +115,7 @@ const Earth = ({ earthshow, earthClose, earthShow, pagenumber}) => {
             <Col>          
               <img className={earthmenu.icon2} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"/>
               <span className={earthmenu.span}> PHP </span>
-              <ProgressBar variant="success" className={earthmenu.progress} animated now={75} />
+              <ProgressBar variant="success" className={earthmenu.progress} animated now={70} />
             </Col>
 
             <Col>
@@ -129,7 +129,7 @@ const Earth = ({ earthshow, earthClose, earthShow, pagenumber}) => {
             <Col>
             <img className={earthmenu.icon1} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" />
                 <span> C# </span>
-              <ProgressBar variant="success" className={earthmenu.progress} animated now={68} />
+              <ProgressBar variant="success" className={earthmenu.progress} animated now={65} />
             </Col>
 
             <Col>
@@ -171,7 +171,7 @@ const Earth = ({ earthshow, earthClose, earthShow, pagenumber}) => {
             <Col>
             <img className={earthmenu.icon2} src="https://img.icons8.com/color/48/null/slack-new.png"  alt="Slack"/>
               <span> Slack </span>
-              <ProgressBar variant="warning" className={earthmenu.progress} animated now={75} />
+              <ProgressBar variant="warning" className={earthmenu.progress} animated now={80} />
             </Col>
           </Row>
 
